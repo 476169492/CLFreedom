@@ -10,8 +10,12 @@
 #define SwiftCallOcHeader_h
 //swift 调用oc类
 
+//view
 #import "CycleScrollView.h"
 
+//category
+#import "UIColor+Additions.h"
+#import "NSTimer+Addition.h"
 
 
 

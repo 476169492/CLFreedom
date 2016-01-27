@@ -16,6 +16,8 @@
 		CED19BA51C58B29500F6B162 /* CLHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED19BA41C58B29500F6B162 /* CLHomeTableViewController.swift */; };
 		CED19BAB1C58B5E500F6B162 /* CycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = CED19BAA1C58B5E500F6B162 /* CycleScrollView.m */; };
 		CED19BB11C58B64A00F6B162 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = CED19BB01C58B64A00F6B162 /* NSTimer+Addition.m */; };
+		CED19BB41C58B9F900F6B162 /* CLCommonConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED19BB31C58B9F900F6B162 /* CLCommonConst.swift */; };
+		CED19BB71C58BAA000F6B162 /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = CED19BB61C58BAA000F6B162 /* UIColor+Additions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,9 @@
 		CED19BAF1C58B64A00F6B162 /* NSTimer+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Addition.h"; sourceTree = "<group>"; };
 		CED19BB01C58B64A00F6B162 /* NSTimer+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Addition.m"; sourceTree = "<group>"; };
 		CED19BB21C58B6F000F6B162 /* SwiftCallOcHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftCallOcHeader.h; sourceTree = "<group>"; };
+		CED19BB31C58B9F900F6B162 /* CLCommonConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLCommonConst.swift; sourceTree = "<group>"; };
+		CED19BB51C58BAA000F6B162 /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
+		CED19BB61C58BAA000F6B162 /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,9 +145,9 @@
 				CED19BA31C58AB2F00F6B162 /* Views */,
 				CED19BA21C58AB2F00F6B162 /* ViewControllers */,
 				CED19B9F1C58AB2F00F6B162 /* NetWorkCenter */,
-				CED19BA11C58AB2F00F6B162 /* Utility */,
 				CED19BA01C58AB2F00F6B162 /* ThirdPart */,
 				CED19B9D1C58AB2F00F6B162 /* Category */,
+				CED19BA11C58AB2F00F6B162 /* Utility */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -159,6 +164,8 @@
 		CED19B9D1C58AB2F00F6B162 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				CED19BB51C58BAA000F6B162 /* UIColor+Additions.h */,
+				CED19BB61C58BAA000F6B162 /* UIColor+Additions.m */,
 				CED19BAF1C58B64A00F6B162 /* NSTimer+Addition.h */,
 				CED19BB01C58B64A00F6B162 /* NSTimer+Addition.m */,
 			);
@@ -190,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				CED19BB21C58B6F000F6B162 /* SwiftCallOcHeader.h */,
+				CED19BB31C58B9F900F6B162 /* CLCommonConst.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -351,9 +359,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CED19BAB1C58B5E500F6B162 /* CycleScrollView.m in Sources */,
+				CED19BB41C58B9F900F6B162 /* CLCommonConst.swift in Sources */,
 				CED19B6A1C589D1800F6B162 /* AppDelegate.swift in Sources */,
 				CED19BB11C58B64A00F6B162 /* NSTimer+Addition.m in Sources */,
 				CED19BA51C58B29500F6B162 /* CLHomeTableViewController.swift in Sources */,
+				CED19BB71C58BAA000F6B162 /* UIColor+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +488,7 @@
 				INFOPLIST_FILE = CLFreedom/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.laosiji.CLFreedom;
 				PRODUCT_MODULE_NAME = OcCallSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -493,6 +504,7 @@
 				INFOPLIST_FILE = CLFreedom/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.laosiji.CLFreedom;
 				PRODUCT_MODULE_NAME = OcCallSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
