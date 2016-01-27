@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		CED19B6A1C589D1800F6B162 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED19B691C589D1800F6B162 /* AppDelegate.swift */; };
-		CED19B6C1C589D1800F6B162 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED19B6B1C589D1800F6B162 /* ViewController.swift */; };
-		CED19B6F1C589D1800F6B162 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED19B6D1C589D1800F6B162 /* Main.storyboard */; };
 		CED19B711C589D1800F6B162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED19B701C589D1800F6B162 /* Assets.xcassets */; };
-		CED19B741C589D1800F6B162 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED19B721C589D1800F6B162 /* LaunchScreen.storyboard */; };
 		CED19B7F1C589D1800F6B162 /* CLFreedomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED19B7E1C589D1800F6B162 /* CLFreedomTests.swift */; };
 		CED19B8A1C589D1800F6B162 /* CLFreedomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED19B891C589D1800F6B162 /* CLFreedomUITests.swift */; };
+		CED19B9B1C58A89200F6B162 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED19B991C58A89200F6B162 /* LaunchScreen.storyboard */; };
+		CED19B9C1C58A89200F6B162 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED19B9A1C58A89200F6B162 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +35,7 @@
 /* Begin PBXFileReference section */
 		CED19B661C589D1800F6B162 /* CLFreedom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLFreedom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED19B691C589D1800F6B162 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CED19B6B1C589D1800F6B162 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CED19B6E1C589D1800F6B162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CED19B701C589D1800F6B162 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CED19B731C589D1800F6B162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CED19B751C589D1800F6B162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CED19B7A1C589D1800F6B162 /* CLFreedomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLFreedomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED19B7E1C589D1800F6B162 /* CLFreedomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLFreedomTests.swift; sourceTree = "<group>"; };
@@ -47,6 +43,8 @@
 		CED19B851C589D1800F6B162 /* CLFreedomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLFreedomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED19B891C589D1800F6B162 /* CLFreedomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLFreedomUITests.swift; sourceTree = "<group>"; };
 		CED19B8B1C589D1800F6B162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED19B991C58A89200F6B162 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CED19B9A1C58A89200F6B162 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +95,10 @@
 		CED19B681C589D1800F6B162 /* CLFreedom */ = {
 			isa = PBXGroup;
 			children = (
-				CED19B691C589D1800F6B162 /* AppDelegate.swift */,
-				CED19B6B1C589D1800F6B162 /* ViewController.swift */,
-				CED19B6D1C589D1800F6B162 /* Main.storyboard */,
+				CED19B981C58A86700F6B162 /* StoryBoard */,
+				CED19B971C58A86700F6B162 /* Classes */,
 				CED19B701C589D1800F6B162 /* Assets.xcassets */,
-				CED19B721C589D1800F6B162 /* LaunchScreen.storyboard */,
+				CED19B691C589D1800F6B162 /* AppDelegate.swift */,
 				CED19B751C589D1800F6B162 /* Info.plist */,
 			);
 			path = CLFreedom;
@@ -123,6 +120,78 @@
 				CED19B8B1C589D1800F6B162 /* Info.plist */,
 			);
 			path = CLFreedomUITests;
+			sourceTree = "<group>";
+		};
+		CED19B971C58A86700F6B162 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CED19B9E1C58AB2F00F6B162 /* DataModel */,
+				CED19BA31C58AB2F00F6B162 /* Views */,
+				CED19BA21C58AB2F00F6B162 /* ViewControllers */,
+				CED19B9F1C58AB2F00F6B162 /* NetWorkCenter */,
+				CED19BA11C58AB2F00F6B162 /* Utility */,
+				CED19BA01C58AB2F00F6B162 /* ThirdPart */,
+				CED19B9D1C58AB2F00F6B162 /* Category */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CED19B981C58A86700F6B162 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				CED19B991C58A89200F6B162 /* LaunchScreen.storyboard */,
+				CED19B9A1C58A89200F6B162 /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		CED19B9D1C58AB2F00F6B162 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		CED19B9E1C58AB2F00F6B162 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		CED19B9F1C58AB2F00F6B162 /* NetWorkCenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetWorkCenter;
+			sourceTree = "<group>";
+		};
+		CED19BA01C58AB2F00F6B162 /* ThirdPart */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdPart;
+			sourceTree = "<group>";
+		};
+		CED19BA11C58AB2F00F6B162 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		CED19BA21C58AB2F00F6B162 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CED19BA31C58AB2F00F6B162 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +298,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CED19B741C589D1800F6B162 /* LaunchScreen.storyboard in Resources */,
+				CED19B9C1C58A89200F6B162 /* Main.storyboard in Resources */,
 				CED19B711C589D1800F6B162 /* Assets.xcassets in Resources */,
-				CED19B6F1C589D1800F6B162 /* Main.storyboard in Resources */,
+				CED19B9B1C58A89200F6B162 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +325,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CED19B6C1C589D1800F6B162 /* ViewController.swift in Sources */,
 				CED19B6A1C589D1800F6B162 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,25 +359,6 @@
 			targetProxy = CED19B861C589D1800F6B162 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		CED19B6D1C589D1800F6B162 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CED19B6E1C589D1800F6B162 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CED19B721C589D1800F6B162 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CED19B731C589D1800F6B162 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CED19B8C1C589D1800F6B162 /* Debug */ = {
@@ -398,6 +447,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CLFreedom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.laosiji.CLFreedom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -409,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CLFreedom/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.laosiji.CLFreedom;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -482,6 +533,7 @@
 				CED19B901C589D1800F6B162 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CED19B911C589D1800F6B162 /* Build configuration list for PBXNativeTarget "CLFreedomTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +542,7 @@
 				CED19B931C589D1800F6B162 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CED19B941C589D1800F6B162 /* Build configuration list for PBXNativeTarget "CLFreedomUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +551,7 @@
 				CED19B961C589D1800F6B162 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
