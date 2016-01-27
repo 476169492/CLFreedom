@@ -54,6 +54,7 @@
 		CED19BAA1C58B5E500F6B162 /* CycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleScrollView.m; sourceTree = "<group>"; };
 		CED19BAF1C58B64A00F6B162 /* NSTimer+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Addition.h"; sourceTree = "<group>"; };
 		CED19BB01C58B64A00F6B162 /* NSTimer+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Addition.m"; sourceTree = "<group>"; };
+		CED19BB21C58B6F000F6B162 /* SwiftCallOcHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftCallOcHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +189,7 @@
 		CED19BA11C58AB2F00F6B162 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				CED19BB21C58B6F000F6B162 /* SwiftCallOcHeader.h */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -477,7 +479,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.laosiji.CLFreedom;
+				PRODUCT_MODULE_NAME = OcCallSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = CLFreedom/Classes/Utility/SwiftCallOcHeader.h;
 			};
 			name = Debug;
 		};
@@ -490,7 +494,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.laosiji.CLFreedom;
+				PRODUCT_MODULE_NAME = OcCallSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = CLFreedom/Classes/Utility/SwiftCallOcHeader.h;
 			};
 			name = Release;
 		};
