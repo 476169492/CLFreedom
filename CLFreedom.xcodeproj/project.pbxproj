@@ -13,6 +13,9 @@
 		CED19B8A1C589D1800F6B162 /* CLFreedomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED19B891C589D1800F6B162 /* CLFreedomUITests.swift */; };
 		CED19B9B1C58A89200F6B162 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED19B991C58A89200F6B162 /* LaunchScreen.storyboard */; };
 		CED19B9C1C58A89200F6B162 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED19B9A1C58A89200F6B162 /* Main.storyboard */; };
+		CED19BA51C58B29500F6B162 /* CLHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED19BA41C58B29500F6B162 /* CLHomeTableViewController.swift */; };
+		CED19BAB1C58B5E500F6B162 /* CycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = CED19BAA1C58B5E500F6B162 /* CycleScrollView.m */; };
+		CED19BB11C58B64A00F6B162 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = CED19BB01C58B64A00F6B162 /* NSTimer+Addition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,12 @@
 		CED19B8B1C589D1800F6B162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CED19B991C58A89200F6B162 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CED19B9A1C58A89200F6B162 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CED19BA41C58B29500F6B162 /* CLHomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLHomeTableViewController.swift; sourceTree = "<group>"; };
+		CED19BA71C58B46400F6B162 /* CLFreedom-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLFreedom-Prefix.pch"; sourceTree = "<group>"; };
+		CED19BA91C58B5E500F6B162 /* CycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleScrollView.h; sourceTree = "<group>"; };
+		CED19BAA1C58B5E500F6B162 /* CycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleScrollView.m; sourceTree = "<group>"; };
+		CED19BAF1C58B64A00F6B162 /* NSTimer+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Addition.h"; sourceTree = "<group>"; };
+		CED19BB01C58B64A00F6B162 /* NSTimer+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Addition.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +107,7 @@
 				CED19B981C58A86700F6B162 /* StoryBoard */,
 				CED19B971C58A86700F6B162 /* Classes */,
 				CED19B701C589D1800F6B162 /* Assets.xcassets */,
+				CED19BA71C58B46400F6B162 /* CLFreedom-Prefix.pch */,
 				CED19B691C589D1800F6B162 /* AppDelegate.swift */,
 				CED19B751C589D1800F6B162 /* Info.plist */,
 			);
@@ -148,6 +158,8 @@
 		CED19B9D1C58AB2F00F6B162 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				CED19BAF1C58B64A00F6B162 /* NSTimer+Addition.h */,
+				CED19BB01C58B64A00F6B162 /* NSTimer+Addition.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -183,6 +195,7 @@
 		CED19BA21C58AB2F00F6B162 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				CED19BA41C58B29500F6B162 /* CLHomeTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -190,8 +203,18 @@
 		CED19BA31C58AB2F00F6B162 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CED19BA81C58B5E500F6B162 /* CycleScrollView */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		CED19BA81C58B5E500F6B162 /* CycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				CED19BA91C58B5E500F6B162 /* CycleScrollView.h */,
+				CED19BAA1C58B5E500F6B162 /* CycleScrollView.m */,
+			);
+			path = CycleScrollView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,7 +348,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED19BAB1C58B5E500F6B162 /* CycleScrollView.m in Sources */,
 				CED19B6A1C589D1800F6B162 /* AppDelegate.swift in Sources */,
+				CED19BB11C58B64A00F6B162 /* NSTimer+Addition.m in Sources */,
+				CED19BA51C58B29500F6B162 /* CLHomeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +472,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CLFreedom/CLFreedom-Prefix.pch";
 				INFOPLIST_FILE = CLFreedom/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -458,6 +485,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CLFreedom/CLFreedom-Prefix.pch";
 				INFOPLIST_FILE = CLFreedom/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
