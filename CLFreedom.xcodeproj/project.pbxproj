@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CED19B6A1C589D1800F6B162 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED19B691C589D1800F6B162 /* AppDelegate.swift */; };
+		CED19B6C1C589D1800F6B162 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED19B6B1C589D1800F6B162 /* ViewController.swift */; };
+		CED19B6F1C589D1800F6B162 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED19B6D1C589D1800F6B162 /* Main.storyboard */; };
+		CED19B711C589D1800F6B162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED19B701C589D1800F6B162 /* Assets.xcassets */; };
+		CED19B741C589D1800F6B162 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED19B721C589D1800F6B162 /* LaunchScreen.storyboard */; };
+		CED19B7F1C589D1800F6B162 /* CLFreedomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED19B7E1C589D1800F6B162 /* CLFreedomTests.swift */; };
+		CED19B8A1C589D1800F6B162 /* CLFreedomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED19B891C589D1800F6B162 /* CLFreedomUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CED19B7B1C589D1800F6B162 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CED19B5E1C589D1800F6B162 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CED19B651C589D1800F6B162;
+			remoteInfo = CLFreedom;
+		};
+		CED19B861C589D1800F6B162 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CED19B5E1C589D1800F6B162 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CED19B651C589D1800F6B162;
+			remoteInfo = CLFreedom;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CED19B661C589D1800F6B162 /* CLFreedom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLFreedom.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CED19B691C589D1800F6B162 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CED19B6B1C589D1800F6B162 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CED19B6E1C589D1800F6B162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CED19B701C589D1800F6B162 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CED19B731C589D1800F6B162 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CED19B751C589D1800F6B162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED19B7A1C589D1800F6B162 /* CLFreedomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLFreedomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CED19B7E1C589D1800F6B162 /* CLFreedomTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLFreedomTests.swift; sourceTree = "<group>"; };
+		CED19B801C589D1800F6B162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED19B851C589D1800F6B162 /* CLFreedomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLFreedomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CED19B891C589D1800F6B162 /* CLFreedomUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLFreedomUITests.swift; sourceTree = "<group>"; };
+		CED19B8B1C589D1800F6B162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CED19B631C589D1800F6B162 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED19B771C589D1800F6B162 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED19B821C589D1800F6B162 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CED19B5D1C589D1800F6B162 = {
+			isa = PBXGroup;
+			children = (
+				CED19B681C589D1800F6B162 /* CLFreedom */,
+				CED19B7D1C589D1800F6B162 /* CLFreedomTests */,
+				CED19B881C589D1800F6B162 /* CLFreedomUITests */,
+				CED19B671C589D1800F6B162 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CED19B671C589D1800F6B162 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CED19B661C589D1800F6B162 /* CLFreedom.app */,
+				CED19B7A1C589D1800F6B162 /* CLFreedomTests.xctest */,
+				CED19B851C589D1800F6B162 /* CLFreedomUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CED19B681C589D1800F6B162 /* CLFreedom */ = {
+			isa = PBXGroup;
+			children = (
+				CED19B691C589D1800F6B162 /* AppDelegate.swift */,
+				CED19B6B1C589D1800F6B162 /* ViewController.swift */,
+				CED19B6D1C589D1800F6B162 /* Main.storyboard */,
+				CED19B701C589D1800F6B162 /* Assets.xcassets */,
+				CED19B721C589D1800F6B162 /* LaunchScreen.storyboard */,
+				CED19B751C589D1800F6B162 /* Info.plist */,
+			);
+			path = CLFreedom;
+			sourceTree = "<group>";
+		};
+		CED19B7D1C589D1800F6B162 /* CLFreedomTests */ = {
+			isa = PBXGroup;
+			children = (
+				CED19B7E1C589D1800F6B162 /* CLFreedomTests.swift */,
+				CED19B801C589D1800F6B162 /* Info.plist */,
+			);
+			path = CLFreedomTests;
+			sourceTree = "<group>";
+		};
+		CED19B881C589D1800F6B162 /* CLFreedomUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CED19B891C589D1800F6B162 /* CLFreedomUITests.swift */,
+				CED19B8B1C589D1800F6B162 /* Info.plist */,
+			);
+			path = CLFreedomUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CED19B651C589D1800F6B162 /* CLFreedom */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CED19B8E1C589D1800F6B162 /* Build configuration list for PBXNativeTarget "CLFreedom" */;
+			buildPhases = (
+				CED19B621C589D1800F6B162 /* Sources */,
+				CED19B631C589D1800F6B162 /* Frameworks */,
+				CED19B641C589D1800F6B162 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CLFreedom;
+			productName = CLFreedom;
+			productReference = CED19B661C589D1800F6B162 /* CLFreedom.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CED19B791C589D1800F6B162 /* CLFreedomTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CED19B911C589D1800F6B162 /* Build configuration list for PBXNativeTarget "CLFreedomTests" */;
+			buildPhases = (
+				CED19B761C589D1800F6B162 /* Sources */,
+				CED19B771C589D1800F6B162 /* Frameworks */,
+				CED19B781C589D1800F6B162 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CED19B7C1C589D1800F6B162 /* PBXTargetDependency */,
+			);
+			name = CLFreedomTests;
+			productName = CLFreedomTests;
+			productReference = CED19B7A1C589D1800F6B162 /* CLFreedomTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CED19B841C589D1800F6B162 /* CLFreedomUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CED19B941C589D1800F6B162 /* Build configuration list for PBXNativeTarget "CLFreedomUITests" */;
+			buildPhases = (
+				CED19B811C589D1800F6B162 /* Sources */,
+				CED19B821C589D1800F6B162 /* Frameworks */,
+				CED19B831C589D1800F6B162 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CED19B871C589D1800F6B162 /* PBXTargetDependency */,
+			);
+			name = CLFreedomUITests;
+			productName = CLFreedomUITests;
+			productReference = CED19B851C589D1800F6B162 /* CLFreedomUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CED19B5E1C589D1800F6B162 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = laosiji;
+				TargetAttributes = {
+					CED19B651C589D1800F6B162 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					CED19B791C589D1800F6B162 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = CED19B651C589D1800F6B162;
+					};
+					CED19B841C589D1800F6B162 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = CED19B651C589D1800F6B162;
+					};
+				};
+			};
+			buildConfigurationList = CED19B611C589D1800F6B162 /* Build configuration list for PBXProject "CLFreedom" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CED19B5D1C589D1800F6B162;
+			productRefGroup = CED19B671C589D1800F6B162 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CED19B651C589D1800F6B162 /* CLFreedom */,
+				CED19B791C589D1800F6B162 /* CLFreedomTests */,
+				CED19B841C589D1800F6B162 /* CLFreedomUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CED19B641C589D1800F6B162 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED19B741C589D1800F6B162 /* LaunchScreen.storyboard in Resources */,
+				CED19B711C589D1800F6B162 /* Assets.xcassets in Resources */,
+				CED19B6F1C589D1800F6B162 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED19B781C589D1800F6B162 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED19B831C589D1800F6B162 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CED19B621C589D1800F6B162 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED19B6C1C589D1800F6B162 /* ViewController.swift in Sources */,
+				CED19B6A1C589D1800F6B162 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED19B761C589D1800F6B162 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED19B7F1C589D1800F6B162 /* CLFreedomTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CED19B811C589D1800F6B162 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED19B8A1C589D1800F6B162 /* CLFreedomUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CED19B7C1C589D1800F6B162 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CED19B651C589D1800F6B162 /* CLFreedom */;
+			targetProxy = CED19B7B1C589D1800F6B162 /* PBXContainerItemProxy */;
+		};
+		CED19B871C589D1800F6B162 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CED19B651C589D1800F6B162 /* CLFreedom */;
+			targetProxy = CED19B861C589D1800F6B162 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CED19B6D1C589D1800F6B162 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CED19B6E1C589D1800F6B162 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CED19B721C589D1800F6B162 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CED19B731C589D1800F6B162 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CED19B8C1C589D1800F6B162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CED19B8D1C589D1800F6B162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CED19B8F1C589D1800F6B162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CLFreedom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laosiji.CLFreedom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CED19B901C589D1800F6B162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CLFreedom/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laosiji.CLFreedom;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CED19B921C589D1800F6B162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CLFreedomTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laosiji.CLFreedomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CLFreedom.app/CLFreedom";
+			};
+			name = Debug;
+		};
+		CED19B931C589D1800F6B162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CLFreedomTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laosiji.CLFreedomTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CLFreedom.app/CLFreedom";
+			};
+			name = Release;
+		};
+		CED19B951C589D1800F6B162 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CLFreedomUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laosiji.CLFreedomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CLFreedom;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CED19B961C589D1800F6B162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CLFreedomUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.laosiji.CLFreedomUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CLFreedom;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CED19B611C589D1800F6B162 /* Build configuration list for PBXProject "CLFreedom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED19B8C1C589D1800F6B162 /* Debug */,
+				CED19B8D1C589D1800F6B162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CED19B8E1C589D1800F6B162 /* Build configuration list for PBXNativeTarget "CLFreedom" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED19B8F1C589D1800F6B162 /* Debug */,
+				CED19B901C589D1800F6B162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CED19B911C589D1800F6B162 /* Build configuration list for PBXNativeTarget "CLFreedomTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED19B921C589D1800F6B162 /* Debug */,
+				CED19B931C589D1800F6B162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CED19B941C589D1800F6B162 /* Build configuration list for PBXNativeTarget "CLFreedomUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CED19B951C589D1800F6B162 /* Debug */,
+				CED19B961C589D1800F6B162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CED19B5E1C589D1800F6B162 /* Project object */;
+}
