@@ -60,6 +60,7 @@ class CLHomeTableViewController: UITableViewController {
                 }
                 
                 return defaultImageView
+                
             }
             
         }
