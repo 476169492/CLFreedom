@@ -107,27 +107,21 @@ class CLHomeTableViewController: UITableViewController {
             
             serceView.addSubview(subView)
             
-            for var i  =0 ; i < serveCount.count ; i++
-            
-            //添加线
-            if i/4 == 0
+            for var i = 0 ; i < dynLineCount ; i++
             {
-                let hengLineView:UIView = UIView(frame: CGRectMake(0,0,ScreenWidth,1))
+                let hengLineView:UIView = UIView(frame: CGRectMake(0,CGFloat(i + 1) * subViewWidthAndHeight,ScreenWidth,0.5))
+                hengLineView.backgroundColor = ASSIST_TEXT_COLOR
                 subView.addSubview(hengLineView)
             }
-            if i%4 == 0
+            
+            for var i = 0 ; i < 4 ; i++
             {
-                let shuLineView:UIView = UIView(frame: CGRectMake(0,0,1,ScreenHeight))
+                let shuLineView:UIView = UIView(frame: CGRectMake(CGFloat(i + 1) * subViewWidthAndHeight,0,0.5,subViewWidthAndHeight * CGFloat(dynLineCount)))
+                shuLineView.backgroundColor = ASSIST_TEXT_COLOR
                 subView.addSubview(shuLineView)
             }
             
-            
-            
-            
-            
-            
         }
-        
     }
     
     
