@@ -12,6 +12,11 @@ class CLMenuSearchViewController: UIViewController,UISearchBarDelegate{
     
     
     @IBOutlet weak var menuSearchBar: UISearchBar!
+    
+    @IBAction func tapGes(sender: AnyObject)
+    {
+        self.view.endEditing(true)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,13 +27,15 @@ class CLMenuSearchViewController: UIViewController,UISearchBarDelegate{
         // Do any additional setup after loading the view.
     }
     
-    func searchBarTextDidEndEditing(searchBar: UISearchBar) {
-        
+    func searchBarSearchButtonClicked(searchBar: UISearchBar)
+    {
         if self.checkSearchBarWithContentText(self.menuSearchBar.text!)
         {
+            self.menuSearchBar.resignFirstResponder()
             
+            let menuDetailsTableVc:CLMenuDetailsTableViewController = Serve_SB.instantiateViewControllerWithIdentifier("CLMenuDetailsTableViewController") as! CLMenuDetailsTableViewController
+            self.navigationController?.pushViewController(menuDetailsTableVc, animated: true)
         }
-        
     }
     
     func checkSearchBarWithContentText(text:String) -> Bool

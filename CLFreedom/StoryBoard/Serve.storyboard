@@ -33,11 +33,15 @@
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="eSS-OS-SPN" firstAttribute="leading" secondItem="5Oh-od-nZy" secondAttribute="leading" id="j1o-W4-ikA"/>
                             <constraint firstItem="eSS-OS-SPN" firstAttribute="top" secondItem="Peo-6Z-OPs" secondAttribute="bottom" id="lJh-V1-WFx"/>
                             <constraint firstAttribute="trailing" secondItem="eSS-OS-SPN" secondAttribute="trailing" id="lpK-D8-b5I"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="1NC-yT-v5H" appends="YES" id="K8p-oO-Yos"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" title="健康菜谱" id="kGQ-6s-RCT"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -47,17 +51,23 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BEG-ql-0pZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="1NC-yT-v5H">
+                    <connections>
+                        <action selector="tapGes:" destination="Qgq-Om-kgg" id="EgB-Tb-K2r"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="606.5" y="200.5"/>
         </scene>
         <!--宫保鸡丁-->
         <scene sceneID="RfE-6A-W8i">
             <objects>
-                <tableViewController id="r9u-Ef-sD6" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="UGc-Hy-HIn">
+                <tableViewController storyboardIdentifier="CLMenuDetailsTableViewController" id="r9u-Ef-sD6" customClass="CLMenuDetailsTableViewController" customModule="OcCallSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="UGc-Hy-HIn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="O78-fF-0Kl">
                             <rect key="frame" x="0.0" y="64" width="375" height="105"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -74,20 +84,25 @@
                             </subviews>
                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
-                        <sections>
-                            <tableViewSection id="Xhg-Dr-dCt">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="250" id="Cek-7B-i18">
-                                        <rect key="frame" x="0.0" y="169" width="375" height="250"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cek-7B-i18" id="TfU-ME-JEz">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="249.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="menuDetailsCellId" rowHeight="250" id="Cek-7B-i18">
+                                <rect key="frame" x="0.0" y="197" width="375" height="250"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cek-7B-i18" id="TfU-ME-JEz">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="249.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vdj-AF-Ytk">
+                                            <rect key="frame" x="83" y="94" width="208" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="r9u-Ef-sD6" id="CH2-8e-bF3"/>
                             <outlet property="delegate" destination="r9u-Ef-sD6" id="OsG-aa-UQf"/>

@@ -9,6 +9,9 @@
 import UIKit
 
 class CLMenuDetailsTableViewController: UITableViewController {
+    
+    
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,20 +21,27 @@ class CLMenuDetailsTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-    
         
-        
-        
+        self.title = "自定义TODO"
+
     }
 
     // MARK: - Table view data source
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+        
         return 1
     }
     
+   override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        
+        return 300
+    }
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("11", forIndexPath:indexPath)
+        
+        let cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("menuDetailsCellId", forIndexPath: indexPath)
+        
+        
         return cell
     }
     
