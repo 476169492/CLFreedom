@@ -17,6 +17,9 @@
 #import "UIColor+Additions.h"
 #import "NSTimer+Addition.h"
 
+//Utility
+#import "APPTools.h"
+
 
 
 #endif

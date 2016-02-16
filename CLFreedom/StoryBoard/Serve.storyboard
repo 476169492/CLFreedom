@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lIO-Jw-AAQ">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--健康菜谱-->
+        <scene sceneID="ofv-gq-6v2">
+            <objects>
+                <viewController storyboardIdentifier="CLMenuSearchViewController" hidesBottomBarWhenPushed="YES" id="Qgq-Om-kgg" customClass="CLMenuSearchViewController" customModule="OcCallSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Peo-6Z-OPs"/>
+                        <viewControllerLayoutGuide type="bottom" id="CwV-bh-HGx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Oh-od-nZy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="请输入您想查询的菜名" translatesAutoresizingMaskIntoConstraints="NO" id="eSS-OS-SPN">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="wKX-RJ-SYt"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="Qgq-Om-kgg" id="w1y-NP-YWC"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eSS-OS-SPN" firstAttribute="leading" secondItem="5Oh-od-nZy" secondAttribute="leading" id="j1o-W4-ikA"/>
+                            <constraint firstItem="eSS-OS-SPN" firstAttribute="top" secondItem="Peo-6Z-OPs" secondAttribute="bottom" id="lJh-V1-WFx"/>
+                            <constraint firstAttribute="trailing" secondItem="eSS-OS-SPN" secondAttribute="trailing" id="lpK-D8-b5I"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="健康菜谱" id="kGQ-6s-RCT"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="menuSearchBar" destination="eSS-OS-SPN" id="fgk-p0-hZ0"/>
+                        <segue destination="r9u-Ef-sD6" kind="show" identifier="menuSearchGotoMenuDetails" id="D3W-zX-szZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BEG-ql-0pZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="606.5" y="200.5"/>
+        </scene>
+        <!--宫保鸡丁-->
+        <scene sceneID="RfE-6A-W8i">
+            <objects>
+                <tableViewController id="r9u-Ef-sD6" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="UGc-Hy-HIn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="O78-fF-0Kl">
+                            <rect key="frame" x="0.0" y="64" width="375" height="105"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="宫保鸡丁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZM-jD-hKs">
+                                    <rect key="frame" x="105" y="18" width="256" height="33"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8mv-0O-Jjj">
+                                    <rect key="frame" x="20" y="18" width="70" height="70"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <sections>
+                            <tableViewSection id="Xhg-Dr-dCt">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="250" id="Cek-7B-i18">
+                                        <rect key="frame" x="0.0" y="169" width="375" height="250"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cek-7B-i18" id="TfU-ME-JEz">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="249.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="r9u-Ef-sD6" id="CH2-8e-bF3"/>
+                            <outlet property="delegate" destination="r9u-Ef-sD6" id="OsG-aa-UQf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="宫保鸡丁" id="xsQ-9Y-pzo"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MVM-4v-T3w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1097.5" y="200.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="G0D-et-Xcz">
+            <objects>
+                <navigationController id="lIO-Jw-AAQ" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5ee-km-HYd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Qgq-Om-kgg" kind="relationship" relationship="rootViewController" id="ckL-64-sZw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tni-k8-iF3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76.5" y="206.5"/>
+        </scene>
+    </scenes>
+</document>

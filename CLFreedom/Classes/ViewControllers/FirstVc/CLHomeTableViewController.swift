@@ -18,7 +18,6 @@ class CLHomeTableViewController: UITableViewController {
     var imageArray:NSArray = NSArray()
     
     
-    
     @IBAction func clickTestButton(sender: UIButton) {
         
         let toVc:UIViewController = UIViewController()
@@ -32,16 +31,28 @@ class CLHomeTableViewController: UITableViewController {
         }
     }
     
+    func clickActionButton(button:UIButton)
+    {
+        SZDLog.swiftLog(button.tag)
+        if button.tag == 0
+        {
+            let menuSearchVc:CLMenuSearchViewController = Serve_SB.instantiateViewControllerWithIdentifier("CLMenuSearchViewController") as! CLMenuSearchViewController
+            self.navigationController?.pushViewController(menuSearchVc, animated: true)
+        }
+        else if button.tag == 1
+        {
+            let idCardSerarchVc:UIViewController = UIViewController()
+            self.navigationController?.pushViewController(idCardSerarchVc, animated: true)
+        }
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        self.imageArray = ["AppIcon","AppIcon","AppIcon"]
+        self.imageArray = ["banner","banner","banner"]
         
         self.initMySubView()
-        
-        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -58,29 +69,30 @@ class CLHomeTableViewController: UITableViewController {
     {
         //滚动View
         myCycleScrollView = CycleScrollView(frame: CGRectMake(0, 0, ScreenWidth, ScreenWidth * 2 / 5), animationDuration: scrollInterval)
-        self.myCycleScrollView?.backgroundColor = UIColor.purpleColor().colorWithAlphaComponent(0.1)
+        self.myCycleScrollView?.backgroundColor = UIColor.whiteColor()
         myCycleScrollView?.totalPagesCount = {
             () -> NSInteger in
             return self.imageArray.count
         }
         
-        
+        let bannerImageViewArray:NSMutableArray = NSMutableArray()
         for var i = 0 ; i < self.imageArray.count ; ++i
         {
-            myCycleScrollView?.fetchContentViewAtIndex = {
-                (pageIndex:NSInteger) -> UIView in
-                
-                let defaultImageView:UIImageView = UIImageView(frame: CGRectMake(0, 0, ScreenWidth, ScreenWidth * 2 / 5))
-                
-                if i < self.imageArray.count
-                {
-                    defaultImageView.image = UIImage(named: self.imageArray[i] as! String)
-                }
-                
-                return defaultImageView
-                
+            let defaultImageView:UIImageView = UIImageView(frame: CGRectMake(0, 0, ScreenWidth, ScreenWidth * 2 / 5))
+            if i < self.imageArray.count
+            {
+                defaultImageView.image = UIImage(named: self.imageArray[i] as! String)
             }
+            bannerImageViewArray.addObject(defaultImageView)
         }
+        
+        myCycleScrollView?.fetchContentViewAtIndex = {
+            (pageIndex:NSInteger) -> UIView in
+            
+            return bannerImageViewArray[pageIndex] as! UIImageView
+            
+        }
+
         self.homeView.addSubview(myCycleScrollView!)
         
         
@@ -93,44 +105,46 @@ class CLHomeTableViewController: UITableViewController {
         let serceView:UIView = UIView(frame: CGRectMake(0,myCycleScrollView!.frame.origin.y + myCycleScrollView!.frame.size.height,ScreenWidth,subViewWidthAndHeight * CGFloat(dynLineCount)))
         self.homeView.addSubview(serceView)
         
-        
-        
+        //nameLabel actionButton
         for var i  = 0 ; i < serveCount.count ; i++
         {
             let subView:UIView = UIView(frame: CGRectMake(CGFloat(i%4) * subViewWidthAndHeight,CGFloat(i/4) * subViewWidthAndHeight,subViewWidthAndHeight,subViewWidthAndHeight))
             let namelable:UILabel = UILabel(frame:CGRectMake(0,0,subViewWidthAndHeight,20))
             namelable.center = CGPointMake(subViewWidthAndHeight/2, subViewWidthAndHeight/2)
             namelable.text = serveCount[i] as? String
+            namelable.font = KFontOfGeneralTwo
             namelable.textColor = COMMON_TEXT_COLOR
             namelable.textAlignment = NSTextAlignment.Center
             subView.addSubview(namelable)
             
+            let actionButton:UIButton = UIButton(type: UIButtonType.Custom)
+            actionButton.frame = CGRectMake(0, 0, subViewWidthAndHeight, subViewWidthAndHeight)
+            actionButton.tag = i
+            actionButton.addTarget(self, action: "clickActionButton:", forControlEvents: UIControlEvents.TouchUpInside)
+            subView.addSubview(actionButton)
+            
+            
             serceView.addSubview(subView)
-            
-            for var i = 0 ; i < dynLineCount ; i++
-            {
-                let hengLineView:UIView = UIView(frame: CGRectMake(0,CGFloat(i + 1) * subViewWidthAndHeight,ScreenWidth,0.5))
-                hengLineView.backgroundColor = ASSIST_TEXT_COLOR
-                subView.addSubview(hengLineView)
-            }
-            
-            for var i = 0 ; i < 4 ; i++
-            {
-                let shuLineView:UIView = UIView(frame: CGRectMake(CGFloat(i + 1) * subViewWidthAndHeight,0,0.5,subViewWidthAndHeight * CGFloat(dynLineCount)))
-                shuLineView.backgroundColor = ASSIST_TEXT_COLOR
-                subView.addSubview(shuLineView)
-            }
-            
         }
+        
+        
+        //横竖线
+        for var i = 0 ; i < dynLineCount ; i++
+        {
+            let hengLineView:UIView = UIView(frame: CGRectMake(0,CGFloat(i + 1) * subViewWidthAndHeight,ScreenWidth,0.5))
+            hengLineView.backgroundColor = ASSIST_TEXT_COLOR
+            serceView.addSubview(hengLineView)
+        }
+        
+        for var i = 0 ; i < 4 ; i++
+        {
+            let shuLineView:UIView = UIView(frame: CGRectMake(CGFloat(i + 1) * subViewWidthAndHeight,0,0.5,subViewWidthAndHeight * CGFloat(dynLineCount)))
+            shuLineView.backgroundColor = ASSIST_TEXT_COLOR
+            serceView.addSubview(shuLineView)
+        }
+   
     }
     
-    
-    
-    
-    
-    
-    
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

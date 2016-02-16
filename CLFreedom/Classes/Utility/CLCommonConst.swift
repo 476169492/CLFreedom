@@ -73,6 +73,9 @@ let KFontOfWeakerTwo = UIFont.systemFontOfSize(10.0)
 //MainStoryBoard
 let MAIN_SB = UIStoryboard(name: "Main", bundle: nil)
 
+//ServeStoryBoard
+let Serve_SB = UIStoryboard(name: "Serve", bundle: nil)
+
 //登录注册StoryBoard
 let LOGIN_SB = UIStoryboard(name: "LoginAndRegist", bundle: nil)
 
