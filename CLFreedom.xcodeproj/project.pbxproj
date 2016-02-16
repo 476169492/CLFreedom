@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE07FA941C71B46000384383 /* CLHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE07FA931C71B46000384383 /* CLHomeTableViewController.swift */; };
 		CED19B6A1C589D1800F6B162 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED19B691C589D1800F6B162 /* AppDelegate.swift */; };
 		CED19B711C589D1800F6B162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED19B701C589D1800F6B162 /* Assets.xcassets */; };
 		CED19B7F1C589D1800F6B162 /* CLFreedomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED19B7E1C589D1800F6B162 /* CLFreedomTests.swift */; };
 		CED19B8A1C589D1800F6B162 /* CLFreedomUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED19B891C589D1800F6B162 /* CLFreedomUITests.swift */; };
 		CED19B9B1C58A89200F6B162 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED19B991C58A89200F6B162 /* LaunchScreen.storyboard */; };
 		CED19B9C1C58A89200F6B162 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED19B9A1C58A89200F6B162 /* Main.storyboard */; };
-		CED19BA51C58B29500F6B162 /* CLHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED19BA41C58B29500F6B162 /* CLHomeTableViewController.swift */; };
 		CED19BAB1C58B5E500F6B162 /* CycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = CED19BAA1C58B5E500F6B162 /* CycleScrollView.m */; };
 		CED19BB11C58B64A00F6B162 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = CED19BB01C58B64A00F6B162 /* NSTimer+Addition.m */; };
 		CED19BB41C58B9F900F6B162 /* CLCommonConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED19BB31C58B9F900F6B162 /* CLCommonConst.swift */; };
@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE07FA931C71B46000384383 /* CLHomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLHomeTableViewController.swift; sourceTree = "<group>"; };
 		CED19B661C589D1800F6B162 /* CLFreedom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLFreedom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED19B691C589D1800F6B162 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED19B701C589D1800F6B162 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,7 +51,6 @@
 		CED19B8B1C589D1800F6B162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CED19B991C58A89200F6B162 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CED19B9A1C58A89200F6B162 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		CED19BA41C58B29500F6B162 /* CLHomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLHomeTableViewController.swift; sourceTree = "<group>"; };
 		CED19BA71C58B46400F6B162 /* CLFreedom-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLFreedom-Prefix.pch"; sourceTree = "<group>"; };
 		CED19BA91C58B5E500F6B162 /* CycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleScrollView.h; sourceTree = "<group>"; };
 		CED19BAA1C58B5E500F6B162 /* CycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleScrollView.m; sourceTree = "<group>"; };
@@ -87,6 +87,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE07FA911C71B44100384383 /* FirstVc */ = {
+			isa = PBXGroup;
+			children = (
+				CE07FA931C71B46000384383 /* CLHomeTableViewController.swift */,
+			);
+			path = FirstVc;
+			sourceTree = "<group>";
+		};
+		CE07FA921C71B44100384383 /* SecondVc */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SecondVc;
+			sourceTree = "<group>";
+		};
 		CED19B5D1C589D1800F6B162 = {
 			isa = PBXGroup;
 			children = (
@@ -205,7 +220,8 @@
 		CED19BA21C58AB2F00F6B162 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				CED19BA41C58B29500F6B162 /* CLHomeTableViewController.swift */,
+				CE07FA911C71B44100384383 /* FirstVc */,
+				CE07FA921C71B44100384383 /* SecondVc */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -362,8 +378,8 @@
 				CED19BB41C58B9F900F6B162 /* CLCommonConst.swift in Sources */,
 				CED19B6A1C589D1800F6B162 /* AppDelegate.swift in Sources */,
 				CED19BB11C58B64A00F6B162 /* NSTimer+Addition.m in Sources */,
-				CED19BA51C58B29500F6B162 /* CLHomeTableViewController.swift in Sources */,
 				CED19BB71C58BAA000F6B162 /* UIColor+Additions.m in Sources */,
+				CE07FA941C71B46000384383 /* CLHomeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

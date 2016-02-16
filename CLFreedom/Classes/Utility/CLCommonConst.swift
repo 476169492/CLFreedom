@@ -24,6 +24,10 @@ class SZDLog {
 }
 
 
+let UMengAppkey = "56c17dd4e0f55ac4e7000adb"
+
+
+
 //获取设备的物理宽度
 let ScreenWidth = UIScreen.mainScreen().bounds.size.width
 //获取设备的物理高度
@@ -64,7 +68,6 @@ let KFontOfGeneralThree = UIFont.systemFontOfSize(12.0)
 let KFontOfWeakerOne = UIFont.systemFontOfSize(11.0)
 //用于辅助性文字(如底部tab icon文字等)
 let KFontOfWeakerTwo = UIFont.systemFontOfSize(10.0)
-
 
 
 //MainStoryBoard
