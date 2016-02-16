@@ -18,7 +18,6 @@
 #warning "This project uses features only available in iOS SDK 8.0 and later"
 #endif
 
-
 #ifndef __OPTIMIZE__
 #define NSLog(...) NSLog(__VA_ARGS__)
 #else
@@ -37,5 +36,8 @@
 
 //Category
 #import "UIColor+Additions.h"
+
+//thirdPart
+#import "AFNetworking.h"
 
 #endif /* CLFreedom_Prefix_pch */

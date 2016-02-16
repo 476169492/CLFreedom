@@ -33,8 +33,27 @@ class CLMenuSearchViewController: UIViewController,UISearchBarDelegate{
         {
             self.menuSearchBar.resignFirstResponder()
             
+           // let sessionManager:AFHTTPSessionManager = AFHTTPSessionManager(baseURL:NSURL(string: "11"))
+            
+            CLNetWorkCenter.sharedNetWorkCenter().getMenuDetailsWithName("宫保鸡丁", completion: { (error, resultDic) -> Void in
+                
+                
+                
+                
+            })
+        
+            
+            
+            
+            
+            
+            
+            
             let menuDetailsTableVc:CLMenuDetailsTableViewController = Serve_SB.instantiateViewControllerWithIdentifier("CLMenuDetailsTableViewController") as! CLMenuDetailsTableViewController
             self.navigationController?.pushViewController(menuDetailsTableVc, animated: true)
+            
+            
+            
         }
     }
     
@@ -43,6 +62,8 @@ class CLMenuSearchViewController: UIViewController,UISearchBarDelegate{
         if text.isEmpty
         {
            APPTools.showHudWithTextAutoCalculateShowTime("亲!搜索内容不能为空哦")
+            
+            
             return false
         }
         return true
