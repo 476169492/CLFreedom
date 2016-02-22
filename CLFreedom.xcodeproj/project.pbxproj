@@ -12,6 +12,7 @@
 		CE4C69FE1C7AAB5A00B01980 /* CLSettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4C69FD1C7AAB5A00B01980 /* CLSettingTableViewController.swift */; };
 		CE4C6A021C7AF51900B01980 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4C6A011C7AF51900B01980 /* LocalAuthentication.framework */; };
 		CE4C6A061C7B055200B01980 /* UIAlertView+MKBlockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4C6A051C7B055200B01980 /* UIAlertView+MKBlockAdditions.m */; };
+		CE4C6A091C7B0A7B00B01980 /* CLTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4C6A081C7B0A7B00B01980 /* CLTabBarController.swift */; };
 		CE5F37831C72FE32002B7B4D /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5F37771C72FE32002B7B4D /* AFHTTPSessionManager.m */; };
 		CE5F37841C72FE32002B7B4D /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5F377A1C72FE32002B7B4D /* AFNetworkReachabilityManager.m */; };
 		CE5F37851C72FE32002B7B4D /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5F377C1C72FE32002B7B4D /* AFSecurityPolicy.m */; };
@@ -62,6 +63,7 @@
 		CE4C6A031C7B055200B01980 /* MKBlockAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBlockAdditions.h; sourceTree = "<group>"; };
 		CE4C6A041C7B055200B01980 /* UIAlertView+MKBlockAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+MKBlockAdditions.h"; sourceTree = "<group>"; };
 		CE4C6A051C7B055200B01980 /* UIAlertView+MKBlockAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+MKBlockAdditions.m"; sourceTree = "<group>"; };
+		CE4C6A081C7B0A7B00B01980 /* CLTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLTabBarController.swift; sourceTree = "<group>"; };
 		CE5F37761C72FE32002B7B4D /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		CE5F37771C72FE32002B7B4D /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		CE5F37781C72FE32002B7B4D /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
@@ -159,6 +161,14 @@
 				CE4C69FD1C7AAB5A00B01980 /* CLSettingTableViewController.swift */,
 			);
 			path = ThirdVc;
+			sourceTree = "<group>";
+		};
+		CE4C6A071C7B0A4500B01980 /* MainVc */ = {
+			isa = PBXGroup;
+			children = (
+				CE4C6A081C7B0A7B00B01980 /* CLTabBarController.swift */,
+			);
+			path = MainVc;
 			sourceTree = "<group>";
 		};
 		CE5F376D1C72F3A2002B7B4D /* DataModel */ = {
@@ -348,6 +358,7 @@
 		CED19BA21C58AB2F00F6B162 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE4C6A071C7B0A4500B01980 /* MainVc */,
 				CE07FA911C71B44100384383 /* FirstVc */,
 				CE07FA921C71B44100384383 /* SecondVc */,
 				CE4C69FC1C7AAAFB00B01980 /* ThirdVc */,
@@ -518,6 +529,7 @@
 				CE5F37861C72FE32002B7B4D /* AFURLRequestSerialization.m in Sources */,
 				CE4C69FE1C7AAB5A00B01980 /* CLSettingTableViewController.swift in Sources */,
 				CE5F37831C72FE32002B7B4D /* AFHTTPSessionManager.m in Sources */,
+				CE4C6A091C7B0A7B00B01980 /* CLTabBarController.swift in Sources */,
 				CE7924361C72C3AC00A4B801 /* MBProgressHUD.m in Sources */,
 				CE5F37881C72FE32002B7B4D /* AFURLSessionManager.m in Sources */,
 				CED19BB11C58B64A00F6B162 /* NSTimer+Addition.m in Sources */,

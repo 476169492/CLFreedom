@@ -19,7 +19,9 @@
 #import "UIAlertView+MKBlockAdditions.h"
 
 //Utility
+#import "CLCommonConst.h"
 #import "APPTools.h"
+
 
 //netWorkCenter
 #import "CLNetWorkCenter.h"

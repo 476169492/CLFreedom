@@ -182,11 +182,11 @@ static NSString *UMengClick2007                         = @"2007";     //登录-
 static NSString *UMengClick2008                         = @"2008";     //登录-登录成功
 static NSString *UMengClick2009                         = @"2009";     //登录-登录失败
 
-
-
 //NSUserDefault KEY
+static NSString *USERID                                 = @"USERID";     //用户id
+static NSString *TOUCHID                                = @"TOUCHID";    //TOUCHID 是否是使用touchid作为登录密码
+
 static NSString *DEVICEID                               = @"DEVICEID";     //设备UUID
-static NSString *USERID                                 = @"USERID";       //USERID 唯一的用户标示
 static NSString *USERMOBILE                             = @"USERMOBILE";   //使用者的手机号
 
 
