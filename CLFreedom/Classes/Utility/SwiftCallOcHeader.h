@@ -16,7 +16,7 @@
 //category
 #import "UIColor+Additions.h"
 #import "NSTimer+Addition.h"
-#import "AFNetworking.h"
+#import "UIAlertView+MKBlockAdditions.h"
 
 //Utility
 #import "APPTools.h"
@@ -26,6 +26,7 @@
 
 //ThirdPart
 #import "MobClick.h"
+#import "AFNetworking.h"
 
 
 

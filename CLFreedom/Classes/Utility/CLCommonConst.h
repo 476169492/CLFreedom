@@ -22,8 +22,9 @@
 //产品StoryBoard
 #define PRODUCT_SB [UIStoryboard storyboardWithName:@"Product" bundle:nil]
 
-//个人中心StoryBoard
-#define MYCENTER_SB [UIStoryboard storyboardWithName:@"MyCenter" bundle:nil]
+//我的StoryBoard
+#define MY_SB [UIStoryboard storyboardWithName:@"My" bundle:nil]
+
 
 
 //获取设备的物理宽度

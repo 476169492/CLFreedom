@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		CE07FA941C71B46000384383 /* CLHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE07FA931C71B46000384383 /* CLHomeTableViewController.swift */; };
+		CE4C69FB1C7AA86D00B01980 /* My.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4C69FA1C7AA86D00B01980 /* My.storyboard */; };
+		CE4C69FE1C7AAB5A00B01980 /* CLSettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4C69FD1C7AAB5A00B01980 /* CLSettingTableViewController.swift */; };
+		CE4C6A021C7AF51900B01980 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4C6A011C7AF51900B01980 /* LocalAuthentication.framework */; };
+		CE4C6A061C7B055200B01980 /* UIAlertView+MKBlockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4C6A051C7B055200B01980 /* UIAlertView+MKBlockAdditions.m */; };
 		CE5F37831C72FE32002B7B4D /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5F37771C72FE32002B7B4D /* AFHTTPSessionManager.m */; };
 		CE5F37841C72FE32002B7B4D /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5F377A1C72FE32002B7B4D /* AFNetworkReachabilityManager.m */; };
 		CE5F37851C72FE32002B7B4D /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5F377C1C72FE32002B7B4D /* AFSecurityPolicy.m */; };
@@ -52,6 +56,12 @@
 
 /* Begin PBXFileReference section */
 		CE07FA931C71B46000384383 /* CLHomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLHomeTableViewController.swift; sourceTree = "<group>"; };
+		CE4C69FA1C7AA86D00B01980 /* My.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = My.storyboard; sourceTree = "<group>"; };
+		CE4C69FD1C7AAB5A00B01980 /* CLSettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLSettingTableViewController.swift; sourceTree = "<group>"; };
+		CE4C6A011C7AF51900B01980 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		CE4C6A031C7B055200B01980 /* MKBlockAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBlockAdditions.h; sourceTree = "<group>"; };
+		CE4C6A041C7B055200B01980 /* UIAlertView+MKBlockAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+MKBlockAdditions.h"; sourceTree = "<group>"; };
+		CE4C6A051C7B055200B01980 /* UIAlertView+MKBlockAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+MKBlockAdditions.m"; sourceTree = "<group>"; };
 		CE5F37761C72FE32002B7B4D /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		CE5F37771C72FE32002B7B4D /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		CE5F37781C72FE32002B7B4D /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
@@ -106,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4C6A021C7AF51900B01980 /* LocalAuthentication.framework in Frameworks */,
 				CE91CD061C7327030000189F /* libMobClickLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +151,14 @@
 			children = (
 			);
 			path = SecondVc;
+			sourceTree = "<group>";
+		};
+		CE4C69FC1C7AAAFB00B01980 /* ThirdVc */ = {
+			isa = PBXGroup;
+			children = (
+				CE4C69FD1C7AAB5A00B01980 /* CLSettingTableViewController.swift */,
+			);
+			path = ThirdVc;
 			sourceTree = "<group>";
 		};
 		CE5F376D1C72F3A2002B7B4D /* DataModel */ = {
@@ -225,6 +244,7 @@
 		CED19B5D1C589D1800F6B162 = {
 			isa = PBXGroup;
 			children = (
+				CE4C6A011C7AF51900B01980 /* LocalAuthentication.framework */,
 				CED19B681C589D1800F6B162 /* CLFreedom */,
 				CED19B7D1C589D1800F6B162 /* CLFreedomTests */,
 				CED19B881C589D1800F6B162 /* CLFreedomUITests */,
@@ -294,6 +314,7 @@
 				CED19B991C58A89200F6B162 /* LaunchScreen.storyboard */,
 				CED19B9A1C58A89200F6B162 /* Main.storyboard */,
 				CE79242E1C72B65A00A4B801 /* Serve.storyboard */,
+				CE4C69FA1C7AA86D00B01980 /* My.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -301,6 +322,9 @@
 		CED19B9D1C58AB2F00F6B162 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				CE4C6A031C7B055200B01980 /* MKBlockAdditions.h */,
+				CE4C6A041C7B055200B01980 /* UIAlertView+MKBlockAdditions.h */,
+				CE4C6A051C7B055200B01980 /* UIAlertView+MKBlockAdditions.m */,
 				CED19BB51C58BAA000F6B162 /* UIColor+Additions.h */,
 				CED19BB61C58BAA000F6B162 /* UIColor+Additions.m */,
 				CED19BAF1C58B64A00F6B162 /* NSTimer+Addition.h */,
@@ -326,6 +350,7 @@
 			children = (
 				CE07FA911C71B44100384383 /* FirstVc */,
 				CE07FA921C71B44100384383 /* SecondVc */,
+				CE4C69FC1C7AAAFB00B01980 /* ThirdVc */,
 				CE79242B1C72B59300A4B801 /* ServeVc */,
 			);
 			path = ViewControllers;
@@ -457,6 +482,7 @@
 				CE79242F1C72B65A00A4B801 /* Serve.storyboard in Resources */,
 				CED19B9C1C58A89200F6B162 /* Main.storyboard in Resources */,
 				CED19B711C589D1800F6B162 /* Assets.xcassets in Resources */,
+				CE4C69FB1C7AA86D00B01980 /* My.storyboard in Resources */,
 				CED19B9B1C58A89200F6B162 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,9 +512,11 @@
 				CED19BAB1C58B5E500F6B162 /* CycleScrollView.m in Sources */,
 				CE79242D1C72B61600A4B801 /* CLMenuSearchViewController.swift in Sources */,
 				CED19BB41C58B9F900F6B162 /* CLCommonConst.swift in Sources */,
+				CE4C6A061C7B055200B01980 /* UIAlertView+MKBlockAdditions.m in Sources */,
 				CE5F37871C72FE32002B7B4D /* AFURLResponseSerialization.m in Sources */,
 				CED19B6A1C589D1800F6B162 /* AppDelegate.swift in Sources */,
 				CE5F37861C72FE32002B7B4D /* AFURLRequestSerialization.m in Sources */,
+				CE4C69FE1C7AAB5A00B01980 /* CLSettingTableViewController.swift in Sources */,
 				CE5F37831C72FE32002B7B4D /* AFHTTPSessionManager.m in Sources */,
 				CE7924361C72C3AC00A4B801 /* MBProgressHUD.m in Sources */,
 				CE5F37881C72FE32002B7B4D /* AFURLSessionManager.m in Sources */,
