@@ -36,24 +36,11 @@ class CLMenuSearchViewController: UIViewController,UISearchBarDelegate{
            // let sessionManager:AFHTTPSessionManager = AFHTTPSessionManager(baseURL:NSURL(string: "11"))
             
             CLNetWorkCenter.sharedNetWorkCenter().getMenuDetailsWithName("宫保鸡丁", completion: { (error, resultDic) -> Void in
-                
-                
-                
-                
+
             })
-        
-            
-            
-            
-            
-            
-            
             
             let menuDetailsTableVc:CLMenuDetailsTableViewController = Serve_SB.instantiateViewControllerWithIdentifier("CLMenuDetailsTableViewController") as! CLMenuDetailsTableViewController
             self.navigationController?.pushViewController(menuDetailsTableVc, animated: true)
-            
-            
-            
         }
     }
     
@@ -63,11 +50,18 @@ class CLMenuSearchViewController: UIViewController,UISearchBarDelegate{
         {
            APPTools.showHudWithTextAutoCalculateShowTime("亲!搜索内容不能为空哦")
             
+            let menuDeatailsTbaleVc:CLMenuDetailsTableViewController = Serve_SB.instantiateViewControllerWithIdentifier("CLMenuDeayisTableViewController") as! CLMenuDetailsTableViewController
+            self.navigationController?.pushViewController(menuDeatailsTbaleVc, animated: true)
+            
+            
+            
             
             return false
         }
         return true
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

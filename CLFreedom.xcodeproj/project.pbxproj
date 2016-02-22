@@ -20,6 +20,7 @@
 		CE7924321C72C34500A4B801 /* APPTools.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7924311C72C34500A4B801 /* APPTools.m */; };
 		CE7924361C72C3AC00A4B801 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7924351C72C3AC00A4B801 /* MBProgressHUD.m */; };
 		CE7924381C72C51500A4B801 /* CLMenuDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7924371C72C51500A4B801 /* CLMenuDetailsTableViewController.swift */; };
+		CE91CD061C7327030000189F /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE91CD031C7327030000189F /* libMobClickLibrary.a */; };
 		CED19B6A1C589D1800F6B162 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED19B691C589D1800F6B162 /* AppDelegate.swift */; };
 		CED19B711C589D1800F6B162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED19B701C589D1800F6B162 /* Assets.xcassets */; };
 		CED19B7F1C589D1800F6B162 /* CLFreedomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED19B7E1C589D1800F6B162 /* CLFreedomTests.swift */; };
@@ -74,6 +75,9 @@
 		CE7924351C72C3AC00A4B801 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		CE7924371C72C51500A4B801 /* CLMenuDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLMenuDetailsTableViewController.swift; sourceTree = "<group>"; };
 		CE8D7B641C72D2810016B798 /* CLCommonConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCommonConst.h; sourceTree = "<group>"; };
+		CE91CD031C7327030000189F /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
+		CE91CD041C7327030000189F /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
+		CE91CD051C7327030000189F /* MobClickSocialAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClickSocialAnalytics.h; sourceTree = "<group>"; };
 		CED19B661C589D1800F6B162 /* CLFreedom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLFreedom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED19B691C589D1800F6B162 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED19B701C589D1800F6B162 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE91CD061C7327030000189F /* libMobClickLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +168,7 @@
 		CE5F37701C72F3A2002B7B4D /* ThirdPart */ = {
 			isa = PBXGroup;
 			children = (
+				CE91CD021C7327030000189F /* UMAnalytics */,
 				CE5F37751C72FE32002B7B4D /* AFNetworking */,
 			);
 			path = ThirdPart;
@@ -204,6 +210,16 @@
 				CE7924351C72C3AC00A4B801 /* MBProgressHUD.m */,
 			);
 			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		CE91CD021C7327030000189F /* UMAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				CE91CD031C7327030000189F /* libMobClickLibrary.a */,
+				CE91CD041C7327030000189F /* MobClick.h */,
+				CE91CD051C7327030000189F /* MobClickSocialAnalytics.h */,
+			);
+			path = UMAnalytics;
 			sourceTree = "<group>";
 		};
 		CED19B5D1C589D1800F6B162 = {
@@ -608,6 +624,10 @@
 				INFOPLIST_FILE = CLFreedom/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CLFreedom/Classes/ThirdPart/UMAnalytics",
+				);
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.laosiji.CLFreedom;
 				PRODUCT_MODULE_NAME = OcCallSwift;
@@ -626,6 +646,10 @@
 				INFOPLIST_FILE = CLFreedom/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CLFreedom/Classes/ThirdPart/UMAnalytics",
+				);
 				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.laosiji.CLFreedom;
 				PRODUCT_MODULE_NAME = OcCallSwift;

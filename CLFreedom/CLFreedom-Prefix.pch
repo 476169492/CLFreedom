@@ -39,5 +39,6 @@
 
 //thirdPart
 #import "AFNetworking.h"
+#import "MobClick.h"
 
 #endif /* CLFreedom_Prefix_pch */

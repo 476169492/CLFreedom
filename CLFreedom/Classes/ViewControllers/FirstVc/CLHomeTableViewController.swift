@@ -52,6 +52,8 @@ class CLHomeTableViewController: UITableViewController {
         
         self.imageArray = ["banner","banner","banner"]
         
+       
+        
         self.initMySubView()
     }
     
