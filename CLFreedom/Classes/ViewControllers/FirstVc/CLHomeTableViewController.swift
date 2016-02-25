@@ -64,7 +64,8 @@ class CLHomeTableViewController: UITableViewController {
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(true)
-        myCycleScrollView?.animationTimer.pauseTimer()
+        myCycleScrollView?.animationTimer.pauseTimer()  //这里是防止 中途卡顿的现象
+        
     }
     
     func initMySubView()

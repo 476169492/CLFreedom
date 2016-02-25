@@ -52,7 +52,6 @@ class CLSettingTableViewController: UITableViewController{
                           })
                         }
                         
-                        
                     }
                     else
                     {
