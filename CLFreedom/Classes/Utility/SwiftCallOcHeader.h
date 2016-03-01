@@ -29,6 +29,7 @@
 //ThirdPart
 #import "MobClick.h"
 #import "AFNetworking.h"
+#import "GeTuiSdk.h"
 
 
 

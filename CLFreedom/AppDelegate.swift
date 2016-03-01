@@ -9,16 +9,93 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
+class AppDelegate: UIResponder, UIApplicationDelegate,GeTuiSdkDelegate{
+    
+    //个推开发者网站中申请App时,注册的AppId AppKey AppSecret
+    let kGtAppId:String = "n95A0FJSz38y6JLdKlC3S7"
+    let kGtAppKey:String  = "ZzA7wWzc2X6ZmVDxLBf6QA"
+    let kGtAppSecret:String = "7itIF3X6G76oi5dbtBCfAA"
+    
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        //启动Sdk
+        GeTuiSdk.startSdkWithAppId(kGtAppId, appKey: kGtAppKey, appSecret: kGtAppSecret, delegate: self)
+        
+        //注册APNS
+        self.registerUserNotification()
+        
+        //处理远程通知启动APP
+        self.receiveNotificationByLaunchingOptions(launchOptions)
+        
         // Override point for customization after application launch.
         
         return true
     }
-
+    
+    func registerUserNotification()
+    {
+        let uns = UIUserNotificationSettings(forTypes: [.Badge, .Sound, .Alert], categories: nil)
+        UIApplication.sharedApplication().registerForRemoteNotifications()
+        UIApplication.sharedApplication().registerUserNotificationSettings(uns)
+    }
+    
+    func receiveNotificationByLaunchingOptions(hehe:[NSObject:AnyObject]?)
+    {
+        
+    }
+    
+    //远程通知注册成功委托
+    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+        var myToken = deviceToken.description.stringByTrimmingCharactersInSet(NSCharacterSet(charactersInString: "<>"))
+        myToken = myToken.stringByReplacingOccurrencesOfString(" ", withString: "")
+        
+        GeTuiSdk.registerDeviceToken(myToken)
+        
+        SZDLog.swiftLog("🍗🍗🍗" + myToken)
+    }
+    
+    //远程通知注册失败委托
+    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
+        GeTuiSdk.registerDeviceToken("")
+        SZDLog.swiftLog("🍗🍗🍗" + "远程通知注册失败")
+    }
+    
+    
+    /** APP已经接收到“远程”通知(推送) - 透传推送消息  */
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject], fetchCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
+      //  处理APNs代码，通过userInfo可以取到推送的信息（包括内容，角标，自定义参数等）。如果需要弹窗等其他操作，则需要自行编码。
+        SZDLog.swiftLog("Receive RemoteNotification - Backgorund")
+        SZDLog.swiftLog(userInfo)
+        
+        completionHandler(UIBackgroundFetchResult.NewData)
+    }
+    
+    func application(application: UIApplication, performFetchWithCompletionHandler completionHandler: (UIBackgroundFetchResult) -> Void) {
+        
+        GeTuiSdk.resume()
+        completionHandler(UIBackgroundFetchResult.NewData)
+        
+    }
+    
+    //使用个推SDK透传消息, 由个推通道下发 (非APNS)
+    func GeTuiSdkDidReceivePayload(payloadId: String!, andTaskId taskId: String!, andMessageId aMsgId: String!, andOffLine offLine: Bool, fromApplication appId: String!) {
+        
+    }
+    
+     //SDK启动成功返回cid
+    func GeTuiSdkDidRegisterClient(clientId: String!) {
+        SZDLog.swiftLog("🍗🍗🍗" + clientId)
+    }
+    
+    //SD遇到错误回调
+    func GeTuiSdkDidOccurError(error: NSError!) {
+        
+        //个推错误报告,集成步骤发生的任何错误都在这里通知，如果集成后，无法正常收到消息，查看这里的通知
+        SZDLog.swiftLog("🍗🍗🍗" + error.description)
+    }
+    
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.

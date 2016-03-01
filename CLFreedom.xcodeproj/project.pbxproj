@@ -26,6 +26,15 @@
 		CE7924361C72C3AC00A4B801 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7924351C72C3AC00A4B801 /* MBProgressHUD.m */; };
 		CE7924381C72C51500A4B801 /* CLMenuDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7924371C72C51500A4B801 /* CLMenuDetailsTableViewController.swift */; };
 		CE91CD061C7327030000189F /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE91CD031C7327030000189F /* libMobClickLibrary.a */; };
+		CEA21F0C1C802A4B000E6815 /* libGeTuiSdk-1.3.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA21F0B1C802A4B000E6815 /* libGeTuiSdk-1.3.2.a */; };
+		CEA21F0E1C802AEA000E6815 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA21F0D1C802AEA000E6815 /* libz.tbd */; };
+		CEA21F101C802B00000E6815 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA21F0F1C802B00000E6815 /* libsqlite3.tbd */; };
+		CEA21F121C802B0A000E6815 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA21F111C802B0A000E6815 /* CFNetwork.framework */; };
+		CEA21F141C802B1B000E6815 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA21F131C802B1B000E6815 /* SystemConfiguration.framework */; };
+		CEA21F161C802B26000E6815 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA21F151C802B26000E6815 /* CoreTelephony.framework */; };
+		CEA21F181C802B2F000E6815 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA21F171C802B2F000E6815 /* AVFoundation.framework */; };
+		CEA21F1A1C802B39000E6815 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA21F191C802B39000E6815 /* CoreLocation.framework */; };
+		CEA21F1C1C802B43000E6815 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA21F1B1C802B43000E6815 /* CoreBluetooth.framework */; };
 		CED19B6A1C589D1800F6B162 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED19B691C589D1800F6B162 /* AppDelegate.swift */; };
 		CED19B711C589D1800F6B162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED19B701C589D1800F6B162 /* Assets.xcassets */; };
 		CED19B7F1C589D1800F6B162 /* CLFreedomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED19B7E1C589D1800F6B162 /* CLFreedomTests.swift */; };
@@ -90,6 +99,16 @@
 		CE91CD031C7327030000189F /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
 		CE91CD041C7327030000189F /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
 		CE91CD051C7327030000189F /* MobClickSocialAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClickSocialAnalytics.h; sourceTree = "<group>"; };
+		CEA21F0A1C802A4B000E6815 /* GeTuiSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeTuiSdk.h; sourceTree = "<group>"; };
+		CEA21F0B1C802A4B000E6815 /* libGeTuiSdk-1.3.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libGeTuiSdk-1.3.2.a"; sourceTree = "<group>"; };
+		CEA21F0D1C802AEA000E6815 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		CEA21F0F1C802B00000E6815 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		CEA21F111C802B0A000E6815 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		CEA21F131C802B1B000E6815 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CEA21F151C802B26000E6815 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		CEA21F171C802B2F000E6815 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CEA21F191C802B39000E6815 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CEA21F1B1C802B43000E6815 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		CED19B661C589D1800F6B162 /* CLFreedom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLFreedom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED19B691C589D1800F6B162 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED19B701C589D1800F6B162 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -118,7 +137,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA21F1C1C802B43000E6815 /* CoreBluetooth.framework in Frameworks */,
+				CEA21F1A1C802B39000E6815 /* CoreLocation.framework in Frameworks */,
+				CEA21F181C802B2F000E6815 /* AVFoundation.framework in Frameworks */,
+				CEA21F161C802B26000E6815 /* CoreTelephony.framework in Frameworks */,
+				CEA21F141C802B1B000E6815 /* SystemConfiguration.framework in Frameworks */,
+				CEA21F121C802B0A000E6815 /* CFNetwork.framework in Frameworks */,
+				CEA21F101C802B00000E6815 /* libsqlite3.tbd in Frameworks */,
+				CEA21F0E1C802AEA000E6815 /* libz.tbd in Frameworks */,
 				CE4C6A021C7AF51900B01980 /* LocalAuthentication.framework in Frameworks */,
+				CEA21F0C1C802A4B000E6815 /* libGeTuiSdk-1.3.2.a in Frameworks */,
 				CE91CD061C7327030000189F /* libMobClickLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +225,7 @@
 		CE5F37701C72F3A2002B7B4D /* ThirdPart */ = {
 			isa = PBXGroup;
 			children = (
+				CEA21F091C802A4B000E6815 /* GtSdkLib */,
 				CE91CD021C7327030000189F /* UMAnalytics */,
 				CE5F37751C72FE32002B7B4D /* AFNetworking */,
 			);
@@ -251,11 +280,36 @@
 			path = UMAnalytics;
 			sourceTree = "<group>";
 		};
+		CEA21F081C8023FC000E6815 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				CEA21F1B1C802B43000E6815 /* CoreBluetooth.framework */,
+				CEA21F191C802B39000E6815 /* CoreLocation.framework */,
+				CEA21F171C802B2F000E6815 /* AVFoundation.framework */,
+				CEA21F151C802B26000E6815 /* CoreTelephony.framework */,
+				CEA21F131C802B1B000E6815 /* SystemConfiguration.framework */,
+				CEA21F111C802B0A000E6815 /* CFNetwork.framework */,
+				CEA21F0F1C802B00000E6815 /* libsqlite3.tbd */,
+				CEA21F0D1C802AEA000E6815 /* libz.tbd */,
+				CE4C6A011C7AF51900B01980 /* LocalAuthentication.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		CEA21F091C802A4B000E6815 /* GtSdkLib */ = {
+			isa = PBXGroup;
+			children = (
+				CEA21F0A1C802A4B000E6815 /* GeTuiSdk.h */,
+				CEA21F0B1C802A4B000E6815 /* libGeTuiSdk-1.3.2.a */,
+			);
+			path = GtSdkLib;
+			sourceTree = "<group>";
+		};
 		CED19B5D1C589D1800F6B162 = {
 			isa = PBXGroup;
 			children = (
-				CE4C6A011C7AF51900B01980 /* LocalAuthentication.framework */,
 				CED19B681C589D1800F6B162 /* CLFreedom */,
+				CEA21F081C8023FC000E6815 /* Framework */,
 				CED19B7D1C589D1800F6B162 /* CLFreedomTests */,
 				CED19B881C589D1800F6B162 /* CLFreedomUITests */,
 				CED19B671C589D1800F6B162 /* Products */,
@@ -453,7 +507,12 @@
 				TargetAttributes = {
 					CED19B651C589D1800F6B162 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = FB5K938FS6;
+						DevelopmentTeam = 4S2E9G47M9;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					CED19B791C589D1800F6B162 = {
 						CreatedOnToolsVersion = 7.2;
@@ -667,9 +726,10 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CLFreedom/Classes/ThirdPart/UMAnalytics",
+					"$(PROJECT_DIR)/CLFreedom/Classes/ThirdPart/GtSdkLib",
 				);
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = com.laosiji.CLFreedom;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jieyue.SuiZhiDai;
 				PRODUCT_MODULE_NAME = OcCallSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = CLFreedom/Classes/Utility/SwiftCallOcHeader.h;
@@ -689,9 +749,10 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CLFreedom/Classes/ThirdPart/UMAnalytics",
+					"$(PROJECT_DIR)/CLFreedom/Classes/ThirdPart/GtSdkLib",
 				);
 				OTHER_SWIFT_FLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.laosiji.CLFreedom;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jieyue.SuiZhiDai;
 				PRODUCT_MODULE_NAME = OcCallSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = CLFreedom/Classes/Utility/SwiftCallOcHeader.h;
