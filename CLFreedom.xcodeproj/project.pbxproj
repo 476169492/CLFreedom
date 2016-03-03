@@ -729,7 +729,7 @@
 					"$(PROJECT_DIR)/CLFreedom/Classes/ThirdPart/GtSdkLib",
 				);
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jieyue.SuiZhiDai;
+				PRODUCT_BUNDLE_IDENTIFIER = com.laosiji.freedom;
 				PRODUCT_MODULE_NAME = OcCallSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = CLFreedom/Classes/Utility/SwiftCallOcHeader.h;
@@ -752,7 +752,7 @@
 					"$(PROJECT_DIR)/CLFreedom/Classes/ThirdPart/GtSdkLib",
 				);
 				OTHER_SWIFT_FLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jieyue.SuiZhiDai;
+				PRODUCT_BUNDLE_IDENTIFIER = com.laosiji.freedom;
 				PRODUCT_MODULE_NAME = OcCallSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = CLFreedom/Classes/Utility/SwiftCallOcHeader.h;

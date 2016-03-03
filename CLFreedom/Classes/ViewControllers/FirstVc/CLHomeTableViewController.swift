@@ -17,7 +17,9 @@ class CLHomeTableViewController: UITableViewController {
     
     var imageArray:NSArray = NSArray()
     
+    var index:NSInteger = 0
     
+
     @IBAction func clickTestButton(sender: UIButton) {
         
         let toVc:UIViewController = UIViewController()
