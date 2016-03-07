@@ -64,11 +64,13 @@ class CLHomeTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.imageArray = ["banner","banner","banner"]
-        
-       
-        
+        self.completeConfig()
         self.initMySubView()
+    }
+    
+    func completeConfig()
+    {
+        self.imageArray = ["banner","banner","banner"]
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -99,7 +101,6 @@ class CLHomeTableViewController: UITableViewController {
         self.autoScrollLabel?.textColor = MAIN_COLOR
         self.view.addSubview(self.autoScrollLabel!)
     
-        
         //banner
         myCycleScrollView = CycleScrollView(frame: CGRectMake(0, myCycleScrollViewY, ScreenWidth, ScreenWidth * 2 / 5), animationDuration: scrollInterval)
         self.myCycleScrollView?.backgroundColor = UIColor.whiteColor()
