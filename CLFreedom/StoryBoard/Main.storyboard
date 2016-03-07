@@ -25,13 +25,6 @@
                                         <constraint firstAttribute="width" secondItem="9gp-YX-YfJ" secondAttribute="height" multiplier="5:2" id="W8Z-TY-NVL"/>
                                     </constraints>
                                 </view>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j24-wp-Skx">
-                                    <rect key="frame" x="164" y="219" width="46" height="30"/>
-                                    <state key="normal" title="Button"/>
-                                    <connections>
-                                        <action selector="clickTestButton:" destination="StD-rC-GkJ" eventType="touchUpInside" id="fgR-m6-3o8"/>
-                                    </connections>
-                                </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
