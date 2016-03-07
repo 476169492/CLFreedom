@@ -11,6 +11,9 @@ import UIKit
 class CLHomeTableViewController: UITableViewController {
     
     let scrollInterval = 4.0
+    //首页banner的Y值
+    let myCycleScrollViewY:CGFloat = 20.0
+    
     
     @IBOutlet weak var homeView: UIView!
     var myCycleScrollView:CycleScrollView?
@@ -19,7 +22,10 @@ class CLHomeTableViewController: UITableViewController {
     
     var index:NSInteger = 0
     
-
+    var autoScrollLabel:CBAutoScrollLabel?
+    
+    var autoScrollLabelContentArray:[String] = ["赵经理响应了xxx的借款申请好给力啊","钱先生发出了一笔购房贷款,经理们迅速响应吧","贷款哪家强中国山东找蓝翔"]
+    
     @IBAction func clickTestButton(sender: UIButton) {
         
         let toVc:UIViewController = UIViewController()
@@ -45,6 +51,12 @@ class CLHomeTableViewController: UITableViewController {
         {
             let idCardSerarchVc:UIViewController = UIViewController()
             self.navigationController?.pushViewController(idCardSerarchVc, animated: true)
+        }
+        else if button.tag == 2
+        {
+            let applePayVc:CLApplePayViewController = CLApplePayViewController()
+            applePayVc.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(applePayVc, animated: true)
         }
     }
     
@@ -72,8 +84,24 @@ class CLHomeTableViewController: UITableViewController {
     
     func initMySubView()
     {
-        //滚动View
-        myCycleScrollView = CycleScrollView(frame: CGRectMake(0, 0, ScreenWidth, ScreenWidth * 2 / 5), animationDuration: scrollInterval)
+        var autoScrollContent:String = ""
+        for var content in self.autoScrollLabelContentArray
+        {
+            content.appendContentsOf("🈯️🈯️🈯️")
+            autoScrollContent.appendContentsOf(content)
+        }
+        self.autoScrollLabel = CBAutoScrollLabel(frame: CGRectMake(0,0,375,20))
+        self.autoScrollLabel?.animationOptions = UIViewAnimationOptions.CurveLinear
+        self.autoScrollLabel?.scrollDirection = CBAutoScrollDirectionRight
+        self.autoScrollLabel?.scrollSpeed = 50.0
+        self.autoScrollLabel?.pauseInterval = 0
+        self.autoScrollLabel!.text = autoScrollContent
+        self.autoScrollLabel?.textColor = MAIN_COLOR
+        self.view.addSubview(self.autoScrollLabel!)
+    
+        
+        //banner
+        myCycleScrollView = CycleScrollView(frame: CGRectMake(0, myCycleScrollViewY, ScreenWidth, ScreenWidth * 2 / 5), animationDuration: scrollInterval)
         self.myCycleScrollView?.backgroundColor = UIColor.whiteColor()
         myCycleScrollView?.totalPagesCount = {
             () -> NSInteger in
@@ -102,7 +130,7 @@ class CLHomeTableViewController: UITableViewController {
         
         
         //服务项View
-        let serveCount:NSArray = ["健康菜谱","身份证识别"]
+        let serveCount:NSArray = ["健康菜谱","身份证识别","Apple Pay"]
         
         let dynLineCount:NSInteger = serveCount.count/4 + (((serveCount.count%4) == 0) ? 0 : 1)
         let subViewWidthAndHeight:CGFloat = ScreenWidth/4

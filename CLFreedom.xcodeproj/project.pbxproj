@@ -35,6 +35,9 @@
 		CEA21F181C802B2F000E6815 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA21F171C802B2F000E6815 /* AVFoundation.framework */; };
 		CEA21F1A1C802B39000E6815 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA21F191C802B39000E6815 /* CoreLocation.framework */; };
 		CEA21F1C1C802B43000E6815 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA21F1B1C802B43000E6815 /* CoreBluetooth.framework */; };
+		CEB0D9821C8D211400222DAA /* CLApplePayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB0D9811C8D211400222DAA /* CLApplePayViewController.m */; };
+		CEB0D9861C8D48C100222DAA /* CBAutoScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB0D9851C8D48C100222DAA /* CBAutoScrollLabel.m */; };
+		CEB0D9891C8D4A2800222DAA /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB0D9881C8D4A2800222DAA /* Utils.m */; };
 		CED19B6A1C589D1800F6B162 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED19B691C589D1800F6B162 /* AppDelegate.swift */; };
 		CED19B711C589D1800F6B162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED19B701C589D1800F6B162 /* Assets.xcassets */; };
 		CED19B7F1C589D1800F6B162 /* CLFreedomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED19B7E1C589D1800F6B162 /* CLFreedomTests.swift */; };
@@ -109,6 +112,13 @@
 		CEA21F171C802B2F000E6815 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		CEA21F191C802B39000E6815 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CEA21F1B1C802B43000E6815 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		CEB0D97F1C8D185800222DAA /* CLFreedom.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CLFreedom.entitlements; sourceTree = "<group>"; };
+		CEB0D9801C8D211400222DAA /* CLApplePayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLApplePayViewController.h; sourceTree = "<group>"; };
+		CEB0D9811C8D211400222DAA /* CLApplePayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLApplePayViewController.m; sourceTree = "<group>"; };
+		CEB0D9841C8D48C100222DAA /* CBAutoScrollLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBAutoScrollLabel.h; sourceTree = "<group>"; };
+		CEB0D9851C8D48C100222DAA /* CBAutoScrollLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBAutoScrollLabel.m; sourceTree = "<group>"; };
+		CEB0D9871C8D4A2800222DAA /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		CEB0D9881C8D4A2800222DAA /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		CED19B661C589D1800F6B162 /* CLFreedom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLFreedom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED19B691C589D1800F6B162 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED19B701C589D1800F6B162 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -257,6 +267,8 @@
 			children = (
 				CE79242C1C72B61600A4B801 /* CLMenuSearchViewController.swift */,
 				CE7924371C72C51500A4B801 /* CLMenuDetailsTableViewController.swift */,
+				CEB0D9801C8D211400222DAA /* CLApplePayViewController.h */,
+				CEB0D9811C8D211400222DAA /* CLApplePayViewController.m */,
 			);
 			path = ServeVc;
 			sourceTree = "<group>";
@@ -305,6 +317,15 @@
 			path = GtSdkLib;
 			sourceTree = "<group>";
 		};
+		CEB0D9831C8D48C100222DAA /* CBAutoScrollLabel */ = {
+			isa = PBXGroup;
+			children = (
+				CEB0D9841C8D48C100222DAA /* CBAutoScrollLabel.h */,
+				CEB0D9851C8D48C100222DAA /* CBAutoScrollLabel.m */,
+			);
+			path = CBAutoScrollLabel;
+			sourceTree = "<group>";
+		};
 		CED19B5D1C589D1800F6B162 = {
 			isa = PBXGroup;
 			children = (
@@ -329,6 +350,7 @@
 		CED19B681C589D1800F6B162 /* CLFreedom */ = {
 			isa = PBXGroup;
 			children = (
+				CEB0D97F1C8D185800222DAA /* CLFreedom.entitlements */,
 				CED19B981C58A86700F6B162 /* StoryBoard */,
 				CED19B971C58A86700F6B162 /* Classes */,
 				CED19B701C589D1800F6B162 /* Assets.xcassets */,
@@ -400,6 +422,8 @@
 		CED19BA11C58AB2F00F6B162 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				CEB0D9871C8D4A2800222DAA /* Utils.h */,
+				CEB0D9881C8D4A2800222DAA /* Utils.m */,
 				CE8D7B641C72D2810016B798 /* CLCommonConst.h */,
 				CED19BB21C58B6F000F6B162 /* SwiftCallOcHeader.h */,
 				CED19BB31C58B9F900F6B162 /* CLCommonConst.swift */,
@@ -424,6 +448,7 @@
 		CED19BA31C58AB2F00F6B162 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CEB0D9831C8D48C100222DAA /* CBAutoScrollLabel */,
 				CE7924331C72C3AC00A4B801 /* MBProgressHUD */,
 				CED19BA81C58B5E500F6B162 /* CycleScrollView */,
 			);
@@ -512,6 +537,9 @@
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
+							com.apple.OMC = {
+								enabled = 1;
+							};
 						};
 					};
 					CED19B791C589D1800F6B162 = {
@@ -579,6 +607,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE7924381C72C51500A4B801 /* CLMenuDetailsTableViewController.swift in Sources */,
+				CEB0D9821C8D211400222DAA /* CLApplePayViewController.m in Sources */,
 				CED19BAB1C58B5E500F6B162 /* CycleScrollView.m in Sources */,
 				CE79242D1C72B61600A4B801 /* CLMenuSearchViewController.swift in Sources */,
 				CED19BB41C58B9F900F6B162 /* CLCommonConst.swift in Sources */,
@@ -588,6 +617,7 @@
 				CE5F37861C72FE32002B7B4D /* AFURLRequestSerialization.m in Sources */,
 				CE4C69FE1C7AAB5A00B01980 /* CLSettingTableViewController.swift in Sources */,
 				CE5F37831C72FE32002B7B4D /* AFHTTPSessionManager.m in Sources */,
+				CEB0D9861C8D48C100222DAA /* CBAutoScrollLabel.m in Sources */,
 				CE4C6A091C7B0A7B00B01980 /* CLTabBarController.swift in Sources */,
 				CE7924361C72C3AC00A4B801 /* MBProgressHUD.m in Sources */,
 				CE5F37881C72FE32002B7B4D /* AFURLSessionManager.m in Sources */,
@@ -597,6 +627,7 @@
 				CE5F37851C72FE32002B7B4D /* AFSecurityPolicy.m in Sources */,
 				CE07FA941C71B46000384383 /* CLHomeTableViewController.swift in Sources */,
 				CE5F37841C72FE32002B7B4D /* AFNetworkReachabilityManager.m in Sources */,
+				CEB0D9891C8D4A2800222DAA /* Utils.m in Sources */,
 				CE7924321C72C34500A4B801 /* APPTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -718,10 +749,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CLFreedom/CLFreedom.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CLFreedom/CLFreedom-Prefix.pch";
 				INFOPLIST_FILE = CLFreedom/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -732,6 +765,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.laosiji.freedom;
 				PRODUCT_MODULE_NAME = OcCallSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = CLFreedom/Classes/Utility/SwiftCallOcHeader.h;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -741,10 +775,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CLFreedom/CLFreedom.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CLFreedom/CLFreedom-Prefix.pch";
 				INFOPLIST_FILE = CLFreedom/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -755,6 +791,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.laosiji.freedom;
 				PRODUCT_MODULE_NAME = OcCallSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = CLFreedom/Classes/Utility/SwiftCallOcHeader.h;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

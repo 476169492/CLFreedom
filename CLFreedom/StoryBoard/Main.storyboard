@@ -59,7 +59,7 @@
         <scene sceneID="0vo-YT-dMt">
             <objects>
                 <navigationController id="YN0-at-mfX" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="首页" id="4aR-vN-psA" customClass="RAMAnimatedTabBarItem" customModule="OcCallSwift" customModuleProvider="target"/>
+                    <tabBarItem key="tabBarItem" title="首页" id="4aR-vN-psA"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="FSe-pU-XY2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -216,7 +216,7 @@
         <scene sceneID="fd7-iL-eiF">
             <objects>
                 <navigationController id="Jjk-oU-B4V" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="我的" id="0pP-0T-g5l" customClass="RAMAnimatedTabBarItem" customModule="OcCallSwift" customModuleProvider="target"/>
+                    <tabBarItem key="tabBarItem" title="我的" id="0pP-0T-g5l"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5f8-T4-EV1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

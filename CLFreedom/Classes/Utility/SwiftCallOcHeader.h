@@ -12,6 +12,7 @@
 
 //view
 #import "CycleScrollView.h"
+#import "CBAutoScrollLabel.h"
 
 //category
 #import "UIColor+Additions.h"
@@ -30,6 +31,10 @@
 #import "MobClick.h"
 #import "AFNetworking.h"
 #import "GeTuiSdk.h"
+
+//viewConttoller
+#import "CLApplePayViewController.h"
+
 
 
 
