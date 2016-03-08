@@ -13,6 +13,9 @@
 		CE4C6A021C7AF51900B01980 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4C6A011C7AF51900B01980 /* LocalAuthentication.framework */; };
 		CE4C6A061C7B055200B01980 /* UIAlertView+MKBlockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4C6A051C7B055200B01980 /* UIAlertView+MKBlockAdditions.m */; };
 		CE4C6A091C7B0A7B00B01980 /* CLTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4C6A081C7B0A7B00B01980 /* CLTabBarController.swift */; };
+		CE4EF9E01C8D6D2400E215DD /* CLSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4EF9DF1C8D6D2400E215DD /* CLSystem.swift */; };
+		CE4EF9E21C8D7A2800E215DD /* CLRegularExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4EF9E11C8D7A2800E215DD /* CLRegularExpression.swift */; };
+		CE4EF9E51C8D856200E215DD /* CLCanNotUserSwift.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4EF9E41C8D856200E215DD /* CLCanNotUserSwift.m */; };
 		CE5F37831C72FE32002B7B4D /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5F37771C72FE32002B7B4D /* AFHTTPSessionManager.m */; };
 		CE5F37841C72FE32002B7B4D /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5F377A1C72FE32002B7B4D /* AFNetworkReachabilityManager.m */; };
 		CE5F37851C72FE32002B7B4D /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5F377C1C72FE32002B7B4D /* AFSecurityPolicy.m */; };
@@ -76,6 +79,10 @@
 		CE4C6A041C7B055200B01980 /* UIAlertView+MKBlockAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+MKBlockAdditions.h"; sourceTree = "<group>"; };
 		CE4C6A051C7B055200B01980 /* UIAlertView+MKBlockAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+MKBlockAdditions.m"; sourceTree = "<group>"; };
 		CE4C6A081C7B0A7B00B01980 /* CLTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLTabBarController.swift; sourceTree = "<group>"; };
+		CE4EF9DF1C8D6D2400E215DD /* CLSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLSystem.swift; sourceTree = "<group>"; };
+		CE4EF9E11C8D7A2800E215DD /* CLRegularExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLRegularExpression.swift; sourceTree = "<group>"; };
+		CE4EF9E31C8D856200E215DD /* CLCanNotUserSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCanNotUserSwift.h; sourceTree = "<group>"; };
+		CE4EF9E41C8D856200E215DD /* CLCanNotUserSwift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLCanNotUserSwift.m; sourceTree = "<group>"; };
 		CE5F37761C72FE32002B7B4D /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		CE5F37771C72FE32002B7B4D /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		CE5F37781C72FE32002B7B4D /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
@@ -422,6 +429,8 @@
 		CED19BA11C58AB2F00F6B162 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				CE4EF9DF1C8D6D2400E215DD /* CLSystem.swift */,
+				CE4EF9E11C8D7A2800E215DD /* CLRegularExpression.swift */,
 				CEB0D9871C8D4A2800222DAA /* Utils.h */,
 				CEB0D9881C8D4A2800222DAA /* Utils.m */,
 				CE8D7B641C72D2810016B798 /* CLCommonConst.h */,
@@ -429,6 +438,8 @@
 				CED19BB31C58B9F900F6B162 /* CLCommonConst.swift */,
 				CE7924301C72C34500A4B801 /* APPTools.h */,
 				CE7924311C72C34500A4B801 /* APPTools.m */,
+				CE4EF9E31C8D856200E215DD /* CLCanNotUserSwift.h */,
+				CE4EF9E41C8D856200E215DD /* CLCanNotUserSwift.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -610,8 +621,10 @@
 				CEB0D9821C8D211400222DAA /* CLApplePayViewController.m in Sources */,
 				CED19BAB1C58B5E500F6B162 /* CycleScrollView.m in Sources */,
 				CE79242D1C72B61600A4B801 /* CLMenuSearchViewController.swift in Sources */,
+				CE4EF9E51C8D856200E215DD /* CLCanNotUserSwift.m in Sources */,
 				CED19BB41C58B9F900F6B162 /* CLCommonConst.swift in Sources */,
 				CE4C6A061C7B055200B01980 /* UIAlertView+MKBlockAdditions.m in Sources */,
+				CE4EF9E21C8D7A2800E215DD /* CLRegularExpression.swift in Sources */,
 				CE5F37871C72FE32002B7B4D /* AFURLResponseSerialization.m in Sources */,
 				CED19B6A1C589D1800F6B162 /* AppDelegate.swift in Sources */,
 				CE5F37861C72FE32002B7B4D /* AFURLRequestSerialization.m in Sources */,
@@ -627,6 +640,7 @@
 				CE5F37851C72FE32002B7B4D /* AFSecurityPolicy.m in Sources */,
 				CE07FA941C71B46000384383 /* CLHomeTableViewController.swift in Sources */,
 				CE5F37841C72FE32002B7B4D /* AFNetworkReachabilityManager.m in Sources */,
+				CE4EF9E01C8D6D2400E215DD /* CLSystem.swift in Sources */,
 				CEB0D9891C8D4A2800222DAA /* Utils.m in Sources */,
 				CE7924321C72C34500A4B801 /* APPTools.m in Sources */,
 			);

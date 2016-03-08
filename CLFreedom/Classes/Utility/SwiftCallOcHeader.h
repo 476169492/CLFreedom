@@ -22,6 +22,7 @@
 //Utility
 #import "CLCommonConst.h"
 #import "APPTools.h"
+#import "CLCanNotUserSwift.h"
 
 
 //netWorkCenter
