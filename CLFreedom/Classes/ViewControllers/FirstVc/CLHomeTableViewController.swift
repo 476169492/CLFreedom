@@ -42,6 +42,14 @@ class CLHomeTableViewController: UITableViewController {
             applePayVc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(applePayVc, animated: true)
         }
+        else if button.tag == 3
+        {
+            
+        }
+        else if button.tag == 4
+        {
+            
+        }
     }
     
     //MARK:viewDidLoad
@@ -74,7 +82,8 @@ class CLHomeTableViewController: UITableViewController {
     {
          self.newsArray = ["赵先生，北京市，提交了借款申请","钱先生，上海市，提交了借款申请","孙先生，广州市，提交了借款申请","李先生，深圳市，提交了借款申请"]
         self.imageNameArray = ["banner","banner","banner"]
-        self.serviceNameArray = ["健康菜谱","身份证识别","Apple Pay"]
+        self.serviceNameArray = ["健康菜谱","身份证识别","Apple Pay","汽车报价","手表之家"]
+        
     }
     
     //MARK:initMySubView

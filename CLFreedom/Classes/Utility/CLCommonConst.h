@@ -70,6 +70,9 @@
 #define KFontOfWeakerTwo         [UIFont systemFontOfSize:10.0]
 
 
+
+
+
 // AppStore地址
 static NSString *StoreHtml                              = @"https://itunes.apple.com/cn/app/sui-zhi-dai/id986669936?mt=8";
 static NSString *APP_ID                                 = @"986669936";
@@ -81,20 +84,12 @@ static NSString *TL404RemindHtml                        = @"http://www.suizhidai
 static NSString *SZDAboutWeHtml                         = @"https://s3.cn-north-1.amazonaws.com.cn/suizhidai/customer/common/about_suizhidai.html";
 
 //About UMeng Share
-static NSString *APP_SHARE_KEY                          = @"5dcaad136896";
-static NSString *SINA_SHARE_KEY                         = @"1318197116";
-static NSString *SINA_SHARE_SECRET                      = @"a6c77c9c5f835f1498315b778399198b";
-static NSString *TX_QZONE_SHARE_KEY                     = @"801561173";
-static NSString *TX_SHARE_SECRET                        = @"3pRsgoLzhofKVBmK";
-static NSString *TX_WEIBO_SHARE_KEY                     = @"801561173";
-static NSString *TX_WEIBO_SHARE_SECRET                  = @"926768c60b191d8441c1aa92209bafbf";
-static NSString *WEICHAT_SHARE_KEY                      = @"wxe51b8867a7109639";
-static NSString *SHARE_BACK_URL                         = @"http://www.zendai.com/";
-static NSString *TARGET_TITLE_NAME                      = @"随指贷";
-static NSString *GAODE_MAP_KEY                          = @"a08fdaf2952edba31705d9e963f84c6d";
+static NSString *Umeng_WeChat                          = @"TODO";
+static NSString *Umeng_QQ                              = @"TODO";
 
 //About Umeng
-static NSString *UMeng_APP_KEY                          = @"5678bd4a67e58e3c03002a8d";
+static NSString *UMeng_APP_KEY                          = @"56df8e4d67e58e2b2800268f";
+
 
 //CODE编码
 static NSString *SZD_EXC_CODE_0000           = @"0000";  //成功
