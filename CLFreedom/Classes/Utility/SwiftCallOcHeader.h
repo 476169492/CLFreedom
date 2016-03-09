@@ -13,6 +13,7 @@
 //view
 #import "CycleScrollView.h"
 #import "CBAutoScrollLabel.h"
+#import "TYNewsView.h"  
 
 //category
 #import "UIColor+Additions.h"

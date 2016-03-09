@@ -42,56 +42,56 @@ class CLRegularExpression: NSObject {
         return mobileTest.evaluateWithObject(mobile)
     }
     
-    //身份证号
-    class func calidateIdentityCard(cardNo:String) -> Bool
-    {
-        if cardNo.characters.count != 18
-        {
-          return false
-        }
-        else
-        {
-            
-            let codeArray:NSArray = ["7","9","10","5","8","4","2","1","6","3","7","9","10","5","8","4","2"]
-            let checkCodeDic:NSDictionary = [["0","1","2","3","4","5","6","7","8","9","10"]:["1","0","X","9","8","7","6","5","4","3","2"]]
-            (cardNo as NSString).substringToIndex(17)
-            
-            let scan:NSScanner = NSScanner(string: (cardNo as NSString).substringToIndex(17))
-           
-            let isNum:Bool = CLCanNotUserSwift.isNumValidateIdentityCardWithScan(scan)
-            
-            if !isNum
-            {
-                return false
-            }
-            var sumValue = 0
-            for var i = 0 ; i < 17 ; i++
-            {
-                sumValue += ((cardNo as NSString).substringWithRange(NSMakeRange(i, 1)) as NSString).integerValue * codeArray[i].integerValue
-                
-            }
-            let strlast:String = checkCodeDic[String(sumValue%11)] as! String
-            if strlast == (cardNo as NSString).substringWithRange(NSMakeRange(17, 1)).uppercaseString
-            {
-                return true
-            }
-            return false
-            
-            
-            
-            
-           
-            
-            
-            
-            
-            
-            
-            
-            
-            return true
-        }
-    }
+//    //身份证号
+//    class func calidateIdentityCard(cardNo:String) -> Bool
+//    {
+//        if cardNo.characters.count != 18
+//        {
+//          return false
+//        }
+//        else
+//        {
+//            
+//            let codeArray:NSArray = ["7","9","10","5","8","4","2","1","6","3","7","9","10","5","8","4","2"]
+//            let checkCodeDic:NSDictionary = [["0","1","2","3","4","5","6","7","8","9","10"]:["1","0","X","9","8","7","6","5","4","3","2"]]
+//            (cardNo as NSString).substringToIndex(17)
+//            
+//            let scan:NSScanner = NSScanner(string: (cardNo as NSString).substringToIndex(17))
+//           
+//            let isNum:Bool = CLCanNotUserSwift.isNumValidateIdentityCardWithScan(scan)
+//            
+//            if !isNum
+//            {
+//                return false
+//            }
+//            var sumValue = 0
+//            for var i = 0 ; i < 17 ; i++
+//            {
+//                sumValue += ((cardNo as NSString).substringWithRange(NSMakeRange(i, 1)) as NSString).integerValue * codeArray[i].integerValue
+//                
+//            }
+//            let strlast:String = checkCodeDic[String(sumValue%11)] as! String
+//            if strlast == (cardNo as NSString).substringWithRange(NSMakeRange(17, 1)).uppercaseString
+//            {
+//                return true
+//            }
+//            return false
+//            
+//            
+//            
+//            
+//           
+//            
+//            
+//            
+//            
+//            
+//            
+//            
+//            
+//            return true
+//        }
+//    }
     
     
 //    //邮箱

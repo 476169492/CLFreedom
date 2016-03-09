@@ -12,17 +12,15 @@ class CLHomeTableViewController: UITableViewController {
     
     let scrollInterval = 4.0
     //首页banner的Y值
-    let myCycleScrollViewY:CGFloat = 20.0
-    
-    
+    let myCycleScrollViewY:CGFloat = 30.0
     
     @IBOutlet weak var homeView: UIView!
     var myCycleScrollView:CycleScrollView?
-    var autoScrollLabel:CBAutoScrollLabel?
+    @IBOutlet weak var newsView: TYNewsView!
     
     //配置文件Array
     var imageNameArray:NSArray = NSArray()
-    var autoScrollLabelContentArray:[String] = []
+    var newsArray:[String]! = []
     var serviceNameArray:[String] = []
     
     func clickActionButton(button:UIButton)
@@ -54,12 +52,29 @@ class CLHomeTableViewController: UITableViewController {
         self.initMySubView()
     }
     
+    override func viewWillAppear(animated: Bool) {
+        self.newsView.startAnimation()
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true)
+        myCycleScrollView?.animationTimer.resumeTimerAfterTimeInterval(scrollInterval-1.0)
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(true)
+        
+        self.newsView.stopAnimation()
+        myCycleScrollView?.animationTimer.pauseTimer()  //这里是防止 中途卡顿的现象
+        
+    }
+
     //MARK:completeConfig
     func completeConfig()
     {
+         self.newsArray = ["赵先生，北京市，提交了借款申请","钱先生，上海市，提交了借款申请","孙先生，广州市，提交了借款申请","李先生，深圳市，提交了借款申请"]
         self.imageNameArray = ["banner","banner","banner"]
-        self.autoScrollLabelContentArray = ["赵经理响应了xxx的借款申请好给力啊","钱先生发出了一笔购房贷款,经理们迅速响应吧","贷款哪家强中国山东找蓝翔"]
-        self.serviceNameArray = ["健康菜谱","身份证识别","去广告(Apple Pay)"]
+        self.serviceNameArray = ["健康菜谱","身份证识别","Apple Pay"]
     }
     
     //MARK:initMySubView
@@ -74,20 +89,13 @@ class CLHomeTableViewController: UITableViewController {
     
     func initAutoScrollLabel()
     {
-        var autoScrollContent:String = ""
-        for var content in self.autoScrollLabelContentArray
-        {
-            content.appendContentsOf("   ")
-            autoScrollContent.appendContentsOf(content)
+        self.newsView.setNewsImageName("TODO")
+        self.newsView.setNewArray(self.newsArray) { (index) -> Void in
+            
         }
-        self.autoScrollLabel = CBAutoScrollLabel(frame: CGRectMake(0,0,375,20))
-        self.autoScrollLabel?.animationOptions = UIViewAnimationOptions.CurveLinear
-        self.autoScrollLabel?.scrollDirection = CBAutoScrollDirectionRight
-        self.autoScrollLabel?.scrollSpeed = 50.0
-        self.autoScrollLabel?.pauseInterval = 0
-        self.autoScrollLabel!.text = autoScrollContent
-        self.autoScrollLabel?.textColor = MAIN_COLOR
-        self.view.addSubview(self.autoScrollLabel!)
+        self.newsView.setNewsFont(KFontOfGeneralTwo)
+        self.newsView.setNewsTextColor(COMMON_TEXT_COLOR)
+        self.newsView.setAnimationTimerInterval(2)
     }
     
     func initCycleScrollView()
@@ -164,16 +172,7 @@ class CLHomeTableViewController: UITableViewController {
         }
     }
     
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(true)
-        myCycleScrollView?.animationTimer.resumeTimerAfterTimeInterval(scrollInterval-1.0)
-    }
-    
-    override func viewWillDisappear(animated: Bool) {
-        super.viewWillDisappear(true)
-        myCycleScrollView?.animationTimer.pauseTimer()  //这里是防止 中途卡顿的现象
-        
-    }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -19,10 +19,17 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9gp-YX-YfJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <rect key="frame" x="0.0" y="30" width="375" height="150"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="9gp-YX-YfJ" secondAttribute="height" multiplier="5:2" id="W8Z-TY-NVL"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I9u-8B-H1V" customClass="TYNewsView">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="AwF-TQ-Tpg"/>
                                     </constraints>
                                 </view>
                             </subviews>
@@ -30,7 +37,10 @@
                             <constraints>
                                 <constraint firstItem="9gp-YX-YfJ" firstAttribute="leading" secondItem="qtb-gT-uib" secondAttribute="leading" id="95k-kn-axr"/>
                                 <constraint firstAttribute="trailing" secondItem="9gp-YX-YfJ" secondAttribute="trailing" id="LLl-Ds-XZg"/>
-                                <constraint firstItem="9gp-YX-YfJ" firstAttribute="top" secondItem="qtb-gT-uib" secondAttribute="top" id="RvI-yH-mTf"/>
+                                <constraint firstItem="9gp-YX-YfJ" firstAttribute="top" secondItem="qtb-gT-uib" secondAttribute="top" constant="30" id="RvI-yH-mTf"/>
+                                <constraint firstItem="I9u-8B-H1V" firstAttribute="leading" secondItem="qtb-gT-uib" secondAttribute="leading" id="o3C-Dk-0T3"/>
+                                <constraint firstItem="I9u-8B-H1V" firstAttribute="top" secondItem="qtb-gT-uib" secondAttribute="top" id="rLW-0k-tP1"/>
+                                <constraint firstAttribute="trailing" secondItem="I9u-8B-H1V" secondAttribute="trailing" id="xq5-Mm-6h5"/>
                             </constraints>
                         </view>
                         <sections/>
@@ -42,6 +52,7 @@
                     <navigationItem key="navigationItem" title="首页" id="cyP-8z-lnV"/>
                     <connections>
                         <outlet property="homeView" destination="qtb-gT-uib" id="TpJ-PY-wNL"/>
+                        <outlet property="newsView" destination="I9u-8B-H1V" id="YWi-dy-YN5"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kp4-Zs-xNu" userLabel="First Responder" sceneMemberID="firstResponder"/>

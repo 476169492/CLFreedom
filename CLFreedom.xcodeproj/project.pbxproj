@@ -41,6 +41,7 @@
 		CEB0D9821C8D211400222DAA /* CLApplePayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB0D9811C8D211400222DAA /* CLApplePayViewController.m */; };
 		CEB0D9861C8D48C100222DAA /* CBAutoScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB0D9851C8D48C100222DAA /* CBAutoScrollLabel.m */; };
 		CEB0D9891C8D4A2800222DAA /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB0D9881C8D4A2800222DAA /* Utils.m */; };
+		CEBB0A9F1C8FB41D00C6C406 /* TYNewsView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBB0A9E1C8FB41D00C6C406 /* TYNewsView.m */; };
 		CED19B6A1C589D1800F6B162 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED19B691C589D1800F6B162 /* AppDelegate.swift */; };
 		CED19B711C589D1800F6B162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED19B701C589D1800F6B162 /* Assets.xcassets */; };
 		CED19B7F1C589D1800F6B162 /* CLFreedomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED19B7E1C589D1800F6B162 /* CLFreedomTests.swift */; };
@@ -126,6 +127,8 @@
 		CEB0D9851C8D48C100222DAA /* CBAutoScrollLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBAutoScrollLabel.m; sourceTree = "<group>"; };
 		CEB0D9871C8D4A2800222DAA /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		CEB0D9881C8D4A2800222DAA /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		CEBB0A9D1C8FB41D00C6C406 /* TYNewsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYNewsView.h; sourceTree = "<group>"; };
+		CEBB0A9E1C8FB41D00C6C406 /* TYNewsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYNewsView.m; sourceTree = "<group>"; };
 		CED19B661C589D1800F6B162 /* CLFreedom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLFreedom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED19B691C589D1800F6B162 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED19B701C589D1800F6B162 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -333,6 +336,15 @@
 			path = CBAutoScrollLabel;
 			sourceTree = "<group>";
 		};
+		CEBB0A9C1C8FB41D00C6C406 /* TYUpDownScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				CEBB0A9D1C8FB41D00C6C406 /* TYNewsView.h */,
+				CEBB0A9E1C8FB41D00C6C406 /* TYNewsView.m */,
+			);
+			path = TYUpDownScrollView;
+			sourceTree = "<group>";
+		};
 		CED19B5D1C589D1800F6B162 = {
 			isa = PBXGroup;
 			children = (
@@ -459,6 +471,7 @@
 		CED19BA31C58AB2F00F6B162 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				CEBB0A9C1C8FB41D00C6C406 /* TYUpDownScrollView */,
 				CEB0D9831C8D48C100222DAA /* CBAutoScrollLabel */,
 				CE7924331C72C3AC00A4B801 /* MBProgressHUD */,
 				CED19BA81C58B5E500F6B162 /* CycleScrollView */,
@@ -637,6 +650,7 @@
 				CED19BB11C58B64A00F6B162 /* NSTimer+Addition.m in Sources */,
 				CE5F378B1C7301B7002B7B4D /* CLNetWorkCenter.m in Sources */,
 				CED19BB71C58BAA000F6B162 /* UIColor+Additions.m in Sources */,
+				CEBB0A9F1C8FB41D00C6C406 /* TYNewsView.m in Sources */,
 				CE5F37851C72FE32002B7B4D /* AFSecurityPolicy.m in Sources */,
 				CE07FA941C71B46000384383 /* CLHomeTableViewController.swift in Sources */,
 				CE5F37841C72FE32002B7B4D /* AFNetworkReachabilityManager.m in Sources */,
