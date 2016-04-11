@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lIO-Jw-AAQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lIO-Jw-AAQ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -115,6 +115,86 @@
             </objects>
             <point key="canvasLocation" x="1097.5" y="200.5"/>
         </scene>
+        <!--手表详情-->
+        <scene sceneID="bBu-On-E0B">
+            <objects>
+                <tableViewController storyboardIdentifier="CLWatchDetailsTableViewController" id="8JO-Qf-OrE" customClass="CLWatchDetailsTableViewController" customModule="OcCallSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="207" sectionHeaderHeight="28" sectionFooterHeight="28" id="e3E-3e-Ucv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="sGm-Yj-R3A">
+                            <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="my" translatesAutoresizingMaskIntoConstraints="NO" id="fEh-f6-cAp">
+                                    <rect key="frame" x="16" y="10" width="80" height="80"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="浪琴复刻版" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7D-DI-qiK">
+                                    <rect key="frame" x="113" y="10" width="262" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="经典复刻版本火爆出售,限量300款" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOR-EB-Rtz">
+                                    <rect key="frame" x="113" y="39" width="262" height="51"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XC6-1p-iWi">
+                                    <rect key="frame" x="16" y="123" width="342" height="290"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4e-ux-cWk">
+                                    <rect key="frame" x="97" y="439" width="180" height="35"/>
+                                    <color key="backgroundColor" red="0.1960784314" green="0.61568627450000002" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <state key="normal" title="分享给好友">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="clickShareButton:" destination="8JO-Qf-OrE" eventType="touchUpInside" id="viT-ef-ANe"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="8JO-Qf-OrE" id="i34-te-rh5"/>
+                            <outlet property="delegate" destination="8JO-Qf-OrE" id="qng-IK-IQ9"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="手表详情" id="pj9-jW-gtH"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="watchImageView" destination="fEh-f6-cAp" id="qK0-lw-ipA"/>
+                        <outlet property="watchIntroLabel" destination="kOR-EB-Rtz" id="7BS-1S-ptY"/>
+                        <outlet property="watchNameLabel" destination="F7D-DI-qiK" id="2Ew-Sj-u5v"/>
+                        <outlet property="watchShareButton" destination="V4e-ux-cWk" id="Aue-QP-RdO"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FTu-9o-2Fy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="606.5" y="990.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="q1d-vy-pz9">
+            <objects>
+                <navigationController id="M9E-Tb-FzA" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AMj-jd-hte">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8JO-Qf-OrE" kind="relationship" relationship="rootViewController" id="2cc-P2-tq9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G7G-vA-qmB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="71.5" y="990.5"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="G0D-et-Xcz">
             <objects>
@@ -133,4 +213,7 @@
             <point key="canvasLocation" x="76.5" y="206.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="my" width="30" height="30"/>
+    </resources>
 </document>

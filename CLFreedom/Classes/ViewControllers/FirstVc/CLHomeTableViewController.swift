@@ -23,6 +23,29 @@ class CLHomeTableViewController: UITableViewController {
     var newsArray:[String]! = []
     var serviceNameArray:[String] = []
     
+    var remoteNotState:Bool = true
+    
+    
+    
+    @IBAction func clickOpenOrCloseRemoteNot(sender: AnyObject)
+    {
+        self.remoteNotState = !self.remoteNotState
+        if self.remoteNotState
+        {
+            APPTools.showHudWithTextAutoCalculateShowTime("开启推送了")
+            let uns = UIUserNotificationSettings(forTypes: [.Badge, .Sound, .Alert], categories: nil)
+            UIApplication.sharedApplication().registerForRemoteNotifications()
+            UIApplication.sharedApplication().registerUserNotificationSettings(uns)
+        }
+        else
+        {
+            APPTools.showHudWithTextAutoCalculateShowTime("关闭推送了")
+             UIApplication.sharedApplication().unregisterForRemoteNotifications()
+        }
+    }
+    
+    
+    
     func clickActionButton(button:UIButton)
     {
         SZDLog.swiftLog(button.tag)
@@ -48,7 +71,9 @@ class CLHomeTableViewController: UITableViewController {
         }
         else if button.tag == 4
         {
-            
+            let watchDetails:CLWatchDetailsTableViewController = Serve_SB.instantiateViewControllerWithIdentifier("CLWatchDetailsTableViewController") as! CLWatchDetailsTableViewController
+            watchDetails.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(watchDetails, animated: true)
         }
     }
     

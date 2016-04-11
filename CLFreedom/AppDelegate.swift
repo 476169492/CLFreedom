@@ -20,18 +20,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GeTuiSdkDelegate{
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        //启动Sdk
-        GeTuiSdk.startSdkWithAppId(kGtAppId, appKey: kGtAppKey, appSecret: kGtAppSecret, delegate: self)
+        //1.个推
+        self.initGeTui(launchOptions)
+        //2.Umeng
+        self.initUMeng()
         
-        //注册APNS
-        self.registerUserNotification()
         
-        //处理远程通知启动APP
-        self.receiveNotificationByLaunchingOptions(launchOptions)
+
         
-        // Override point for customization after application launch.
         
         return true
+    }
+    
+    func initGeTui(launchOptions:[NSObject: AnyObject]?)
+    {
+        //启动Sdk
+        GeTuiSdk.startSdkWithAppId(kGtAppId, appKey: kGtAppKey, appSecret: kGtAppSecret, delegate: self)
+        //注册APNS
+        self.registerUserNotification()
+        //处理远程通知启动APP
+        self.receiveNotificationByLaunchingOptions(launchOptions)
+    }
+    
+    func initUMeng()
+    {
+        UMSocialData.setAppKey(UMeng_APP_KEY)
+        UMSocialWechatHandler.setWXAppId(weChatAppId, appSecret: weChatAppSecret, url: UMeng_SHARE_URL)
     }
     
     func registerUserNotification()
@@ -95,6 +109,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GeTuiSdkDelegate{
         //个推错误报告,集成步骤发生的任何错误都在这里通知，如果集成后，无法正常收到消息，查看这里的通知
         SZDLog.swiftLog("🍗🍗🍗" + error.description)
     }
+    
+    func application(application: UIApplication, handleOpenURL url: NSURL) -> Bool {
+        return UMSocialSnsService.handleOpenURL(url)
+    }
+    
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        return UMSocialSnsService.handleOpenURL(url)
+    }
+
     
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

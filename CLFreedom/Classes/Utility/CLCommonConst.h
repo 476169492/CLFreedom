@@ -69,23 +69,24 @@
 //用于辅助性文字(如底部tab icon文字等)
 #define KFontOfWeakerTwo         [UIFont systemFontOfSize:10.0]
 
-
-
-
-
 // AppStore地址
 static NSString *StoreHtml                              = @"https://itunes.apple.com/cn/app/sui-zhi-dai/id986669936?mt=8";
 static NSString *APP_ID                                 = @"986669936";
 // 公司客服电话
 static NSString *TELEPHONE_SERVICE                      = @"021-60799271";
 
+
 //HTML地址
 static NSString *TL404RemindHtml                        = @"http://www.suizhidai.com/404-none.html";
 static NSString *SZDAboutWeHtml                         = @"https://s3.cn-north-1.amazonaws.com.cn/suizhidai/customer/common/about_suizhidai.html";
 
-//About UMeng Share
-static NSString *Umeng_WeChat                          = @"TODO";
-static NSString *Umeng_QQ                              = @"TODO";
+//About Share
+static NSString *weChatAppId                            = @"wx1bf4356a4e24a031";
+static NSString *weChatAppSecret                        = @"8b97f5391c44b32f94cce1a8ca5433b1";
+
+
+
+static NSString *UMeng_SHARE_URL                        = @"http://www.baidu.com";
 
 //About Umeng
 static NSString *UMeng_APP_KEY                          = @"56df8e4d67e58e2b2800268f";
