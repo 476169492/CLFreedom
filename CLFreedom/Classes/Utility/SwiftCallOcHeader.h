@@ -38,6 +38,8 @@
 
 //viewConttoller
 #import "CLApplePayViewController.h"
+#import "RechargeVC.h"
+#import "PaymentViewController.h"
 
 
 

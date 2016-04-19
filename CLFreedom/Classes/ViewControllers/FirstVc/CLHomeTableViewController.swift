@@ -40,7 +40,7 @@ class CLHomeTableViewController: UITableViewController {
         else
         {
             APPTools.showHudWithTextAutoCalculateShowTime("关闭推送了")
-             UIApplication.sharedApplication().unregisterForRemoteNotifications()
+            UIApplication.sharedApplication().unregisterForRemoteNotifications()
         }
     }
     
@@ -75,6 +75,15 @@ class CLHomeTableViewController: UITableViewController {
             watchDetails.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(watchDetails, animated: true)
         }
+        else if button.tag == 5
+        {
+            //TODO
+            //            let testVc:RechargeVC = RechargeVC()
+            //            self.navigationController?.pushViewController(testVc, animated: true)
+            
+            let testVc:PaymentViewController = Serve_SB.instantiateViewControllerWithIdentifier("PaymentViewController") as! PaymentViewController
+            self.navigationController?.pushViewController(testVc, animated: true)
+        }
     }
     
     //MARK:viewDidLoad
@@ -101,13 +110,13 @@ class CLHomeTableViewController: UITableViewController {
         myCycleScrollView?.animationTimer.pauseTimer()  //这里是防止 中途卡顿的现象
         
     }
-
+    
     //MARK:completeConfig
     func completeConfig()
     {
-         self.newsArray = ["赵先生，北京市，提交了借款申请","钱先生，上海市，提交了借款申请","孙先生，广州市，提交了借款申请","李先生，深圳市，提交了借款申请"]
+        self.newsArray = ["赵先生，北京市，提交了借款申请","钱先生，上海市，提交了借款申请","孙先生，广州市，提交了借款申请","李先生，深圳市，提交了借款申请"]
         self.imageNameArray = ["banner","banner","banner"]
-        self.serviceNameArray = ["健康菜谱","身份证识别","Apple Pay","汽车报价","手表之家"]
+        self.serviceNameArray = ["健康菜谱","身份证识别","Apple Pay","汽车报价","手表之家","IAP"]
         
     }
     
@@ -187,7 +196,7 @@ class CLHomeTableViewController: UITableViewController {
             actionButton.tag = i
             actionButton.addTarget(self, action: "clickActionButton:", forControlEvents: UIControlEvents.TouchUpInside)
             subView.addSubview(actionButton)
-        
+            
             serceView.addSubview(subView)
         }
         //横竖线
@@ -206,12 +215,12 @@ class CLHomeTableViewController: UITableViewController {
         }
     }
     
-
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }

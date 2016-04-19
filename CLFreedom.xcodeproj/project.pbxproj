@@ -28,6 +28,7 @@
 		CE7924321C72C34500A4B801 /* APPTools.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7924311C72C34500A4B801 /* APPTools.m */; };
 		CE7924361C72C3AC00A4B801 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7924351C72C3AC00A4B801 /* MBProgressHUD.m */; };
 		CE7924381C72C51500A4B801 /* CLMenuDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7924371C72C51500A4B801 /* CLMenuDetailsTableViewController.swift */; };
+		CE7E42141CC4BA55009C6E49 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7E42131CC4BA55009C6E49 /* StoreKit.framework */; };
 		CE91CD061C7327030000189F /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE91CD031C7327030000189F /* libMobClickLibrary.a */; };
 		CEA21F0C1C802A4B000E6815 /* libGeTuiSdk-1.3.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA21F0B1C802A4B000E6815 /* libGeTuiSdk-1.3.2.a */; };
 		CEA21F0E1C802AEA000E6815 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA21F0D1C802AEA000E6815 /* libz.tbd */; };
@@ -77,6 +78,8 @@
 		CED19BB11C58B64A00F6B162 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = CED19BB01C58B64A00F6B162 /* NSTimer+Addition.m */; };
 		CED19BB41C58B9F900F6B162 /* CLCommonConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED19BB31C58B9F900F6B162 /* CLCommonConst.swift */; };
 		CED19BB71C58BAA000F6B162 /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = CED19BB61C58BAA000F6B162 /* UIColor+Additions.m */; };
+		CEF56AE21CC5C4BE00C2428C /* RechargeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF56AE11CC5C4BE00C2428C /* RechargeVC.m */; };
+		CEF56AE51CC5D70D00C2428C /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF56AE41CC5D70D00C2428C /* PaymentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,6 +134,7 @@
 		CE7924341C72C3AC00A4B801 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		CE7924351C72C3AC00A4B801 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		CE7924371C72C51500A4B801 /* CLMenuDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLMenuDetailsTableViewController.swift; sourceTree = "<group>"; };
+		CE7E42131CC4BA55009C6E49 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		CE8D7B641C72D2810016B798 /* CLCommonConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCommonConst.h; sourceTree = "<group>"; };
 		CE91CD031C7327030000189F /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
 		CE91CD041C7327030000189F /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
@@ -219,6 +223,10 @@
 		CED19BB31C58B9F900F6B162 /* CLCommonConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLCommonConst.swift; sourceTree = "<group>"; };
 		CED19BB51C58BAA000F6B162 /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
 		CED19BB61C58BAA000F6B162 /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
+		CEF56AE01CC5C4BE00C2428C /* RechargeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RechargeVC.h; sourceTree = "<group>"; };
+		CEF56AE11CC5C4BE00C2428C /* RechargeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RechargeVC.m; sourceTree = "<group>"; };
+		CEF56AE31CC5D70D00C2428C /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentViewController.h; sourceTree = "<group>"; };
+		CEF56AE41CC5D70D00C2428C /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +234,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7E42141CC4BA55009C6E49 /* StoreKit.framework in Frameworks */,
 				CEBB0B4E1C8FF46300C6C406 /* libstdc++.tbd in Frameworks */,
 				CEA21F161C802B26000E6815 /* CoreTelephony.framework in Frameworks */,
 				CEBB0B4C1C8FF43300C6C406 /* CoreGraphics.framework in Frameworks */,
@@ -387,6 +396,11 @@
 		CEA21F081C8023FC000E6815 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				CE7E42131CC4BA55009C6E49 /* StoreKit.framework */,
+				CEBB0B4D1C8FF46300C6C406 /* libstdc++.tbd */,
+				CEBB0B4B1C8FF43300C6C406 /* CoreGraphics.framework */,
+				CEBB0B491C8FF40F00C6C406 /* libiconv.tbd */,
+				CEBB0B471C8FF40000C6C406 /* Security.framework */,
 				CEA21F1B1C802B43000E6815 /* CoreBluetooth.framework */,
 				CEA21F191C802B39000E6815 /* CoreLocation.framework */,
 				CEA21F171C802B2F000E6815 /* AVFoundation.framework */,
@@ -539,10 +553,6 @@
 		CED19B5D1C589D1800F6B162 = {
 			isa = PBXGroup;
 			children = (
-				CEBB0B4D1C8FF46300C6C406 /* libstdc++.tbd */,
-				CEBB0B4B1C8FF43300C6C406 /* CoreGraphics.framework */,
-				CEBB0B491C8FF40F00C6C406 /* libiconv.tbd */,
-				CEBB0B471C8FF40000C6C406 /* Security.framework */,
 				CED19B681C589D1800F6B162 /* CLFreedom */,
 				CEA21F081C8023FC000E6815 /* Framework */,
 				CED19B7D1C589D1800F6B162 /* CLFreedomTests */,
@@ -596,6 +606,10 @@
 		CED19B971C58A86700F6B162 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CEF56AE31CC5D70D00C2428C /* PaymentViewController.h */,
+				CEF56AE41CC5D70D00C2428C /* PaymentViewController.m */,
+				CEF56AE01CC5C4BE00C2428C /* RechargeVC.h */,
+				CEF56AE11CC5C4BE00C2428C /* RechargeVC.m */,
 				CE5F376D1C72F3A2002B7B4D /* DataModel */,
 				CE5F376E1C72F3A2002B7B4D /* NetWorkCenter */,
 				CE5F376F1C72F3A2002B7B4D /* TableIViewCell */,
@@ -842,6 +856,7 @@
 				CE7924381C72C51500A4B801 /* CLMenuDetailsTableViewController.swift in Sources */,
 				CEB0D9821C8D211400222DAA /* CLApplePayViewController.m in Sources */,
 				CED19BAB1C58B5E500F6B162 /* CycleScrollView.m in Sources */,
+				CEF56AE51CC5D70D00C2428C /* PaymentViewController.m in Sources */,
 				CE79242D1C72B61600A4B801 /* CLMenuSearchViewController.swift in Sources */,
 				CE4EF9E51C8D856200E215DD /* CLCanNotUserSwift.m in Sources */,
 				CEBB0B461C8FEAFD00C6C406 /* CLWatchDetailsTableViewController.swift in Sources */,
@@ -862,6 +877,7 @@
 				CED19BB71C58BAA000F6B162 /* UIColor+Additions.m in Sources */,
 				CEBB0A9F1C8FB41D00C6C406 /* TYNewsView.m in Sources */,
 				CE5F37851C72FE32002B7B4D /* AFSecurityPolicy.m in Sources */,
+				CEF56AE21CC5C4BE00C2428C /* RechargeVC.m in Sources */,
 				CE07FA941C71B46000384383 /* CLHomeTableViewController.swift in Sources */,
 				CE5F37841C72FE32002B7B4D /* AFNetworkReachabilityManager.m in Sources */,
 				CE4EF9E01C8D6D2400E215DD /* CLSystem.swift in Sources */,
