@@ -29,15 +29,8 @@
 #import "CLNetWorkCenter.h"
 
 //ThirdPart
-#import "MobClick.h"
-#import "AFNetworking.h"
 #import "GeTuiSdk.h"
-#import "UMSocial.h"
-#import "UMSocialWechatHandler.h"
 
 //viewConttoller
-
-
-
 
 #endif

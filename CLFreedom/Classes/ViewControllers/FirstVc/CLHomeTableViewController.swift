@@ -46,31 +46,7 @@ class CLHomeTableViewController: UITableViewController {
     
     func clickActionButton(button:UIButton)
     {
-        SZDLog.swiftLog(button.tag)
-        if button.tag == 0
-        {
-            let menuSearchVc:CLMenuSearchViewController = Serve_SB.instantiateViewControllerWithIdentifier("CLMenuSearchViewController") as! CLMenuSearchViewController
-            self.navigationController?.pushViewController(menuSearchVc, animated: true)
-        }
-        else if button.tag == 1
-        {
-            let idCardSerarchVc:UIViewController = UIViewController()
-            self.navigationController?.pushViewController(idCardSerarchVc, animated: true)
-        }
-        else if button.tag == 2
-        {
-            
-        }
-        else if button.tag == 3
-        {
-            
-        }
-        else if button.tag == 4
-        {
-            let watchDetails:CLWatchDetailsTableViewController = Serve_SB.instantiateViewControllerWithIdentifier("CLWatchDetailsTableViewController") as! CLWatchDetailsTableViewController
-            watchDetails.hidesBottomBarWhenPushed = true
-            self.navigationController?.pushViewController(watchDetails, animated: true)
-        }
+
     }
     
     //MARK:viewDidLoad

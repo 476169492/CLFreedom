@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GeTuiSdkDelegate{
         //1.个推
         self.initGeTui(launchOptions)
         //2.Umeng
-        self.initUMeng()
+      //  self.initUMeng()
         
         
 
@@ -42,11 +42,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GeTuiSdkDelegate{
         self.receiveNotificationByLaunchingOptions(launchOptions)
     }
     
-    func initUMeng()
-    {
-        UMSocialData.setAppKey(UMeng_APP_KEY)
-        UMSocialWechatHandler.setWXAppId(weChatAppId, appSecret: weChatAppSecret, url: UMeng_SHARE_URL)
-    }
+//    func initUMeng()
+//    {
+//        UMSocialData.setAppKey(UMeng_APP_KEY)
+//        UMSocialWechatHandler.setWXAppId(weChatAppId, appSecret: weChatAppSecret, url: UMeng_SHARE_URL)
+//    }
     
     func registerUserNotification()
     {
@@ -109,14 +109,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GeTuiSdkDelegate{
         //个推错误报告,集成步骤发生的任何错误都在这里通知，如果集成后，无法正常收到消息，查看这里的通知
         SZDLog.swiftLog("🍗🍗🍗" + error.description)
     }
-    
-    func application(application: UIApplication, handleOpenURL url: NSURL) -> Bool {
-        return UMSocialSnsService.handleOpenURL(url)
-    }
-    
-    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
-        return UMSocialSnsService.handleOpenURL(url)
-    }
+//    
+//    func application(application: UIApplication, handleOpenURL url: NSURL) -> Bool {
+//        return UMSocialSnsService.handleOpenURL(url)
+//    }
+//    
+//    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+//        return UMSocialSnsService.handleOpenURL(url)
+//    }
 
     
     func applicationWillResignActive(application: UIApplication) {
