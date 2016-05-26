@@ -7,18 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE07FA941C71B46000384383 /* CLHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE07FA931C71B46000384383 /* CLHomeTableViewController.swift */; };
 		CE4C69FB1C7AA86D00B01980 /* My.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4C69FA1C7AA86D00B01980 /* My.storyboard */; };
-		CE4C69FE1C7AAB5A00B01980 /* CLSettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4C69FD1C7AAB5A00B01980 /* CLSettingTableViewController.swift */; };
 		CE4C6A021C7AF51900B01980 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4C6A011C7AF51900B01980 /* LocalAuthentication.framework */; };
 		CE4C6A061C7B055200B01980 /* UIAlertView+MKBlockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4C6A051C7B055200B01980 /* UIAlertView+MKBlockAdditions.m */; };
 		CE4C6A091C7B0A7B00B01980 /* CLTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4C6A081C7B0A7B00B01980 /* CLTabBarController.swift */; };
 		CE5F378B1C7301B7002B7B4D /* CLNetWorkCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5F378A1C7301B7002B7B4D /* CLNetWorkCenter.m */; };
-		CE79242D1C72B61600A4B801 /* CLMenuSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE79242C1C72B61600A4B801 /* CLMenuSearchViewController.swift */; };
 		CE79242F1C72B65A00A4B801 /* Serve.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE79242E1C72B65A00A4B801 /* Serve.storyboard */; };
 		CE7924321C72C34500A4B801 /* APPTools.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7924311C72C34500A4B801 /* APPTools.m */; };
 		CE7924361C72C3AC00A4B801 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7924351C72C3AC00A4B801 /* MBProgressHUD.m */; };
-		CE7924381C72C51500A4B801 /* CLMenuDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7924371C72C51500A4B801 /* CLMenuDetailsTableViewController.swift */; };
 		CE7E42141CC4BA55009C6E49 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7E42131CC4BA55009C6E49 /* StoreKit.framework */; };
 		CEA21F0C1C802A4B000E6815 /* libGeTuiSdk-1.3.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA21F0B1C802A4B000E6815 /* libGeTuiSdk-1.3.2.a */; };
 		CEA21F0E1C802AEA000E6815 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA21F0D1C802AEA000E6815 /* libz.tbd */; };
@@ -29,7 +25,6 @@
 		CEA21F181C802B2F000E6815 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA21F171C802B2F000E6815 /* AVFoundation.framework */; };
 		CEA21F1A1C802B39000E6815 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA21F191C802B39000E6815 /* CoreLocation.framework */; };
 		CEA21F1C1C802B43000E6815 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA21F1B1C802B43000E6815 /* CoreBluetooth.framework */; };
-		CEB0D9821C8D211400222DAA /* CLApplePayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB0D9811C8D211400222DAA /* CLApplePayViewController.m */; };
 		CEB0D9861C8D48C100222DAA /* CBAutoScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB0D9851C8D48C100222DAA /* CBAutoScrollLabel.m */; };
 		CEB0D9891C8D4A2800222DAA /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB0D9881C8D4A2800222DAA /* Utils.m */; };
 		CEBB0A9F1C8FB41D00C6C406 /* TYNewsView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBB0A9E1C8FB41D00C6C406 /* TYNewsView.m */; };
@@ -67,9 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CE07FA931C71B46000384383 /* CLHomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLHomeTableViewController.swift; sourceTree = "<group>"; };
 		CE4C69FA1C7AA86D00B01980 /* My.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = My.storyboard; sourceTree = "<group>"; };
-		CE4C69FD1C7AAB5A00B01980 /* CLSettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLSettingTableViewController.swift; sourceTree = "<group>"; };
 		CE4C6A011C7AF51900B01980 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		CE4C6A031C7B055200B01980 /* MKBlockAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKBlockAdditions.h; sourceTree = "<group>"; };
 		CE4C6A041C7B055200B01980 /* UIAlertView+MKBlockAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+MKBlockAdditions.h"; sourceTree = "<group>"; };
@@ -77,13 +70,11 @@
 		CE4C6A081C7B0A7B00B01980 /* CLTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLTabBarController.swift; sourceTree = "<group>"; };
 		CE5F37891C7301B7002B7B4D /* CLNetWorkCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLNetWorkCenter.h; sourceTree = "<group>"; };
 		CE5F378A1C7301B7002B7B4D /* CLNetWorkCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLNetWorkCenter.m; sourceTree = "<group>"; };
-		CE79242C1C72B61600A4B801 /* CLMenuSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLMenuSearchViewController.swift; sourceTree = "<group>"; };
 		CE79242E1C72B65A00A4B801 /* Serve.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Serve.storyboard; sourceTree = "<group>"; };
 		CE7924301C72C34500A4B801 /* APPTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPTools.h; sourceTree = "<group>"; };
 		CE7924311C72C34500A4B801 /* APPTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPTools.m; sourceTree = "<group>"; };
 		CE7924341C72C3AC00A4B801 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		CE7924351C72C3AC00A4B801 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		CE7924371C72C51500A4B801 /* CLMenuDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLMenuDetailsTableViewController.swift; sourceTree = "<group>"; };
 		CE7E42131CC4BA55009C6E49 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		CE8D7B641C72D2810016B798 /* CLCommonConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCommonConst.h; sourceTree = "<group>"; };
 		CEA21F0A1C802A4B000E6815 /* GeTuiSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeTuiSdk.h; sourceTree = "<group>"; };
@@ -96,8 +87,6 @@
 		CEA21F171C802B2F000E6815 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		CEA21F191C802B39000E6815 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CEA21F1B1C802B43000E6815 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
-		CEB0D9801C8D211400222DAA /* CLApplePayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLApplePayViewController.h; sourceTree = "<group>"; };
-		CEB0D9811C8D211400222DAA /* CLApplePayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLApplePayViewController.m; sourceTree = "<group>"; };
 		CEB0D9841C8D48C100222DAA /* CBAutoScrollLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBAutoScrollLabel.h; sourceTree = "<group>"; };
 		CEB0D9851C8D48C100222DAA /* CBAutoScrollLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBAutoScrollLabel.m; sourceTree = "<group>"; };
 		CEB0D9871C8D4A2800222DAA /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
@@ -171,29 +160,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CE07FA911C71B44100384383 /* FirstVc */ = {
-			isa = PBXGroup;
-			children = (
-				CE07FA931C71B46000384383 /* CLHomeTableViewController.swift */,
-			);
-			path = FirstVc;
-			sourceTree = "<group>";
-		};
-		CE07FA921C71B44100384383 /* SecondVc */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SecondVc;
-			sourceTree = "<group>";
-		};
-		CE4C69FC1C7AAAFB00B01980 /* ThirdVc */ = {
-			isa = PBXGroup;
-			children = (
-				CE4C69FD1C7AAB5A00B01980 /* CLSettingTableViewController.swift */,
-			);
-			path = ThirdVc;
-			sourceTree = "<group>";
-		};
 		CE4C6A071C7B0A4500B01980 /* MainVc */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,17 +197,6 @@
 				CEA21F091C802A4B000E6815 /* GtSdkLib */,
 			);
 			path = ThirdPart;
-			sourceTree = "<group>";
-		};
-		CE79242B1C72B59300A4B801 /* ServeVc */ = {
-			isa = PBXGroup;
-			children = (
-				CE79242C1C72B61600A4B801 /* CLMenuSearchViewController.swift */,
-				CE7924371C72C51500A4B801 /* CLMenuDetailsTableViewController.swift */,
-				CEB0D9801C8D211400222DAA /* CLApplePayViewController.h */,
-				CEB0D9811C8D211400222DAA /* CLApplePayViewController.m */,
-			);
-			path = ServeVc;
 			sourceTree = "<group>";
 		};
 		CE7924331C72C3AC00A4B801 /* MBProgressHUD */ = {
@@ -299,6 +254,20 @@
 				CEBB0A9E1C8FB41D00C6C406 /* TYNewsView.m */,
 			);
 			path = TYUpDownScrollView;
+			sourceTree = "<group>";
+		};
+		CEC6FE4B1CF69E3E0045FC72 /* HomeVc */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HomeVc;
+			sourceTree = "<group>";
+		};
+		CEC6FE4C1CF69E3E0045FC72 /* MyVc */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyVc;
 			sourceTree = "<group>";
 		};
 		CED19B5D1C589D1800F6B162 = {
@@ -396,11 +365,11 @@
 		CED19BA11C58AB2F00F6B162 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				CEB0D9871C8D4A2800222DAA /* Utils.h */,
-				CEB0D9881C8D4A2800222DAA /* Utils.m */,
+				CED19BB31C58B9F900F6B162 /* CLCommonConst.swift */,
 				CE8D7B641C72D2810016B798 /* CLCommonConst.h */,
 				CED19BB21C58B6F000F6B162 /* SwiftCallOcHeader.h */,
-				CED19BB31C58B9F900F6B162 /* CLCommonConst.swift */,
+				CEB0D9871C8D4A2800222DAA /* Utils.h */,
+				CEB0D9881C8D4A2800222DAA /* Utils.m */,
 				CE7924301C72C34500A4B801 /* APPTools.h */,
 				CE7924311C72C34500A4B801 /* APPTools.m */,
 			);
@@ -411,10 +380,8 @@
 			isa = PBXGroup;
 			children = (
 				CE4C6A071C7B0A4500B01980 /* MainVc */,
-				CE07FA911C71B44100384383 /* FirstVc */,
-				CE07FA921C71B44100384383 /* SecondVc */,
-				CE4C69FC1C7AAAFB00B01980 /* ThirdVc */,
-				CE79242B1C72B59300A4B801 /* ServeVc */,
+				CEC6FE4B1CF69E3E0045FC72 /* HomeVc */,
+				CEC6FE4C1CF69E3E0045FC72 /* MyVc */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -582,14 +549,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE7924381C72C51500A4B801 /* CLMenuDetailsTableViewController.swift in Sources */,
-				CEB0D9821C8D211400222DAA /* CLApplePayViewController.m in Sources */,
 				CED19BAB1C58B5E500F6B162 /* CycleScrollView.m in Sources */,
-				CE79242D1C72B61600A4B801 /* CLMenuSearchViewController.swift in Sources */,
 				CED19BB41C58B9F900F6B162 /* CLCommonConst.swift in Sources */,
 				CE4C6A061C7B055200B01980 /* UIAlertView+MKBlockAdditions.m in Sources */,
 				CED19B6A1C589D1800F6B162 /* AppDelegate.swift in Sources */,
-				CE4C69FE1C7AAB5A00B01980 /* CLSettingTableViewController.swift in Sources */,
 				CEB0D9861C8D48C100222DAA /* CBAutoScrollLabel.m in Sources */,
 				CE4C6A091C7B0A7B00B01980 /* CLTabBarController.swift in Sources */,
 				CE7924361C72C3AC00A4B801 /* MBProgressHUD.m in Sources */,
@@ -597,7 +560,6 @@
 				CE5F378B1C7301B7002B7B4D /* CLNetWorkCenter.m in Sources */,
 				CED19BB71C58BAA000F6B162 /* UIColor+Additions.m in Sources */,
 				CEBB0A9F1C8FB41D00C6C406 /* TYNewsView.m in Sources */,
-				CE07FA941C71B46000384383 /* CLHomeTableViewController.swift in Sources */,
 				CEB0D9891C8D4A2800222DAA /* Utils.m in Sources */,
 				CE7924321C72C34500A4B801 /* APPTools.m in Sources */,
 			);
