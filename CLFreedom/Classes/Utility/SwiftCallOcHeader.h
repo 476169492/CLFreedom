@@ -24,12 +24,11 @@
 #import "CLCommonConst.h"
 #import "APPTools.h"
 
-
 //netWorkCenter
 #import "CLNetWorkCenter.h"
 
 //ThirdPart
-#import "GeTuiSdk.h"
+#import <GeTuiSdk.h>
 
 //viewConttoller
 

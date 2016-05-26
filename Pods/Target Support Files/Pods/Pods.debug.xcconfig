@@ -1,6 +1,8 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/GTSDK"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/AWSCore.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/AWSDynamoDB.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "AWSCore" -framework "AWSDynamoDB"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/GTSDK"
+OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/AWSCore.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/AWSDynamoDB.framework/Headers" -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/GTSDK"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"GeTuiSdk-1.4.2" -l"sqlite3.0" -l"z" -framework "AVFoundation" -framework "AWSCore" -framework "AWSDynamoDB" -framework "CFNetwork" -framework "CoreBluetooth" -framework "CoreLocation" -framework "CoreTelephony" -framework "JavaScriptCore" -framework "Security" -framework "SystemConfiguration"
 PODS_FRAMEWORK_BUILD_PATH = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods
 PODS_ROOT = ${SRCROOT}/Pods

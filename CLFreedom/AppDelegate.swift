@@ -26,9 +26,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GeTuiSdkDelegate{
       //  self.initUMeng()
         
         
-
-        
-        
         return true
     }
     

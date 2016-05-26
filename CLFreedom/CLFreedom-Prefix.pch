@@ -39,5 +39,6 @@
 #import "UIColor+Additions.h"
 #import "UIAlertView+MKBlockAdditions.h"
 //thirdPart
+#import <GeTuiSdk.h>
 
 #endif /* CLFreedom_Prefix_pch */

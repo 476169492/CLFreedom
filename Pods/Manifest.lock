@@ -2,12 +2,15 @@ PODS:
   - AWSCore (2.4.2)
   - AWSDynamoDB (2.4.2):
     - AWSCore (= 2.4.2)
+  - GTSDK (1.4.2)
 
 DEPENDENCIES:
   - AWSDynamoDB (~> 2.4.1)
+  - GTSDK (~> 1.4.2-noidfa)
 
 SPEC CHECKSUMS:
   AWSCore: 08cc4318682a518ad73e452900336ba54e823e03
   AWSDynamoDB: 604d26f6f13275bac9a0fec2c0194bf1593fd2fd
+  GTSDK: 51a12836895312a872f75a2fe0f2e788dee75b19
 
 COCOAPODS: 0.39.0
