@@ -30,16 +30,14 @@
 #   define TLLog(...)
 #endif
 
-//oc调用swift and CommonConst
+//oc调用swift
 #import "OcCallSwift-Swift.h"
-#import "CLCommonConst.h"
 
+//Public
+#import "CLCommonConst.h"
 //Category
 #import "UIColor+Additions.h"
 #import "UIAlertView+MKBlockAdditions.h"
-
 //thirdPart
-#import "AFNetworking.h"
-#import "MobClick.h"
 
 #endif /* CLFreedom_Prefix_pch */

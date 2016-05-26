@@ -12,7 +12,7 @@
 
 + (CLNetWorkCenter *)sharedNetWorkCenter;
 
-- (void)getMenuDetailsWithName:(NSString *)name
-                    completion:(void(^)(NSError *error,NSDictionary *resultDic))handler;
+//- (void)getMenuDetailsWithName:(NSString *)name
+//                    completion:(void(^)(NSError *error,NSDictionary *resultDic))handler;
 
 @end

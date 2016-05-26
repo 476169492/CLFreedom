@@ -32,6 +32,7 @@
 		CEBB0B4A1C8FF40F00C6C406 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBB0B491C8FF40F00C6C406 /* libiconv.tbd */; };
 		CEBB0B4C1C8FF43300C6C406 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBB0B4B1C8FF43300C6C406 /* CoreGraphics.framework */; };
 		CEBB0B4E1C8FF46300C6C406 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CEBB0B4D1C8FF46300C6C406 /* libstdc++.tbd */; };
+		CEC6FE4E1CF69F800045FC72 /* CLHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6FE4D1CF69F800045FC72 /* CLHomeTableViewController.swift */; };
 		CED19B6A1C589D1800F6B162 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED19B691C589D1800F6B162 /* AppDelegate.swift */; };
 		CED19B711C589D1800F6B162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED19B701C589D1800F6B162 /* Assets.xcassets */; };
 		CED19B7F1C589D1800F6B162 /* CLFreedomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED19B7E1C589D1800F6B162 /* CLFreedomTests.swift */; };
@@ -97,6 +98,7 @@
 		CEBB0B491C8FF40F00C6C406 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		CEBB0B4B1C8FF43300C6C406 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		CEBB0B4D1C8FF46300C6C406 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		CEC6FE4D1CF69F800045FC72 /* CLHomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLHomeTableViewController.swift; sourceTree = "<group>"; };
 		CED19B661C589D1800F6B162 /* CLFreedom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLFreedom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED19B691C589D1800F6B162 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED19B701C589D1800F6B162 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 		CEC6FE4B1CF69E3E0045FC72 /* HomeVc */ = {
 			isa = PBXGroup;
 			children = (
+				CEC6FE4D1CF69F800045FC72 /* CLHomeTableViewController.swift */,
 			);
 			path = HomeVc;
 			sourceTree = "<group>";
@@ -325,13 +328,13 @@
 		CED19B971C58A86700F6B162 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				CE5F376D1C72F3A2002B7B4D /* DataModel */,
 				CE5F376E1C72F3A2002B7B4D /* NetWorkCenter */,
-				CE5F376F1C72F3A2002B7B4D /* TableIViewCell */,
-				CE5F37701C72F3A2002B7B4D /* ThirdPart */,
+				CE5F376D1C72F3A2002B7B4D /* DataModel */,
 				CED19BA31C58AB2F00F6B162 /* Views */,
+				CE5F376F1C72F3A2002B7B4D /* TableIViewCell */,
 				CED19BA21C58AB2F00F6B162 /* ViewControllers */,
 				CED19B9D1C58AB2F00F6B162 /* Category */,
+				CE5F37701C72F3A2002B7B4D /* ThirdPart */,
 				CED19BA11C58AB2F00F6B162 /* Utility */,
 			);
 			path = Classes;
@@ -558,6 +561,7 @@
 				CE7924361C72C3AC00A4B801 /* MBProgressHUD.m in Sources */,
 				CED19BB11C58B64A00F6B162 /* NSTimer+Addition.m in Sources */,
 				CE5F378B1C7301B7002B7B4D /* CLNetWorkCenter.m in Sources */,
+				CEC6FE4E1CF69F800045FC72 /* CLHomeTableViewController.swift in Sources */,
 				CED19BB71C58BAA000F6B162 /* UIColor+Additions.m in Sources */,
 				CEBB0A9F1C8FB41D00C6C406 /* TYNewsView.m in Sources */,
 				CEB0D9891C8D4A2800222DAA /* Utils.m in Sources */,
