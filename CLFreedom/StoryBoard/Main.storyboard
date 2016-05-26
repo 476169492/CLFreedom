@@ -32,13 +32,6 @@
                                         <constraint firstAttribute="height" constant="30" id="AwF-TQ-Tpg"/>
                                     </constraints>
                                 </view>
-                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTw-YK-pYJ">
-                                    <rect key="frame" x="129" y="444" width="116" height="30"/>
-                                    <state key="normal" title="Button"/>
-                                    <connections>
-                                        <action selector="clickOpenOrCloseRemoteNot:" destination="StD-rC-GkJ" eventType="touchUpInside" id="gYO-aH-GzI"/>
-                                    </connections>
-                                </button>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>

@@ -23,30 +23,12 @@ class CLHomeTableViewController: UITableViewController {
     var newsArray:[String]! = []
     var serviceNameArray:[String] = []
     
-    var remoteNotState:Bool = true
-    
-    
-    
-    @IBAction func clickOpenOrCloseRemoteNot(sender: AnyObject)
+    //MARK:completeConfig
+    func completeConfig()
     {
-        self.remoteNotState = !self.remoteNotState
-        if self.remoteNotState
-        {
-            APPTools.showHudWithTextAutoCalculateShowTime("开启推送了")
-            let uns = UIUserNotificationSettings(forTypes: [.Badge, .Sound, .Alert], categories: nil)
-            UIApplication.sharedApplication().registerForRemoteNotifications()
-            UIApplication.sharedApplication().registerUserNotificationSettings(uns)
-        }
-        else
-        {
-            APPTools.showHudWithTextAutoCalculateShowTime("关闭推送了")
-            UIApplication.sharedApplication().unregisterForRemoteNotifications()
-        }
-    }
-    
-    func clickActionButton(button:UIButton)
-    {
-
+        self.newsArray = ["赵先生，北京市，提交了借款申请","钱先生，上海市，提交了借款申请","孙先生，广州市，提交了借款申请","李先生，深圳市，提交了借款申请"]
+        self.imageNameArray = ["banner","banner","banner"]
+        self.serviceNameArray = ["健康菜谱","身份证识别","Apple Pay","汽车报价","手表之家","IAP"]
     }
     
     //MARK:viewDidLoad
@@ -57,38 +39,12 @@ class CLHomeTableViewController: UITableViewController {
         self.initMySubView()
     }
     
-    override func viewWillAppear(animated: Bool) {
-        self.newsView.startAnimation()
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(true)
-        myCycleScrollView?.animationTimer.resumeTimerAfterTimeInterval(scrollInterval-1.0)
-    }
-    
-    override func viewWillDisappear(animated: Bool) {
-        super.viewWillDisappear(true)
-        
-        self.newsView.stopAnimation()
-        myCycleScrollView?.animationTimer.pauseTimer()  //这里是防止 中途卡顿的现象
-    }
-    
-    //MARK:completeConfig
-    func completeConfig()
-    {
-        self.newsArray = ["赵先生，北京市，提交了借款申请","钱先生，上海市，提交了借款申请","孙先生，广州市，提交了借款申请","李先生，深圳市，提交了借款申请"]
-        self.imageNameArray = ["banner","banner","banner"]
-        self.serviceNameArray = ["健康菜谱","身份证识别","Apple Pay","汽车报价","手表之家","IAP"]
-    }
-    
     //MARK:initMySubView
     func initMySubView()
     {
         self.initAutoScrollLabel()
         
         self.initCycleScrollView()
-        
-        self.initServiceView()
     }
     
     func initAutoScrollLabel()
@@ -113,7 +69,7 @@ class CLHomeTableViewController: UITableViewController {
         }
         
         let bannerImageViewArray:NSMutableArray = NSMutableArray()
-        for var i = 0 ; i < self.imageNameArray.count ; ++i
+        for i in 0  ..< self.imageNameArray.count
         {
             let defaultImageView:UIImageView = UIImageView(frame: CGRectMake(0, 0, ScreenWidth, ScreenWidth * 2 / 5))
             if i < self.imageNameArray.count
@@ -132,51 +88,22 @@ class CLHomeTableViewController: UITableViewController {
         self.homeView.addSubview(myCycleScrollView!)
     }
     
-    func initServiceView()
-    {
-        let dynLineCount:NSInteger = self.serviceNameArray.count/4 + (((self.serviceNameArray.count%4) == 0) ? 0 : 1)
-        let subViewWidthAndHeight:CGFloat = ScreenWidth/4
-        
-        let serceView:UIView = UIView(frame: CGRectMake(0,myCycleScrollView!.frame.origin.y + myCycleScrollView!.frame.size.height,ScreenWidth,subViewWidthAndHeight * CGFloat(dynLineCount)))
-        self.homeView.addSubview(serceView)
-        
-        //nameLabel actionButton
-        for var i  = 0 ; i < self.serviceNameArray.count ; i++
-        {
-            let subView:UIView = UIView(frame: CGRectMake(CGFloat(i%4) * subViewWidthAndHeight,CGFloat(i/4) * subViewWidthAndHeight,subViewWidthAndHeight,subViewWidthAndHeight))
-            let namelable:UILabel = UILabel(frame:CGRectMake(0,0,subViewWidthAndHeight,20))
-            namelable.center = CGPointMake(subViewWidthAndHeight/2, subViewWidthAndHeight/2)
-            namelable.text = self.serviceNameArray[i]
-            namelable.font = KFontOfGeneralTwo
-            namelable.textColor = COMMON_TEXT_COLOR
-            namelable.textAlignment = NSTextAlignment.Center
-            subView.addSubview(namelable)
-            
-            let actionButton:UIButton = UIButton(type: UIButtonType.Custom)
-            actionButton.frame = CGRectMake(0, 0, subViewWidthAndHeight, subViewWidthAndHeight)
-            actionButton.tag = i
-            actionButton.addTarget(self, action: "clickActionButton:", forControlEvents: UIControlEvents.TouchUpInside)
-            subView.addSubview(actionButton)
-            
-            serceView.addSubview(subView)
-        }
-        //横竖线
-        for var i = 0 ; i < dynLineCount ; i++
-        {
-            let hengLineView:UIView = UIView(frame: CGRectMake(0,CGFloat(i + 1) * subViewWidthAndHeight,ScreenWidth,0.5))
-            hengLineView.backgroundColor = ASSIST_TEXT_COLOR
-            serceView.addSubview(hengLineView)
-        }
-        
-        for var i = 0 ; i < 4 ; i++
-        {
-            let shuLineView:UIView = UIView(frame: CGRectMake(CGFloat(i + 1) * subViewWidthAndHeight,0,0.5,subViewWidthAndHeight * CGFloat(dynLineCount)))
-            shuLineView.backgroundColor = ASSIST_TEXT_COLOR
-            serceView.addSubview(shuLineView)
-        }
+    override func viewWillAppear(animated: Bool) {
+        self.newsView.startAnimation()
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(true)
+        myCycleScrollView?.animationTimer.resumeTimerAfterTimeInterval(scrollInterval-1.0)
+    }
     
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(true)
+        
+        self.newsView.stopAnimation()
+        //这里是防止 中途卡顿的现象
+        myCycleScrollView?.animationTimer.pauseTimer()
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
