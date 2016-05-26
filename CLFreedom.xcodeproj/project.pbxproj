@@ -13,12 +13,6 @@
 		CE4C6A021C7AF51900B01980 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4C6A011C7AF51900B01980 /* LocalAuthentication.framework */; };
 		CE4C6A061C7B055200B01980 /* UIAlertView+MKBlockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4C6A051C7B055200B01980 /* UIAlertView+MKBlockAdditions.m */; };
 		CE4C6A091C7B0A7B00B01980 /* CLTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4C6A081C7B0A7B00B01980 /* CLTabBarController.swift */; };
-		CE5F37831C72FE32002B7B4D /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5F37771C72FE32002B7B4D /* AFHTTPSessionManager.m */; };
-		CE5F37841C72FE32002B7B4D /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5F377A1C72FE32002B7B4D /* AFNetworkReachabilityManager.m */; };
-		CE5F37851C72FE32002B7B4D /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5F377C1C72FE32002B7B4D /* AFSecurityPolicy.m */; };
-		CE5F37861C72FE32002B7B4D /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5F377E1C72FE32002B7B4D /* AFURLRequestSerialization.m */; };
-		CE5F37871C72FE32002B7B4D /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5F37801C72FE32002B7B4D /* AFURLResponseSerialization.m */; };
-		CE5F37881C72FE32002B7B4D /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5F37821C72FE32002B7B4D /* AFURLSessionManager.m */; };
 		CE5F378B1C7301B7002B7B4D /* CLNetWorkCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5F378A1C7301B7002B7B4D /* CLNetWorkCenter.m */; };
 		CE79242D1C72B61600A4B801 /* CLMenuSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE79242C1C72B61600A4B801 /* CLMenuSearchViewController.swift */; };
 		CE79242F1C72B65A00A4B801 /* Serve.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE79242E1C72B65A00A4B801 /* Serve.storyboard */; };
@@ -26,7 +20,6 @@
 		CE7924361C72C3AC00A4B801 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7924351C72C3AC00A4B801 /* MBProgressHUD.m */; };
 		CE7924381C72C51500A4B801 /* CLMenuDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7924371C72C51500A4B801 /* CLMenuDetailsTableViewController.swift */; };
 		CE7E42141CC4BA55009C6E49 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7E42131CC4BA55009C6E49 /* StoreKit.framework */; };
-		CE91CD061C7327030000189F /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE91CD031C7327030000189F /* libMobClickLibrary.a */; };
 		CEA21F0C1C802A4B000E6815 /* libGeTuiSdk-1.3.2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA21F0B1C802A4B000E6815 /* libGeTuiSdk-1.3.2.a */; };
 		CEA21F0E1C802AEA000E6815 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA21F0D1C802AEA000E6815 /* libz.tbd */; };
 		CEA21F101C802B00000E6815 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA21F0F1C802B00000E6815 /* libsqlite3.tbd */; };
@@ -103,19 +96,6 @@
 		CE4C6A041C7B055200B01980 /* UIAlertView+MKBlockAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+MKBlockAdditions.h"; sourceTree = "<group>"; };
 		CE4C6A051C7B055200B01980 /* UIAlertView+MKBlockAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+MKBlockAdditions.m"; sourceTree = "<group>"; };
 		CE4C6A081C7B0A7B00B01980 /* CLTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLTabBarController.swift; sourceTree = "<group>"; };
-		CE5F37761C72FE32002B7B4D /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
-		CE5F37771C72FE32002B7B4D /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
-		CE5F37781C72FE32002B7B4D /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
-		CE5F37791C72FE32002B7B4D /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
-		CE5F377A1C72FE32002B7B4D /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
-		CE5F377B1C72FE32002B7B4D /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
-		CE5F377C1C72FE32002B7B4D /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
-		CE5F377D1C72FE32002B7B4D /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
-		CE5F377E1C72FE32002B7B4D /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
-		CE5F377F1C72FE32002B7B4D /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
-		CE5F37801C72FE32002B7B4D /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
-		CE5F37811C72FE32002B7B4D /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
-		CE5F37821C72FE32002B7B4D /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		CE5F37891C7301B7002B7B4D /* CLNetWorkCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLNetWorkCenter.h; sourceTree = "<group>"; };
 		CE5F378A1C7301B7002B7B4D /* CLNetWorkCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLNetWorkCenter.m; sourceTree = "<group>"; };
 		CE79242C1C72B61600A4B801 /* CLMenuSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLMenuSearchViewController.swift; sourceTree = "<group>"; };
@@ -127,9 +107,6 @@
 		CE7924371C72C51500A4B801 /* CLMenuDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLMenuDetailsTableViewController.swift; sourceTree = "<group>"; };
 		CE7E42131CC4BA55009C6E49 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		CE8D7B641C72D2810016B798 /* CLCommonConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCommonConst.h; sourceTree = "<group>"; };
-		CE91CD031C7327030000189F /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
-		CE91CD041C7327030000189F /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
-		CE91CD051C7327030000189F /* MobClickSocialAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClickSocialAnalytics.h; sourceTree = "<group>"; };
 		CEA21F0A1C802A4B000E6815 /* GeTuiSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeTuiSdk.h; sourceTree = "<group>"; };
 		CEA21F0B1C802A4B000E6815 /* libGeTuiSdk-1.3.2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libGeTuiSdk-1.3.2.a"; sourceTree = "<group>"; };
 		CEA21F0D1C802AEA000E6815 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -241,7 +218,6 @@
 				CEA21F0E1C802AEA000E6815 /* libz.tbd in Frameworks */,
 				CE4C6A021C7AF51900B01980 /* LocalAuthentication.framework in Frameworks */,
 				CEA21F0C1C802A4B000E6815 /* libGeTuiSdk-1.3.2.a in Frameworks */,
-				CE91CD061C7327030000189F /* libMobClickLibrary.a in Frameworks */,
 				CEBB0B3C1C8FE82F00C6C406 /* libSocialQQ.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,30 +298,8 @@
 			children = (
 				CEBB0B001C8FE82F00C6C406 /* umeng_ios_social_sdk_5.0_arm64_custom */,
 				CEA21F091C802A4B000E6815 /* GtSdkLib */,
-				CE91CD021C7327030000189F /* UMAnalytics */,
-				CE5F37751C72FE32002B7B4D /* AFNetworking */,
 			);
 			path = ThirdPart;
-			sourceTree = "<group>";
-		};
-		CE5F37751C72FE32002B7B4D /* AFNetworking */ = {
-			isa = PBXGroup;
-			children = (
-				CE5F37761C72FE32002B7B4D /* AFHTTPSessionManager.h */,
-				CE5F37771C72FE32002B7B4D /* AFHTTPSessionManager.m */,
-				CE5F37781C72FE32002B7B4D /* AFNetworking.h */,
-				CE5F37791C72FE32002B7B4D /* AFNetworkReachabilityManager.h */,
-				CE5F377A1C72FE32002B7B4D /* AFNetworkReachabilityManager.m */,
-				CE5F377B1C72FE32002B7B4D /* AFSecurityPolicy.h */,
-				CE5F377C1C72FE32002B7B4D /* AFSecurityPolicy.m */,
-				CE5F377D1C72FE32002B7B4D /* AFURLRequestSerialization.h */,
-				CE5F377E1C72FE32002B7B4D /* AFURLRequestSerialization.m */,
-				CE5F377F1C72FE32002B7B4D /* AFURLResponseSerialization.h */,
-				CE5F37801C72FE32002B7B4D /* AFURLResponseSerialization.m */,
-				CE5F37811C72FE32002B7B4D /* AFURLSessionManager.h */,
-				CE5F37821C72FE32002B7B4D /* AFURLSessionManager.m */,
-			);
-			path = AFNetworking;
 			sourceTree = "<group>";
 		};
 		CE79242B1C72B59300A4B801 /* ServeVc */ = {
@@ -367,16 +321,6 @@
 				CE7924351C72C3AC00A4B801 /* MBProgressHUD.m */,
 			);
 			path = MBProgressHUD;
-			sourceTree = "<group>";
-		};
-		CE91CD021C7327030000189F /* UMAnalytics */ = {
-			isa = PBXGroup;
-			children = (
-				CE91CD031C7327030000189F /* libMobClickLibrary.a */,
-				CE91CD041C7327030000189F /* MobClick.h */,
-				CE91CD051C7327030000189F /* MobClickSocialAnalytics.h */,
-			);
-			path = UMAnalytics;
 			sourceTree = "<group>";
 		};
 		CEA21F081C8023FC000E6815 /* Framework */ = {
@@ -837,22 +781,16 @@
 				CEBB0B461C8FEAFD00C6C406 /* CLWatchDetailsTableViewController.swift in Sources */,
 				CED19BB41C58B9F900F6B162 /* CLCommonConst.swift in Sources */,
 				CE4C6A061C7B055200B01980 /* UIAlertView+MKBlockAdditions.m in Sources */,
-				CE5F37871C72FE32002B7B4D /* AFURLResponseSerialization.m in Sources */,
 				CED19B6A1C589D1800F6B162 /* AppDelegate.swift in Sources */,
-				CE5F37861C72FE32002B7B4D /* AFURLRequestSerialization.m in Sources */,
 				CE4C69FE1C7AAB5A00B01980 /* CLSettingTableViewController.swift in Sources */,
-				CE5F37831C72FE32002B7B4D /* AFHTTPSessionManager.m in Sources */,
 				CEB0D9861C8D48C100222DAA /* CBAutoScrollLabel.m in Sources */,
 				CE4C6A091C7B0A7B00B01980 /* CLTabBarController.swift in Sources */,
 				CE7924361C72C3AC00A4B801 /* MBProgressHUD.m in Sources */,
-				CE5F37881C72FE32002B7B4D /* AFURLSessionManager.m in Sources */,
 				CED19BB11C58B64A00F6B162 /* NSTimer+Addition.m in Sources */,
 				CE5F378B1C7301B7002B7B4D /* CLNetWorkCenter.m in Sources */,
 				CED19BB71C58BAA000F6B162 /* UIColor+Additions.m in Sources */,
 				CEBB0A9F1C8FB41D00C6C406 /* TYNewsView.m in Sources */,
-				CE5F37851C72FE32002B7B4D /* AFSecurityPolicy.m in Sources */,
 				CE07FA941C71B46000384383 /* CLHomeTableViewController.swift in Sources */,
-				CE5F37841C72FE32002B7B4D /* AFNetworkReachabilityManager.m in Sources */,
 				CEB0D9891C8D4A2800222DAA /* Utils.m in Sources */,
 				CE7924321C72C34500A4B801 /* APPTools.m in Sources */,
 			);
