@@ -44,8 +44,6 @@ class CLHomeTableViewController: UITableViewController {
         }
     }
     
-    
-    
     func clickActionButton(button:UIButton)
     {
         SZDLog.swiftLog(button.tag)
@@ -61,9 +59,7 @@ class CLHomeTableViewController: UITableViewController {
         }
         else if button.tag == 2
         {
-            let applePayVc:CLApplePayViewController = CLApplePayViewController()
-            applePayVc.hidesBottomBarWhenPushed = true
-            self.navigationController?.pushViewController(applePayVc, animated: true)
+            
         }
         else if button.tag == 3
         {
@@ -74,15 +70,6 @@ class CLHomeTableViewController: UITableViewController {
             let watchDetails:CLWatchDetailsTableViewController = Serve_SB.instantiateViewControllerWithIdentifier("CLWatchDetailsTableViewController") as! CLWatchDetailsTableViewController
             watchDetails.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(watchDetails, animated: true)
-        }
-        else if button.tag == 5
-        {
-            //TODO
-            //            let testVc:RechargeVC = RechargeVC()
-            //            self.navigationController?.pushViewController(testVc, animated: true)
-            
-            let testVc:PaymentViewController = Serve_SB.instantiateViewControllerWithIdentifier("PaymentViewController") as! PaymentViewController
-            self.navigationController?.pushViewController(testVc, animated: true)
         }
     }
     
@@ -108,7 +95,6 @@ class CLHomeTableViewController: UITableViewController {
         
         self.newsView.stopAnimation()
         myCycleScrollView?.animationTimer.pauseTimer()  //这里是防止 中途卡顿的现象
-        
     }
     
     //MARK:completeConfig
@@ -117,7 +103,6 @@ class CLHomeTableViewController: UITableViewController {
         self.newsArray = ["赵先生，北京市，提交了借款申请","钱先生，上海市，提交了借款申请","孙先生，广州市，提交了借款申请","李先生，深圳市，提交了借款申请"]
         self.imageNameArray = ["banner","banner","banner"]
         self.serviceNameArray = ["健康菜谱","身份证识别","Apple Pay","汽车报价","手表之家","IAP"]
-        
     }
     
     //MARK:initMySubView

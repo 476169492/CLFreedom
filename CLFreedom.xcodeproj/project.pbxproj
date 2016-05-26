@@ -13,9 +13,6 @@
 		CE4C6A021C7AF51900B01980 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4C6A011C7AF51900B01980 /* LocalAuthentication.framework */; };
 		CE4C6A061C7B055200B01980 /* UIAlertView+MKBlockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4C6A051C7B055200B01980 /* UIAlertView+MKBlockAdditions.m */; };
 		CE4C6A091C7B0A7B00B01980 /* CLTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4C6A081C7B0A7B00B01980 /* CLTabBarController.swift */; };
-		CE4EF9E01C8D6D2400E215DD /* CLSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4EF9DF1C8D6D2400E215DD /* CLSystem.swift */; };
-		CE4EF9E21C8D7A2800E215DD /* CLRegularExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4EF9E11C8D7A2800E215DD /* CLRegularExpression.swift */; };
-		CE4EF9E51C8D856200E215DD /* CLCanNotUserSwift.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4EF9E41C8D856200E215DD /* CLCanNotUserSwift.m */; };
 		CE5F37831C72FE32002B7B4D /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5F37771C72FE32002B7B4D /* AFHTTPSessionManager.m */; };
 		CE5F37841C72FE32002B7B4D /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5F377A1C72FE32002B7B4D /* AFNetworkReachabilityManager.m */; };
 		CE5F37851C72FE32002B7B4D /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5F377C1C72FE32002B7B4D /* AFSecurityPolicy.m */; };
@@ -78,8 +75,6 @@
 		CED19BB11C58B64A00F6B162 /* NSTimer+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = CED19BB01C58B64A00F6B162 /* NSTimer+Addition.m */; };
 		CED19BB41C58B9F900F6B162 /* CLCommonConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED19BB31C58B9F900F6B162 /* CLCommonConst.swift */; };
 		CED19BB71C58BAA000F6B162 /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = CED19BB61C58BAA000F6B162 /* UIColor+Additions.m */; };
-		CEF56AE21CC5C4BE00C2428C /* RechargeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF56AE11CC5C4BE00C2428C /* RechargeVC.m */; };
-		CEF56AE51CC5D70D00C2428C /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF56AE41CC5D70D00C2428C /* PaymentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,10 +103,6 @@
 		CE4C6A041C7B055200B01980 /* UIAlertView+MKBlockAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+MKBlockAdditions.h"; sourceTree = "<group>"; };
 		CE4C6A051C7B055200B01980 /* UIAlertView+MKBlockAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+MKBlockAdditions.m"; sourceTree = "<group>"; };
 		CE4C6A081C7B0A7B00B01980 /* CLTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLTabBarController.swift; sourceTree = "<group>"; };
-		CE4EF9DF1C8D6D2400E215DD /* CLSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLSystem.swift; sourceTree = "<group>"; };
-		CE4EF9E11C8D7A2800E215DD /* CLRegularExpression.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLRegularExpression.swift; sourceTree = "<group>"; };
-		CE4EF9E31C8D856200E215DD /* CLCanNotUserSwift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCanNotUserSwift.h; sourceTree = "<group>"; };
-		CE4EF9E41C8D856200E215DD /* CLCanNotUserSwift.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLCanNotUserSwift.m; sourceTree = "<group>"; };
 		CE5F37761C72FE32002B7B4D /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		CE5F37771C72FE32002B7B4D /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		CE5F37781C72FE32002B7B4D /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
@@ -149,7 +140,6 @@
 		CEA21F171C802B2F000E6815 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		CEA21F191C802B39000E6815 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CEA21F1B1C802B43000E6815 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
-		CEB0D97F1C8D185800222DAA /* CLFreedom.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CLFreedom.entitlements; sourceTree = "<group>"; };
 		CEB0D9801C8D211400222DAA /* CLApplePayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLApplePayViewController.h; sourceTree = "<group>"; };
 		CEB0D9811C8D211400222DAA /* CLApplePayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLApplePayViewController.m; sourceTree = "<group>"; };
 		CEB0D9841C8D48C100222DAA /* CBAutoScrollLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBAutoScrollLabel.h; sourceTree = "<group>"; };
@@ -223,10 +213,6 @@
 		CED19BB31C58B9F900F6B162 /* CLCommonConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLCommonConst.swift; sourceTree = "<group>"; };
 		CED19BB51C58BAA000F6B162 /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
 		CED19BB61C58BAA000F6B162 /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
-		CEF56AE01CC5C4BE00C2428C /* RechargeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RechargeVC.h; sourceTree = "<group>"; };
-		CEF56AE11CC5C4BE00C2428C /* RechargeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RechargeVC.m; sourceTree = "<group>"; };
-		CEF56AE31CC5D70D00C2428C /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentViewController.h; sourceTree = "<group>"; };
-		CEF56AE41CC5D70D00C2428C /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -574,7 +560,6 @@
 		CED19B681C589D1800F6B162 /* CLFreedom */ = {
 			isa = PBXGroup;
 			children = (
-				CEB0D97F1C8D185800222DAA /* CLFreedom.entitlements */,
 				CED19B981C58A86700F6B162 /* StoryBoard */,
 				CED19B971C58A86700F6B162 /* Classes */,
 				CED19B701C589D1800F6B162 /* Assets.xcassets */,
@@ -606,10 +591,6 @@
 		CED19B971C58A86700F6B162 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				CEF56AE31CC5D70D00C2428C /* PaymentViewController.h */,
-				CEF56AE41CC5D70D00C2428C /* PaymentViewController.m */,
-				CEF56AE01CC5C4BE00C2428C /* RechargeVC.h */,
-				CEF56AE11CC5C4BE00C2428C /* RechargeVC.m */,
 				CE5F376D1C72F3A2002B7B4D /* DataModel */,
 				CE5F376E1C72F3A2002B7B4D /* NetWorkCenter */,
 				CE5F376F1C72F3A2002B7B4D /* TableIViewCell */,
@@ -650,8 +631,6 @@
 		CED19BA11C58AB2F00F6B162 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				CE4EF9DF1C8D6D2400E215DD /* CLSystem.swift */,
-				CE4EF9E11C8D7A2800E215DD /* CLRegularExpression.swift */,
 				CEB0D9871C8D4A2800222DAA /* Utils.h */,
 				CEB0D9881C8D4A2800222DAA /* Utils.m */,
 				CE8D7B641C72D2810016B798 /* CLCommonConst.h */,
@@ -659,8 +638,6 @@
 				CED19BB31C58B9F900F6B162 /* CLCommonConst.swift */,
 				CE7924301C72C34500A4B801 /* APPTools.h */,
 				CE7924311C72C34500A4B801 /* APPTools.m */,
-				CE4EF9E31C8D856200E215DD /* CLCanNotUserSwift.h */,
-				CE4EF9E41C8D856200E215DD /* CLCanNotUserSwift.m */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -856,13 +833,10 @@
 				CE7924381C72C51500A4B801 /* CLMenuDetailsTableViewController.swift in Sources */,
 				CEB0D9821C8D211400222DAA /* CLApplePayViewController.m in Sources */,
 				CED19BAB1C58B5E500F6B162 /* CycleScrollView.m in Sources */,
-				CEF56AE51CC5D70D00C2428C /* PaymentViewController.m in Sources */,
 				CE79242D1C72B61600A4B801 /* CLMenuSearchViewController.swift in Sources */,
-				CE4EF9E51C8D856200E215DD /* CLCanNotUserSwift.m in Sources */,
 				CEBB0B461C8FEAFD00C6C406 /* CLWatchDetailsTableViewController.swift in Sources */,
 				CED19BB41C58B9F900F6B162 /* CLCommonConst.swift in Sources */,
 				CE4C6A061C7B055200B01980 /* UIAlertView+MKBlockAdditions.m in Sources */,
-				CE4EF9E21C8D7A2800E215DD /* CLRegularExpression.swift in Sources */,
 				CE5F37871C72FE32002B7B4D /* AFURLResponseSerialization.m in Sources */,
 				CED19B6A1C589D1800F6B162 /* AppDelegate.swift in Sources */,
 				CE5F37861C72FE32002B7B4D /* AFURLRequestSerialization.m in Sources */,
@@ -877,10 +851,8 @@
 				CED19BB71C58BAA000F6B162 /* UIColor+Additions.m in Sources */,
 				CEBB0A9F1C8FB41D00C6C406 /* TYNewsView.m in Sources */,
 				CE5F37851C72FE32002B7B4D /* AFSecurityPolicy.m in Sources */,
-				CEF56AE21CC5C4BE00C2428C /* RechargeVC.m in Sources */,
 				CE07FA941C71B46000384383 /* CLHomeTableViewController.swift in Sources */,
 				CE5F37841C72FE32002B7B4D /* AFNetworkReachabilityManager.m in Sources */,
-				CE4EF9E01C8D6D2400E215DD /* CLSystem.swift in Sources */,
 				CEB0D9891C8D4A2800222DAA /* Utils.m in Sources */,
 				CE7924321C72C34500A4B801 /* APPTools.m in Sources */,
 			);
@@ -1015,7 +987,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = CLFreedom/CLFreedom.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1050,7 +1022,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = CLFreedom/CLFreedom.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (

@@ -23,7 +23,6 @@
 //Utility
 #import "CLCommonConst.h"
 #import "APPTools.h"
-#import "CLCanNotUserSwift.h"
 
 
 //netWorkCenter
@@ -37,9 +36,6 @@
 #import "UMSocialWechatHandler.h"
 
 //viewConttoller
-#import "CLApplePayViewController.h"
-#import "RechargeVC.h"
-#import "PaymentViewController.h"
 
 
 
