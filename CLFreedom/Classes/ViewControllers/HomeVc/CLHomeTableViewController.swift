@@ -14,7 +14,7 @@ class CLHomeTableViewController: UITableViewController {
     //首页banner的Y值
     let myCycleScrollViewY:CGFloat = 30.0
     
-    @IBOutlet weak var homeView: UIView!
+    @IBOutlet weak var homeTableHeaderView: UIView!
     var myCycleScrollView:CycleScrollView?
     @IBOutlet weak var newsView: TYNewsView!
     
@@ -22,14 +22,6 @@ class CLHomeTableViewController: UITableViewController {
     var imageNameArray:NSArray = NSArray()
     var newsArray:[String]! = []
     var serviceNameArray:[String] = []
-    
-    //MARK:completeConfig
-    func completeConfig()
-    {
-        self.newsArray = ["赵先生，北京市，提交了借款申请","钱先生，上海市，提交了借款申请","孙先生，广州市，提交了借款申请","李先生，深圳市，提交了借款申请"]
-        self.imageNameArray = ["banner","banner","banner"]
-        self.serviceNameArray = ["健康菜谱","身份证识别","Apple Pay","汽车报价","手表之家","IAP"]
-    }
     
     //MARK:viewDidLoad
     override func viewDidLoad() {
@@ -39,14 +31,22 @@ class CLHomeTableViewController: UITableViewController {
         self.initMySubView()
     }
     
+    //MARK:completeConfig
+    func completeConfig()
+    {
+        self.newsArray = ["赵先生，北京市，提交了借款申请","钱先生，上海市，提交了借款申请","孙先生，广州市，提交了借款申请","李先生，深圳市，提交了借款申请"]
+        self.imageNameArray = ["banner","banner","banner"]
+        self.serviceNameArray = ["健康菜谱","身份证识别","Apple Pay","汽车报价","手表之家","IAP"]
+    }
+    
     //MARK:initMySubView
     func initMySubView()
     {
+        //self.tableView.registerNib(UINib(nibName: "TODO", bundle: nil), forCellReuseIdentifier: "todo")
         self.initAutoScrollLabel()
-        
         self.initCycleScrollView()
     }
-    
+
     func initAutoScrollLabel()
     {
         self.newsView.setNewsImageName("TODO")
@@ -85,9 +85,26 @@ class CLHomeTableViewController: UITableViewController {
             return bannerImageViewArray[pageIndex] as! UIImageView
         }
         
-        self.homeView.addSubview(myCycleScrollView!)
+        self.homeTableHeaderView.addSubview(myCycleScrollView!)
     }
     
+    
+    //MARK: TableView delegate dataSource
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 100.0
+    }
+    
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("CLArticleBriefCell", forIndexPath: indexPath)
+        return cell
+    }
+    
+    
+    //MARK: view show
     override func viewWillAppear(animated: Bool) {
         self.newsView.startAnimation()
     }

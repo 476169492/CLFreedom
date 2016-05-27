@@ -10,21 +10,14 @@
         <scene sceneID="6Uw-X3-h2w">
             <objects>
                 <tableViewController id="StD-rC-GkJ" customClass="CLHomeTableViewController" customModule="OcCallSwift" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="khV-wz-RlA">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="khV-wz-RlA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <view key="tableFooterView" contentMode="scaleToFill" id="qtb-gT-uib">
-                            <rect key="frame" x="0.0" y="64" width="375" height="553"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="qtb-gT-uib">
+                            <rect key="frame" x="0.0" y="64" width="375" height="220"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9gp-YX-YfJ">
-                                    <rect key="frame" x="0.0" y="30" width="375" height="150"/>
-                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                    <constraints>
-                                        <constraint firstAttribute="width" secondItem="9gp-YX-YfJ" secondAttribute="height" multiplier="5:2" id="W8Z-TY-NVL"/>
-                                    </constraints>
-                                </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I9u-8B-H1V" customClass="TYNewsView">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -32,17 +25,78 @@
                                         <constraint firstAttribute="height" constant="30" id="AwF-TQ-Tpg"/>
                                     </constraints>
                                 </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9gp-YX-YfJ" userLabel="cycle View">
+                                    <rect key="frame" x="0.0" y="30" width="375" height="150"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="9gp-YX-YfJ" secondAttribute="height" multiplier="5:2" id="W8Z-TY-NVL"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vc1-yd-cKR" userLabel="hot View">
+                                    <rect key="frame" x="0.0" y="180" width="375" height="40"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="热门" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Hc-3t-nYR">
+                                            <rect key="frame" x="15" y="9" width="100" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line_heng" translatesAutoresizingMaskIntoConstraints="NO" id="22E-Bh-L1o">
+                                            <rect key="frame" x="0.0" y="39" width="375" height="1"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="KlM-og-NSE"/>
+                                    </constraints>
+                                </view>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Vc1-yd-cKR" secondAttribute="trailing" id="8E0-na-yvP"/>
                                 <constraint firstItem="9gp-YX-YfJ" firstAttribute="leading" secondItem="qtb-gT-uib" secondAttribute="leading" id="95k-kn-axr"/>
                                 <constraint firstAttribute="trailing" secondItem="9gp-YX-YfJ" secondAttribute="trailing" id="LLl-Ds-XZg"/>
+                                <constraint firstItem="Vc1-yd-cKR" firstAttribute="leading" secondItem="qtb-gT-uib" secondAttribute="leading" id="MN0-yr-Yxg"/>
                                 <constraint firstItem="9gp-YX-YfJ" firstAttribute="top" secondItem="qtb-gT-uib" secondAttribute="top" constant="30" id="RvI-yH-mTf"/>
+                                <constraint firstItem="Vc1-yd-cKR" firstAttribute="top" secondItem="9gp-YX-YfJ" secondAttribute="bottom" id="Tj2-9y-Atp"/>
                                 <constraint firstItem="I9u-8B-H1V" firstAttribute="leading" secondItem="qtb-gT-uib" secondAttribute="leading" id="o3C-Dk-0T3"/>
                                 <constraint firstItem="I9u-8B-H1V" firstAttribute="top" secondItem="qtb-gT-uib" secondAttribute="top" id="rLW-0k-tP1"/>
                                 <constraint firstAttribute="trailing" secondItem="I9u-8B-H1V" secondAttribute="trailing" id="xq5-Mm-6h5"/>
                             </constraints>
                         </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CLArticleBriefCell" rowHeight="88" id="2xx-vk-Jy1" customClass="CLArticleBriefCell" customModule="OcCallSwift" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="312" width="375" height="88"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2xx-vk-Jy1" id="9E7-fo-Erc">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="test" translatesAutoresizingMaskIntoConstraints="NO" id="2Vj-DG-X3q">
+                                            <rect key="frame" x="10" y="9" width="100" height="70"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="习近平访黑龙江&quot;粮仓&quot;:让农民生活水平不断提高" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pH1-m8-exa">
+                                            <rect key="frame" x="120" y="9" width="245" height="40"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="新闻热点" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9GT-aq-TXD">
+                                            <rect key="frame" x="120" y="57" width="100" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zhiding" translatesAutoresizingMaskIntoConstraints="NO" id="pNe-vL-DwZ">
+                                            <rect key="frame" x="335" y="59" width="30" height="18"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line_heng" translatesAutoresizingMaskIntoConstraints="NO" id="BUo-5F-GZ5">
+                                            <rect key="frame" x="0.0" y="87" width="375" height="1"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
                         <sections/>
                         <connections>
                             <outlet property="dataSource" destination="StD-rC-GkJ" id="2vp-6i-uNc"/>
@@ -51,7 +105,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="首页" id="cyP-8z-lnV"/>
                     <connections>
-                        <outlet property="homeView" destination="qtb-gT-uib" id="TpJ-PY-wNL"/>
+                        <outlet property="homeTableHeaderView" destination="qtb-gT-uib" id="ar3-AD-2XY"/>
                         <outlet property="newsView" destination="I9u-8B-H1V" id="YWi-dy-YN5"/>
                     </connections>
                 </tableViewController>
@@ -235,4 +289,9 @@
             <point key="canvasLocation" x="579.5" y="-6.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="line_heng" width="1" height="1"/>
+        <image name="test" width="97" height="65"/>
+        <image name="zhiding" width="30" height="17"/>
+    </resources>
 </document>

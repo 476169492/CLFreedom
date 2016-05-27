@@ -11,40 +11,30 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate,GeTuiSdkDelegate{
     
-    //个推开发者网站中申请App时,注册的AppId AppKey AppSecret
-    let kGtAppId:String = "n95A0FJSz38y6JLdKlC3S7"
-    let kGtAppKey:String  = "ZzA7wWzc2X6ZmVDxLBf6QA"
-    let kGtAppSecret:String = "7itIF3X6G76oi5dbtBCfAA"
-    
     var window: UIWindow?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         //1.个推
         self.initGeTui(launchOptions)
-        //2.Umeng
-      //  self.initUMeng()
         
-        
+        //2.UMeng
+        //UMSocialData.setAppKey(UMeng_APP_KEY)
+        //UMSocialWechatHandler.setWXAppId(weChatAppId, appSecret: weChatAppSecret, url: UMeng_SHARE_URL)
+
         return true
     }
     
     func initGeTui(launchOptions:[NSObject: AnyObject]?)
     {
         //启动Sdk
-        GeTuiSdk.startSdkWithAppId(kGtAppId, appKey: kGtAppKey, appSecret: kGtAppSecret, delegate: self)
+        GeTuiSdk.startSdkWithAppId(KGT_APP_ID, appKey: KGT_APP_KEY, appSecret: KGT_APP_SECRET, delegate: self)
         //注册APNS
         self.registerUserNotification()
         //处理远程通知启动APP
         self.receiveNotificationByLaunchingOptions(launchOptions)
     }
-    
-//    func initUMeng()
-//    {
-//        UMSocialData.setAppKey(UMeng_APP_KEY)
-//        UMSocialWechatHandler.setWXAppId(weChatAppId, appSecret: weChatAppSecret, url: UMeng_SHARE_URL)
-//    }
-    
+
     func registerUserNotification()
     {
         let uns = UIUserNotificationSettings(forTypes: [.Badge, .Sound, .Alert], categories: nil)
@@ -56,7 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GeTuiSdkDelegate{
     {
         
     }
-    
+
     //远程通知注册成功委托
     func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
         var myToken = deviceToken.description.stringByTrimmingCharactersInSet(NSCharacterSet(charactersInString: "<>"))
@@ -64,13 +54,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GeTuiSdkDelegate{
         
         GeTuiSdk.registerDeviceToken(myToken)
         
-        SZDLog.swiftLog("🍗🍗🍗" + myToken)
+        SZDLog.swiftLog("myToken = :" + myToken)
     }
     
     //远程通知注册失败委托
     func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
         GeTuiSdk.registerDeviceToken("")
-        SZDLog.swiftLog("🍗🍗🍗" + "远程通知注册失败")
+        SZDLog.swiftLog("远程通知注册失败")
     }
     
     
@@ -87,24 +77,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GeTuiSdkDelegate{
         
         GeTuiSdk.resume()
         completionHandler(UIBackgroundFetchResult.NewData)
-        
     }
     
     //使用个推SDK透传消息, 由个推通道下发 (非APNS)
     func GeTuiSdkDidReceivePayload(payloadId: String!, andTaskId taskId: String!, andMessageId aMsgId: String!, andOffLine offLine: Bool, fromApplication appId: String!) {
-        
     }
     
-     //SDK启动成功返回cid
+    //SDK启动成功返回cid
     func GeTuiSdkDidRegisterClient(clientId: String!) {
-        SZDLog.swiftLog("🍗🍗🍗" + clientId)
+        SZDLog.swiftLog("个推SDK启动注册成功clientId = :" + clientId)
     }
     
-    //SD遇到错误回调
+    //SDK遇到错误回调
     func GeTuiSdkDidOccurError(error: NSError!) {
         
         //个推错误报告,集成步骤发生的任何错误都在这里通知，如果集成后，无法正常收到消息，查看这里的通知
-        SZDLog.swiftLog("🍗🍗🍗" + error.description)
+        SZDLog.swiftLog("个推SDK遇到错误如下")
+        SZDLog.swiftLog(error.description)
     }
 //    
 //    func application(application: UIApplication, handleOpenURL url: NSURL) -> Bool {

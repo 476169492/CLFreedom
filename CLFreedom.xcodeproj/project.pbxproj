@@ -19,6 +19,8 @@
 		CEB0D9891C8D4A2800222DAA /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB0D9881C8D4A2800222DAA /* Utils.m */; };
 		CEBB0A9F1C8FB41D00C6C406 /* TYNewsView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBB0A9E1C8FB41D00C6C406 /* TYNewsView.m */; };
 		CEC6FE4E1CF69F800045FC72 /* CLHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6FE4D1CF69F800045FC72 /* CLHomeTableViewController.swift */; };
+		CECCAABD1CF6C438002FD110 /* CLAppBase-const.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECCAABC1CF6C438002FD110 /* CLAppBase-const.swift */; };
+		CECCAABF1CF6CC90002FD110 /* CLArticleBriefCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECCAABE1CF6CC90002FD110 /* CLArticleBriefCell.swift */; };
 		CED19B6A1C589D1800F6B162 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED19B691C589D1800F6B162 /* AppDelegate.swift */; };
 		CED19B711C589D1800F6B162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED19B701C589D1800F6B162 /* Assets.xcassets */; };
 		CED19B7F1C589D1800F6B162 /* CLFreedomTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED19B7E1C589D1800F6B162 /* CLFreedomTests.swift */; };
@@ -72,6 +74,8 @@
 		CEBB0A9D1C8FB41D00C6C406 /* TYNewsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYNewsView.h; sourceTree = "<group>"; };
 		CEBB0A9E1C8FB41D00C6C406 /* TYNewsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYNewsView.m; sourceTree = "<group>"; };
 		CEC6FE4D1CF69F800045FC72 /* CLHomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLHomeTableViewController.swift; sourceTree = "<group>"; };
+		CECCAABC1CF6C438002FD110 /* CLAppBase-const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLAppBase-const.swift"; sourceTree = "<group>"; };
+		CECCAABE1CF6CC90002FD110 /* CLArticleBriefCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLArticleBriefCell.swift; sourceTree = "<group>"; };
 		CED19B661C589D1800F6B162 /* CLFreedom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLFreedom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED19B691C589D1800F6B162 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED19B701C589D1800F6B162 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 		CE5F376F1C72F3A2002B7B4D /* TableIViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				CECCAABE1CF6CC90002FD110 /* CLArticleBriefCell.swift */,
 			);
 			path = TableIViewCell;
 			sourceTree = "<group>";
@@ -208,6 +213,21 @@
 			children = (
 			);
 			path = MyVc;
+			sourceTree = "<group>";
+		};
+		CECCAABB1CF6C383002FD110 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CECCAABC1CF6C438002FD110 /* CLAppBase-const.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		CECCAAC01CF6DA6D002FD110 /* NearbyVc */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NearbyVc;
 			sourceTree = "<group>";
 		};
 		CED19B5D1C589D1800F6B162 = {
@@ -266,6 +286,7 @@
 		CED19B971C58A86700F6B162 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CECCAABB1CF6C383002FD110 /* Helper */,
 				CE5F376E1C72F3A2002B7B4D /* NetWorkCenter */,
 				CE5F376D1C72F3A2002B7B4D /* DataModel */,
 				CED19BA31C58AB2F00F6B162 /* Views */,
@@ -322,6 +343,7 @@
 			children = (
 				CE4C6A071C7B0A4500B01980 /* MainVc */,
 				CEC6FE4B1CF69E3E0045FC72 /* HomeVc */,
+				CECCAAC01CF6DA6D002FD110 /* NearbyVc */,
 				CEC6FE4C1CF69E3E0045FC72 /* MyVc */,
 			);
 			path = ViewControllers;
@@ -549,6 +571,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CECCAABD1CF6C438002FD110 /* CLAppBase-const.swift in Sources */,
 				CED19BAB1C58B5E500F6B162 /* CycleScrollView.m in Sources */,
 				CED19BB41C58B9F900F6B162 /* CLCommonConst.swift in Sources */,
 				CE4C6A061C7B055200B01980 /* UIAlertView+MKBlockAdditions.m in Sources */,
@@ -562,6 +585,7 @@
 				CED19BB71C58BAA000F6B162 /* UIColor+Additions.m in Sources */,
 				CEBB0A9F1C8FB41D00C6C406 /* TYNewsView.m in Sources */,
 				CEB0D9891C8D4A2800222DAA /* Utils.m in Sources */,
+				CECCAABF1CF6CC90002FD110 /* CLArticleBriefCell.swift in Sources */,
 				CE7924321C72C34500A4B801 /* APPTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
