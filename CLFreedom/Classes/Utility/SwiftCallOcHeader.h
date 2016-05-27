@@ -31,6 +31,7 @@
 #import <GeTuiSdk.h>
 #import <BaiduMapAPI_Base/BMKBaseComponent.h>
 #import <BaiduMapAPI_Search/BMKSearchComponent.h>
+#import "MJRefresh.h"
 
 //viewConttoller
 

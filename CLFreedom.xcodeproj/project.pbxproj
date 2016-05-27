@@ -23,12 +23,21 @@
 		CE6EF93E1CF7E41000DA70CB /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6EF93D1CF7E41000DA70CB /* libsqlite3.tbd */; };
 		CE6EF9401CF7E42200DA70CB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6EF93F1CF7E42200DA70CB /* CoreTelephony.framework */; };
 		CE6EF9421CF7E42E00DA70CB /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6EF9411CF7E42E00DA70CB /* libstdc++.6.0.9.tbd */; };
+		CE6EF9461CF7F9C200DA70CB /* CLNearbyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6EF9451CF7F9C200DA70CB /* CLNearbyTableViewController.swift */; };
 		CE79242F1C72B65A00A4B801 /* Serve.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE79242E1C72B65A00A4B801 /* Serve.storyboard */; };
 		CE7924321C72C34500A4B801 /* APPTools.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7924311C72C34500A4B801 /* APPTools.m */; };
 		CE7924361C72C3AC00A4B801 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7924351C72C3AC00A4B801 /* MBProgressHUD.m */; };
 		CEB0D9861C8D48C100222DAA /* CBAutoScrollLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB0D9851C8D48C100222DAA /* CBAutoScrollLabel.m */; };
 		CEB0D9891C8D4A2800222DAA /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB0D9881C8D4A2800222DAA /* Utils.m */; };
 		CEBB0A9F1C8FB41D00C6C406 /* TYNewsView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBB0A9E1C8FB41D00C6C406 /* TYNewsView.m */; };
+		CEC11ED11CF825CE000111A4 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CEC11EC11CF825CE000111A4 /* MJRefresh.bundle */; };
+		CEC11ED21CF825CE000111A4 /* MJRefreshBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC11EC41CF825CE000111A4 /* MJRefreshBaseView.m */; };
+		CEC11ED31CF825CE000111A4 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC11EC61CF825CE000111A4 /* MJRefreshConst.m */; };
+		CEC11ED41CF825CE000111A4 /* MJRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC11EC81CF825CE000111A4 /* MJRefreshFooterView.m */; };
+		CEC11ED51CF825CE000111A4 /* MJRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC11ECA1CF825CE000111A4 /* MJRefreshHeaderView.m */; };
+		CEC11ED61CF825CE000111A4 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC11ECC1CF825CE000111A4 /* UIScrollView+MJExtension.m */; };
+		CEC11ED71CF825CE000111A4 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC11ECE1CF825CE000111A4 /* UIScrollView+MJRefresh.m */; };
+		CEC11ED81CF825CE000111A4 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC11ED01CF825CE000111A4 /* UIView+MJExtension.m */; };
 		CEC6FE4E1CF69F800045FC72 /* CLHomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC6FE4D1CF69F800045FC72 /* CLHomeTableViewController.swift */; };
 		CECCAABD1CF6C438002FD110 /* CLAppBase-const.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECCAABC1CF6C438002FD110 /* CLAppBase-const.swift */; };
 		CECCAABF1CF6CC90002FD110 /* CLArticleBriefCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECCAABE1CF6CC90002FD110 /* CLArticleBriefCell.swift */; };
@@ -83,6 +92,7 @@
 		CE6EF93D1CF7E41000DA70CB /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		CE6EF93F1CF7E42200DA70CB /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		CE6EF9411CF7E42E00DA70CB /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		CE6EF9451CF7F9C200DA70CB /* CLNearbyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLNearbyTableViewController.swift; sourceTree = "<group>"; };
 		CE79242E1C72B65A00A4B801 /* Serve.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Serve.storyboard; sourceTree = "<group>"; };
 		CE7924301C72C34500A4B801 /* APPTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPTools.h; sourceTree = "<group>"; };
 		CE7924311C72C34500A4B801 /* APPTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPTools.m; sourceTree = "<group>"; };
@@ -95,6 +105,22 @@
 		CEB0D9881C8D4A2800222DAA /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		CEBB0A9D1C8FB41D00C6C406 /* TYNewsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYNewsView.h; sourceTree = "<group>"; };
 		CEBB0A9E1C8FB41D00C6C406 /* TYNewsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYNewsView.m; sourceTree = "<group>"; };
+		CEC11EC11CF825CE000111A4 /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
+		CEC11EC21CF825CE000111A4 /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
+		CEC11EC31CF825CE000111A4 /* MJRefreshBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBaseView.h; sourceTree = "<group>"; };
+		CEC11EC41CF825CE000111A4 /* MJRefreshBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBaseView.m; sourceTree = "<group>"; };
+		CEC11EC51CF825CE000111A4 /* MJRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshConst.h; sourceTree = "<group>"; };
+		CEC11EC61CF825CE000111A4 /* MJRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConst.m; sourceTree = "<group>"; };
+		CEC11EC71CF825CE000111A4 /* MJRefreshFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooterView.h; sourceTree = "<group>"; };
+		CEC11EC81CF825CE000111A4 /* MJRefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshFooterView.m; sourceTree = "<group>"; };
+		CEC11EC91CF825CE000111A4 /* MJRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshHeaderView.h; sourceTree = "<group>"; };
+		CEC11ECA1CF825CE000111A4 /* MJRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshHeaderView.m; sourceTree = "<group>"; };
+		CEC11ECB1CF825CE000111A4 /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
+		CEC11ECC1CF825CE000111A4 /* UIScrollView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJExtension.m"; sourceTree = "<group>"; };
+		CEC11ECD1CF825CE000111A4 /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
+		CEC11ECE1CF825CE000111A4 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
+		CEC11ECF1CF825CE000111A4 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
+		CEC11ED01CF825CE000111A4 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
 		CEC6FE4D1CF69F800045FC72 /* CLHomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLHomeTableViewController.swift; sourceTree = "<group>"; };
 		CECCAABC1CF6C438002FD110 /* CLAppBase-const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CLAppBase-const.swift"; sourceTree = "<group>"; };
 		CECCAABE1CF6CC90002FD110 /* CLArticleBriefCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLArticleBriefCell.swift; sourceTree = "<group>"; };
@@ -202,6 +228,7 @@
 		CE5F37701C72F3A2002B7B4D /* ThirdPart */ = {
 			isa = PBXGroup;
 			children = (
+				CEC11EC01CF825CE000111A4 /* MJRefresh */,
 			);
 			path = ThirdPart;
 			sourceTree = "<group>";
@@ -243,6 +270,29 @@
 			path = TYUpDownScrollView;
 			sourceTree = "<group>";
 		};
+		CEC11EC01CF825CE000111A4 /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				CEC11EC11CF825CE000111A4 /* MJRefresh.bundle */,
+				CEC11EC21CF825CE000111A4 /* MJRefresh.h */,
+				CEC11EC31CF825CE000111A4 /* MJRefreshBaseView.h */,
+				CEC11EC41CF825CE000111A4 /* MJRefreshBaseView.m */,
+				CEC11EC51CF825CE000111A4 /* MJRefreshConst.h */,
+				CEC11EC61CF825CE000111A4 /* MJRefreshConst.m */,
+				CEC11EC71CF825CE000111A4 /* MJRefreshFooterView.h */,
+				CEC11EC81CF825CE000111A4 /* MJRefreshFooterView.m */,
+				CEC11EC91CF825CE000111A4 /* MJRefreshHeaderView.h */,
+				CEC11ECA1CF825CE000111A4 /* MJRefreshHeaderView.m */,
+				CEC11ECB1CF825CE000111A4 /* UIScrollView+MJExtension.h */,
+				CEC11ECC1CF825CE000111A4 /* UIScrollView+MJExtension.m */,
+				CEC11ECD1CF825CE000111A4 /* UIScrollView+MJRefresh.h */,
+				CEC11ECE1CF825CE000111A4 /* UIScrollView+MJRefresh.m */,
+				CEC11ECF1CF825CE000111A4 /* UIView+MJExtension.h */,
+				CEC11ED01CF825CE000111A4 /* UIView+MJExtension.m */,
+			);
+			path = MJRefresh;
+			sourceTree = "<group>";
+		};
 		CEC6FE4B1CF69E3E0045FC72 /* HomeVc */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +319,7 @@
 		CECCAAC01CF6DA6D002FD110 /* NearbyVc */ = {
 			isa = PBXGroup;
 			children = (
+				CE6EF9451CF7F9C200DA70CB /* CLNearbyTableViewController.swift */,
 			);
 			path = NearbyVc;
 			sourceTree = "<group>";
@@ -549,6 +600,7 @@
 			files = (
 				CE79242F1C72B65A00A4B801 /* Serve.storyboard in Resources */,
 				CED19B9C1C58A89200F6B162 /* Main.storyboard in Resources */,
+				CEC11ED11CF825CE000111A4 /* MJRefresh.bundle in Resources */,
 				CED19B711C589D1800F6B162 /* Assets.xcassets in Resources */,
 				CE4C69FB1C7AA86D00B01980 /* My.storyboard in Resources */,
 				CED19B9B1C58A89200F6B162 /* LaunchScreen.storyboard in Resources */,
@@ -626,16 +678,24 @@
 			files = (
 				CECCAABD1CF6C438002FD110 /* CLAppBase-const.swift in Sources */,
 				CED19BAB1C58B5E500F6B162 /* CycleScrollView.m in Sources */,
+				CE6EF9461CF7F9C200DA70CB /* CLNearbyTableViewController.swift in Sources */,
+				CEC11ED31CF825CE000111A4 /* MJRefreshConst.m in Sources */,
 				CED19BB41C58B9F900F6B162 /* CLCommonConst.swift in Sources */,
 				CE4C6A061C7B055200B01980 /* UIAlertView+MKBlockAdditions.m in Sources */,
 				CED19B6A1C589D1800F6B162 /* AppDelegate.swift in Sources */,
+				CEC11ED81CF825CE000111A4 /* UIView+MJExtension.m in Sources */,
+				CEC11ED21CF825CE000111A4 /* MJRefreshBaseView.m in Sources */,
+				CEC11ED61CF825CE000111A4 /* UIScrollView+MJExtension.m in Sources */,
 				CEB0D9861C8D48C100222DAA /* CBAutoScrollLabel.m in Sources */,
+				CEC11ED51CF825CE000111A4 /* MJRefreshHeaderView.m in Sources */,
 				CE4C6A091C7B0A7B00B01980 /* CLTabBarController.swift in Sources */,
 				CE7924361C72C3AC00A4B801 /* MBProgressHUD.m in Sources */,
 				CED19BB11C58B64A00F6B162 /* NSTimer+Addition.m in Sources */,
+				CEC11ED41CF825CE000111A4 /* MJRefreshFooterView.m in Sources */,
 				CE5F378B1C7301B7002B7B4D /* CLNetWorkCenter.m in Sources */,
 				CEC6FE4E1CF69F800045FC72 /* CLHomeTableViewController.swift in Sources */,
 				CED19BB71C58BAA000F6B162 /* UIColor+Additions.m in Sources */,
+				CEC11ED71CF825CE000111A4 /* UIScrollView+MJRefresh.m in Sources */,
 				CEBB0A9F1C8FB41D00C6C406 /* TYNewsView.m in Sources */,
 				CEB0D9891C8D4A2800222DAA /* Utils.m in Sources */,
 				CECCAABF1CF6CC90002FD110 /* CLArticleBriefCell.swift in Sources */,

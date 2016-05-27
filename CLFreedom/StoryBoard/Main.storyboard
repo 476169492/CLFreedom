@@ -111,7 +111,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kp4-Zs-xNu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1073.5" y="-907.5"/>
+            <point key="canvasLocation" x="1073.5" y="-1291.5"/>
         </scene>
         <!--首页-->
         <scene sceneID="0vo-YT-dMt">
@@ -128,7 +128,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="51v-bN-elb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="579.5" y="-899.5"/>
+            <point key="canvasLocation" x="579.5" y="-1283.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="hvq-Oy-WAk">
@@ -142,12 +142,13 @@
                     </tabBar>
                     <connections>
                         <segue destination="YN0-at-mfX" kind="relationship" relationship="viewControllers" id="Hzl-au-5eK"/>
+                        <segue destination="RSQ-jr-Sbh" kind="relationship" relationship="viewControllers" id="xja-KV-Ect"/>
                         <segue destination="Jjk-oU-B4V" kind="relationship" relationship="viewControllers" id="TEZ-ek-lSm"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="es9-qW-vde" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2.5" y="-494.5"/>
+            <point key="canvasLocation" x="-76.5" y="-488.5"/>
         </scene>
         <!--我的-->
         <scene sceneID="fGS-xL-QL6">
@@ -203,7 +204,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yye-uL-8sZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1061.5" y="-6.5"/>
+            <point key="canvasLocation" x="1081.5" y="549.5"/>
         </scene>
         <!--设置-->
         <scene sceneID="tIi-6s-0zE">
@@ -268,7 +269,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c2Q-02-XML" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1492.5" y="-6.5"/>
+            <point key="canvasLocation" x="1570.5" y="549.5"/>
         </scene>
         <!--我的-->
         <scene sceneID="fd7-iL-eiF">
@@ -286,7 +287,79 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eXS-54-i7f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="579.5" y="-6.5"/>
+            <point key="canvasLocation" x="579.5" y="549.5"/>
+        </scene>
+        <!--附近-->
+        <scene sceneID="Cu1-KJ-JyM">
+            <objects>
+                <tableViewController id="1DI-yZ-4ca" customClass="CLNearbyTableViewController" customModule="OcCallSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="UyE-bA-VZT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="NnG-Ub-kBi">
+                            <rect key="frame" x="0.0" y="64" width="375" height="100"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入搜索内容" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RbW-mO-Hkw">
+                                    <rect key="frame" x="8" y="15" width="359" height="40"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellId" rowHeight="115" id="tC2-sI-YhG">
+                                <rect key="frame" x="0.0" y="192" width="375" height="115"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tC2-sI-YhG" id="9GM-iZ-bZy">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="114.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="test" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dM-xN-8eE">
+                                            <rect key="frame" x="18" y="11" width="161" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1DI-yZ-4ca" id="3Xv-Nu-xLs"/>
+                            <outlet property="delegate" destination="1DI-yZ-4ca" id="JI2-fa-n77"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="附近" id="t06-E1-n93"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="searchTableHeaderView" destination="NnG-Ub-kBi" id="dLE-UQ-2H6"/>
+                        <outlet property="searchTextField" destination="RbW-mO-Hkw" id="AFB-1r-0PN"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2wR-oz-9Yu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1064.5" y="-488.5"/>
+        </scene>
+        <!--附近-->
+        <scene sceneID="ii7-RM-hMs">
+            <objects>
+                <navigationController id="RSQ-jr-Sbh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="附近" id="CKc-ri-FQ6"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="73x-m7-NmM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1DI-yZ-4ca" kind="relationship" relationship="rootViewController" id="WVM-kF-OBy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MY4-Xe-1Eh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="579.5" y="-488.5"/>
         </scene>
     </scenes>
     <resources>
