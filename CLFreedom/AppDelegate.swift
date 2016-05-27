@@ -9,15 +9,20 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate,GeTuiSdkDelegate{
+class AppDelegate: UIResponder, UIApplicationDelegate,GeTuiSdkDelegate,BMKGeneralDelegate{
     
     var window: UIWindow?
+    
+    var _mapManager:BMKMapManager?
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         //1.个推
         self.initGeTui(launchOptions)
         
+        self.initBaiDuMap()
+        
+
         //2.UMeng
         //UMSocialData.setAppKey(UMeng_APP_KEY)
         //UMSocialWechatHandler.setWXAppId(weChatAppId, appSecret: weChatAppSecret, url: UMeng_SHARE_URL)
@@ -25,6 +30,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GeTuiSdkDelegate{
         return true
     }
     
+    //MARK: init baidu map
+    func initBaiDuMap()
+    {
+        _mapManager = BMKMapManager()
+        let ret = _mapManager?.start("6NL6SqEvf1SrqWscYqxIbgwiGqEhY4Eh", generalDelegate: self)
+        if ret == false{
+            SZDLog.swiftLog("manager start failed")
+        }
+    }
+    
+    func onGetNetworkState(iError: Int32) {
+        
+    }
+    
+    func onGetPermissionState(iError: Int32) {
+        
+    }
+    
+    //MARK: init GeTui
     func initGeTui(launchOptions:[NSObject: AnyObject]?)
     {
         //启动Sdk

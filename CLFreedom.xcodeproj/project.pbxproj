@@ -12,6 +12,17 @@
 		CE4C6A061C7B055200B01980 /* UIAlertView+MKBlockAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4C6A051C7B055200B01980 /* UIAlertView+MKBlockAdditions.m */; };
 		CE4C6A091C7B0A7B00B01980 /* CLTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4C6A081C7B0A7B00B01980 /* CLTabBarController.swift */; };
 		CE5F378B1C7301B7002B7B4D /* CLNetWorkCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5F378A1C7301B7002B7B4D /* CLNetWorkCenter.m */; };
+		CE6EF92F1CF7E22500DA70CB /* BaiduMapAPI_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6EF92D1CF7E22500DA70CB /* BaiduMapAPI_Base.framework */; };
+		CE6EF9301CF7E22500DA70CB /* BaiduMapAPI_Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6EF92E1CF7E22500DA70CB /* BaiduMapAPI_Search.framework */; };
+		CE6EF9321CF7E3D200DA70CB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6EF9311CF7E3D200DA70CB /* CoreLocation.framework */; };
+		CE6EF9341CF7E3DB00DA70CB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6EF9331CF7E3DB00DA70CB /* QuartzCore.framework */; };
+		CE6EF9361CF7E3E400DA70CB /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6EF9351CF7E3E400DA70CB /* OpenGLES.framework */; };
+		CE6EF9381CF7E3EC00DA70CB /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6EF9371CF7E3EC00DA70CB /* SystemConfiguration.framework */; };
+		CE6EF93A1CF7E3F500DA70CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6EF9391CF7E3F500DA70CB /* CoreGraphics.framework */; };
+		CE6EF93C1CF7E40300DA70CB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6EF93B1CF7E40300DA70CB /* Security.framework */; };
+		CE6EF93E1CF7E41000DA70CB /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6EF93D1CF7E41000DA70CB /* libsqlite3.tbd */; };
+		CE6EF9401CF7E42200DA70CB /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6EF93F1CF7E42200DA70CB /* CoreTelephony.framework */; };
+		CE6EF9421CF7E42E00DA70CB /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6EF9411CF7E42E00DA70CB /* libstdc++.6.0.9.tbd */; };
 		CE79242F1C72B65A00A4B801 /* Serve.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE79242E1C72B65A00A4B801 /* Serve.storyboard */; };
 		CE7924321C72C34500A4B801 /* APPTools.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7924311C72C34500A4B801 /* APPTools.m */; };
 		CE7924361C72C3AC00A4B801 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7924351C72C3AC00A4B801 /* MBProgressHUD.m */; };
@@ -61,6 +72,17 @@
 		CE4C6A081C7B0A7B00B01980 /* CLTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CLTabBarController.swift; sourceTree = "<group>"; };
 		CE5F37891C7301B7002B7B4D /* CLNetWorkCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLNetWorkCenter.h; sourceTree = "<group>"; };
 		CE5F378A1C7301B7002B7B4D /* CLNetWorkCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLNetWorkCenter.m; sourceTree = "<group>"; };
+		CE6EF92D1CF7E22500DA70CB /* BaiduMapAPI_Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Base.framework; sourceTree = "<group>"; };
+		CE6EF92E1CF7E22500DA70CB /* BaiduMapAPI_Search.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Search.framework; sourceTree = "<group>"; };
+		CE6EF9311CF7E3D200DA70CB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CE6EF9331CF7E3DB00DA70CB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CE6EF9351CF7E3E400DA70CB /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		CE6EF9371CF7E3EC00DA70CB /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		CE6EF9391CF7E3F500DA70CB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CE6EF93B1CF7E40300DA70CB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		CE6EF93D1CF7E41000DA70CB /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		CE6EF93F1CF7E42200DA70CB /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		CE6EF9411CF7E42E00DA70CB /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
 		CE79242E1C72B65A00A4B801 /* Serve.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Serve.storyboard; sourceTree = "<group>"; };
 		CE7924301C72C34500A4B801 /* APPTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APPTools.h; sourceTree = "<group>"; };
 		CE7924311C72C34500A4B801 /* APPTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APPTools.m; sourceTree = "<group>"; };
@@ -104,7 +126,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE6EF9421CF7E42E00DA70CB /* libstdc++.6.0.9.tbd in Frameworks */,
+				CE6EF9401CF7E42200DA70CB /* CoreTelephony.framework in Frameworks */,
+				CE6EF93E1CF7E41000DA70CB /* libsqlite3.tbd in Frameworks */,
+				CE6EF93C1CF7E40300DA70CB /* Security.framework in Frameworks */,
+				CE6EF93A1CF7E3F500DA70CB /* CoreGraphics.framework in Frameworks */,
+				CE6EF9381CF7E3EC00DA70CB /* SystemConfiguration.framework in Frameworks */,
+				CE6EF9361CF7E3E400DA70CB /* OpenGLES.framework in Frameworks */,
+				CE6EF9341CF7E3DB00DA70CB /* QuartzCore.framework in Frameworks */,
+				CE6EF9321CF7E3D200DA70CB /* CoreLocation.framework in Frameworks */,
 				27A5594FC6CADB90995CD5FD /* Pods.framework in Frameworks */,
+				CE6EF92F1CF7E22500DA70CB /* BaiduMapAPI_Base.framework in Frameworks */,
+				CE6EF9301CF7E22500DA70CB /* BaiduMapAPI_Search.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +204,16 @@
 			children = (
 			);
 			path = ThirdPart;
+			sourceTree = "<group>";
+		};
+		CE6EF92C1CF7E1E900DA70CB /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				CE6EF92D1CF7E22500DA70CB /* BaiduMapAPI_Base.framework */,
+				CE6EF92E1CF7E22500DA70CB /* BaiduMapAPI_Search.framework */,
+			);
+			name = Framework;
+			path = Classes/Framework;
 			sourceTree = "<group>";
 		};
 		CE7924331C72C3AC00A4B801 /* MBProgressHUD */ = {
@@ -261,6 +304,7 @@
 				CED19BA71C58B46400F6B162 /* CLFreedom-Prefix.pch */,
 				CED19B691C589D1800F6B162 /* AppDelegate.swift */,
 				CED19B751C589D1800F6B162 /* Info.plist */,
+				CE6EF92C1CF7E1E900DA70CB /* Framework */,
 			);
 			path = CLFreedom;
 			sourceTree = "<group>";
@@ -372,6 +416,15 @@
 		EA943AB6C29235256EB533D2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE6EF9411CF7E42E00DA70CB /* libstdc++.6.0.9.tbd */,
+				CE6EF93F1CF7E42200DA70CB /* CoreTelephony.framework */,
+				CE6EF93D1CF7E41000DA70CB /* libsqlite3.tbd */,
+				CE6EF93B1CF7E40300DA70CB /* Security.framework */,
+				CE6EF9391CF7E3F500DA70CB /* CoreGraphics.framework */,
+				CE6EF9371CF7E3EC00DA70CB /* SystemConfiguration.framework */,
+				CE6EF9351CF7E3E400DA70CB /* OpenGLES.framework */,
+				CE6EF9331CF7E3DB00DA70CB /* QuartzCore.framework */,
+				CE6EF9311CF7E3D200DA70CB /* CoreLocation.framework */,
 				5A8E1EBB1901238DDA91142C /* Pods.framework */,
 			);
 			name = Frameworks;
@@ -714,6 +767,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CLFreedom/Classes/ThirdPart/umeng_ios_social_sdk_5.0_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
+					"$(PROJECT_DIR)/CLFreedom/Classes/Framework",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CLFreedom/CLFreedom-Prefix.pch";
 				INFOPLIST_FILE = CLFreedom/Info.plist;
@@ -750,6 +804,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CLFreedom/Classes/ThirdPart/umeng_ios_social_sdk_5.0_arm64_custom/UMSocial_Sdk_Extra_Frameworks/TencentOpenAPI",
+					"$(PROJECT_DIR)/CLFreedom/Classes/Framework",
 				);
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CLFreedom/CLFreedom-Prefix.pch";
 				INFOPLIST_FILE = CLFreedom/Info.plist;
